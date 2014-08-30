@@ -88,4 +88,4 @@ amixer -c 0 -- sset Master 100% unmute
 amixer -c 0 -- sset PCM 100% unmute
 aplay /usr/share/sounds/alsa/Front_Center.wav
 aplay /usr/share/sounds/alsa/Noise.wav
-usermod -G audio vagrant
+usermod -a -G audio vagrant

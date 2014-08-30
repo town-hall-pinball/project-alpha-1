@@ -28,6 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "hashicorp/precise64"
   config.vm.provision :shell, path: "vm/bootstrap"
   config.vm.hostname = "no-fear"
+  config.ssh.forward_x11 = true
 
   config.vm.provider "virtualbox" do |vb|
       vb.name = "no-fear"
