@@ -25,14 +25,9 @@ set -x
 apt-get update
 apt-get install -y \
     alsa-utils \
-    cmake \
     curl \
-    git \
-    g++ \
     libboost-dev \
-    libyaml-dev \
-    make \
-    python-dev \
+    libyaml-0-2 \
     python-imaging \
     python-pyglet \
     python-pygame \
@@ -40,47 +35,13 @@ apt-get install -y \
     python-setuptools \
     swig
 
-curl -L -O 'http://softlayer-dal.dl.sourceforge.net/project/libusb/libusb-0.1%20%28LEGACY%29/0.1.12/libusb-0.1.12.tar.gz'
-tar xf libusb-0.1.12.tar.gz
-( cd libusb-0.1.12 ;
-    ./configure ;
-    make ;
-    make install)
-
-curl -O http://yaml-cpp.googlecode.com/files/yaml-cpp-0.3.0.tar.gz
-tar xf yaml-cpp-0.3.0.tar.gz
-mkdir -p yaml-cpp/build
-( cd yaml-cpp/build ; \
-    cmake .. ; \
-    make ; \
-    make install )
-
-curl -O http://www.intra2net.com/en/developer/libftdi/download/libftdi-0.16.tar.gz
-tar xf libftdi-0.16.tar.gz
-mkdir -p libftdi-0.16/build
-( cd libftdi-0.16/build ; \
-    cmake .. ; \
-    make ; \
-    make install )
-ln -s /usr/local/include/libftdi/ftdi.h /usr/local/include/ftdi.h
-ln -s /usr/local/lib/libftdi.so.1 /usr/local/lib/libftdi1.so
-
-git clone https://github.com/preble/libpinproc.git
-mkdir -p libpinproc/bin
-( cd libpinproc/bin; \
-    cmake -DCMAKE_CXX_FLAGS="-fPIC" -DBUILD_SHARED_LIBS="ON" .. ; \
-    make ; \
-    make install )
-
-git clone https://github.com/preble/pypinproc.git
-( cd pypinproc ; \
-    python setup.py build ; \
-    python setup.py install )
-
-git clone https://github.com/preble/pyprocgame.git
-( cd pyprocgame ; \
-    python setup.py build ; \
-    python setup.py install )
+curl -O http://www.townhallpinball.org/precise64/local-libftdi-0.16_amd64.deb
+curl -O http://www.townhallpinball.org/precise64/local-libpinproc-0.0.0_amd64.deb
+curl -O http://www.townhallpinball.org/precise64/local-libusb-0.1.12_amd64.deb
+curl -O http://www.townhallpinball.org/precise64/local-pypinproc-0.0.0_amd64.deb
+curl -O http://www.townhallpinball.org/precise64/local-pyprocgame-0.0.0_amd64.deb
+curl -O http://www.townhallpinball.org/precise64/local-yaml-cpp-0.3.0_amd64.deb
+dpkg --install *.deb
 
 ldconfig
 
