@@ -32,8 +32,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provider "virtualbox" do |vb|
       vb.name = "no-fear"
-      #vb.memory = 1024
       vb.customize ["modifyvm", :id, "--audio", "coreaudio",
                     "--audiocontroller", "ac97"]
+      config.vm.synced_folder "../pinlib/pinlib", "/usr/local/lib/python2.7/dist-packages/pinlib"
+      config.vm.synced_folder "../pyprocgame/procgame", "/usr/local/lib/python2.7/dist-packages/procgame"
   end
 end

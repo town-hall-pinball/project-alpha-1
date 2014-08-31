@@ -1,0 +1,24 @@
+font_path:
+    - fonts
+pinproc_class: procgame.fakepinproc.FakePinPROC
+config_path:
+        - config
+keyboard_switch_map:
+    # Enter, Up, Down, Exit
+    7: SD8
+    8: SD7
+    9: SD6
+    0: SD5
+    # Start:
+    s: S13
+    z: SF4
+    # Drain
+    /: S01
+    # Bumper
+    b: S02
+    # Super Jets
+    j: S03
+    # Slingshot
+    g: S04
+desktop_dmd_scale: 4
+dmd_cache_path: tmp/cache
