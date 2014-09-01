@@ -19,23 +19,25 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import boot, game, oops
-from pingame import attract, brand
+from procgame import game
+from pinlib import frame
 
-def main():
-    g = game.Game("wpc")
+class AttractMode(game.Mode):
 
-    g.boot = boot.BootMode(g, {
-        "name": brand.name.upper(),
-        "version": brand.version,
-        "date": brand.date
-    })
-    g.oops = oops.OopsMode(g, {
-        "next_mode": g.boot
-    })
-    g.attract = attract.AttractMode(g)
-    
-    g.run()
+    def __init__(self, game):
+        super(AttractMode, self).__init__(game._game, 100)
 
-if __name__ == "__main__":
-    main()
+        self.layer = (frame.Builder(game.fonts)
+            .move_y(6)
+            .font("plain")
+            .println("Town Hall Pinball")
+            .font("bold")
+            .move_y(2)
+            .println("PRESENTS")
+            .end(3.0)
+            .move_y(12)
+            .println("NO FEAR")
+            .end(3.0)
+            .empty(10.0)
+            .script()
+        )
