@@ -1,18 +1,19 @@
-from pinlib import boot, game
+from pinlib import boot, game, oops
+from pingame import brand
 
 def main():
     g = game.Game("wpc")
 
-    g.boot = boot.Mode(g, {
-        "name": "No Fear",
-        "version": "0.0.0"
+    g.boot = boot.BootMode(g, {
+        "name": brand.name.upper(),
+        "version": brand.version,
+        "date": brand.date
+    })
+    g.oops = oops.OopsMode(g, {
+        "next_mode": g.boot
     })
 
-    try:
-        g.setup()
-        g.run_loop()
-    finally:
-        del g
+    g.run()
 
 if __name__ == "__main__":
     main()

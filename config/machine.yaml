@@ -1,0 +1,22 @@
+PRGame:
+    machineType: wpc
+    numBalls: 6
+PRSwitches:
+    enter:
+        number: SD8
+    up:
+        number: SD7
+    down:
+        number: SD6
+    exit:
+        number: SD5
+    startButton:
+        number: S13
+    drain:
+        number: S01
+    bumper:
+        number: S02
+    superJets:
+        number: S03
+    slingshot:
+        number: S04

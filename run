@@ -1,0 +1,10 @@
+#!/bin/bash
+
+OOPS=""
+
+while true; do
+    if python -m pingame $OOPS ; then
+        exit
+    fi
+    OOPS="--oops"
+done
