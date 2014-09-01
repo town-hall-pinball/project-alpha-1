@@ -38,6 +38,7 @@ class AttractMode(game.Mode):
             .move_y(12)
             .println("NO FEAR")
             .end(3.0)
+            .transition("push", direction="north")
             .empty(10.0)
             .script()
         )
