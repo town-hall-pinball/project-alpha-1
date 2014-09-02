@@ -1,0 +1,14 @@
+Adjustments:
+    Pricing:
+        "Left Slot Value":
+            options: ["0.25", "1.00", "None"]
+            default: "0.25"
+        "Center Slot Value":
+            options: ["0.25", "1.00", "None"]
+            default: "None"
+        "Right Slot Value":
+            options: ["0.25", "1.00", "None"]
+            default: "0.25"
+        "Fourth Slot Value":
+            options: ["0.25", "1.00", "None"]
+            default: "None"

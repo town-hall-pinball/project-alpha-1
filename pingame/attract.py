@@ -20,14 +20,16 @@
 # DEALINGS IN THE SOFTWARE.
 
 from procgame import game
-from pinlib import frame
+from pinlib import attract, frame
 
-class AttractMode(game.Mode):
+class AttractMode(attract.AttractMode):
 
-    def __init__(self, game):
-        super(AttractMode, self).__init__(game._game, 100)
+    def __init__(self, sys):
+        super(AttractMode, self).__init__(sys)
+        self.sys = sys
 
-        self.layer = (frame.Builder(game.fonts)
+    def mode_started(self):
+        self.layer = (frame.Builder(self.sys.fonts)
             .move_y(6)
             .font("plain")
             .println("Town Hall Pinball")

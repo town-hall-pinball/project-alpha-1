@@ -19,23 +19,23 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import boot, game, oops
+from pinlib import boot, machine, oops
 from pingame import attract, brand
 
 def main():
-    g = game.Game("wpc")
+    sys = machine.System("wpc")
 
-    g.boot = boot.BootMode(g, {
+    sys.boot = boot.BootMode(sys, {
         "name": brand.name.upper(),
         "version": brand.version,
         "date": brand.date
     })
-    g.oops = oops.OopsMode(g, {
-        "next_mode": g.boot
+    sys.oops = oops.OopsMode(sys, {
+        "next_mode": sys.boot
     })
-    g.attract = attract.AttractMode(g)
-    
-    g.run()
+    sys.attract = attract.AttractMode(sys)
+
+    sys.run()
 
 if __name__ == "__main__":
     main()
