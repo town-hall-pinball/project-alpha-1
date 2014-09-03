@@ -77,6 +77,5 @@ to the discussion.
 
 ## Administrivia
 
-Licensed under the MIT license.
-
-[Credits](CREDITS.md)
+* Licensed under the [MIT license](LICENSE.md)
+* [Credits](CREDITS.md)
