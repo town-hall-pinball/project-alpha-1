@@ -17,6 +17,7 @@ can use git. Add your name here! Alphabetical order in the sections.
 
 ## Software
 * Mike McGann
+* Ken B
 
 ## Testers
 
