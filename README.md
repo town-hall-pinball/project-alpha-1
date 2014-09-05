@@ -32,9 +32,24 @@ Setup a development environment as follows:
 ```bash
 mkdir town-hall-pinball
 cd town-hall-pinball
+```
+
+If you are not contributing back to the repositories or prefer to use https:
+```bash
 git clone https://github.com/town-hall-pinball/no-fear.git
 git clone https://github.com/town-hall-pinball/pinlib.git
 git clone https://github.com/town-hall-pinball/pyprocgame.git
+```
+
+Otherwise, register your SSH key and:
+```bash 
+git clone git@github.com:town-hall-pinball/no-fear.git
+git clone git@github.com:town-hall-pinball/pinlib.git
+git clone git@github.com:town-hall-pinball/pyprocgame.git
+```
+
+Then:
+``` bash
 cd no-fear
 vagrant up
 ```
