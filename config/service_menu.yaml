@@ -11,7 +11,7 @@ Settings:
         -
             name: "Maximum Credits"
             key: "coin.max_credits"
-            options: ["10", "20", "30", "50", "75", "99"]
+            options: [10, 20, 30, 50, 75, 99]
         -
             name: "Coin Door Type"
             key: "coin.door_type"
