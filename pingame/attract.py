@@ -41,6 +41,15 @@ class AttractMode(attract.AttractMode):
         hs4 = locale.format("%d",
             int(self.sys.settings["high_score.place4.score"]), True)
 
+        credits = "FREE PLAY"
+        if self.sys.coin:
+            credits = self.sys.coin.credits_text()
+        if (self.sys.settings["coin.free_play"] == "YES" or
+                self.sys.data["coin.credits"] > 0):
+            credits_message = "PRESS START"
+        else:
+            credits_message = "INSERT MONEY"
+
         self.layer = (frame.Builder(self.sys.resources)
             .image("Splash")
             .end(3.0)
@@ -55,6 +64,17 @@ class AttractMode(attract.AttractMode):
             .println("NO FEAR")
             .end(3.0)
             .transition("push", direction="north")
+
+            .move_y(12)
+            .println("GAME OVER")
+            .end(6.0)
+
+            .move_y(5)
+            .font("bold")
+            .println(credits)
+            .move_y(4)
+            .println(credits_message)
+            .end(6.0)
 
             .move_y(5)
             .font("bold")
