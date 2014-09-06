@@ -19,6 +19,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
+import locale
 from procgame import game
 from pinlib import attract, frame
 
@@ -29,7 +30,72 @@ class AttractMode(attract.AttractMode):
         self.sys = sys
 
     def mode_started(self):
+        gc = locale.format("%d",
+            int(self.sys.settings["high_score.grand_champion.score"]), True)
+        hs1 = locale.format("%d",
+            int(self.sys.settings["high_score.place1.score"]), True)
+        hs2 = locale.format("%d",
+            int(self.sys.settings["high_score.place2.score"]), True)
+        hs3 = locale.format("%d",
+            int(self.sys.settings["high_score.place3.score"]), True)
+        hs4 = locale.format("%d",
+            int(self.sys.settings["high_score.place4.score"]), True)
+
         self.layer = (frame.Builder(self.sys.resources)
+            .move_y(5)
+            .font("bold")
+            .println("GRAND CHAMPION")
+            .move_y(4)
+            .align("left")
+            .left(3)
+            .prints(self.sys.settings["high_score.grand_champion.player"])
+            .align("right")
+            .right(3)
+            .println(gc)
+            .end(3.0)
+
+            .move_y(12)
+            .println("HIGHEST SCORES")
+            .end(3.0)
+
+            .move_y(5)
+            .align("left")
+            .left(3)
+            .prints("1. ")
+            .prints(self.sys.settings["high_score.place1.player"])
+            .align("right")
+            .right(3)
+            .println(hs1)
+            .move_y(4)
+
+            .align("left")
+            .left(3)
+            .prints("2. ")
+            .prints(self.sys.settings["high_score.place2.player"])
+            .align("right")
+            .right(3)
+            .println(hs2)
+            .end(3.0)
+
+            .move_y(5)
+            .align("left")
+            .left(3)
+            .prints("3. ")
+            .prints(self.sys.settings["high_score.place3.player"])
+            .align("right")
+            .right(3)
+            .println(hs3)
+            .move_y(4)
+
+            .align("left")
+            .left(3)
+            .prints("4. ")
+            .prints(self.sys.settings["high_score.place4.player"])
+            .align("right")
+            .right(3)
+            .println(hs4)
+            .end(3.0)
+
             .image("Splash")
             .end(3.0)
             .move_y(7)
