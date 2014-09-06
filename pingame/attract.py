@@ -30,9 +30,9 @@ class AttractMode(attract.AttractMode):
 
     def mode_started(self):
         self.layer = (frame.Builder(self.sys.fonts)
-            .move_y(6)
+            .move_y(7)
             .font("plain")
-            .println("Town Hall Pinball")
+            .println("TOWN HALL PINBALL")
             .font("bold")
             .move_y(2)
             .println("PRESENTS")

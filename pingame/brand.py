@@ -20,5 +20,5 @@
 # DEALINGS IN THE SOFTWARE.
 
 name = "No Fear"
-version = "Version 0.0.0"
-date = "Jan 1, 1970"
+version = "VERSION 0.0.0"
+date = "JAN 1, 1970"

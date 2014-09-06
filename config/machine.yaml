@@ -20,3 +20,9 @@ PRSwitches:
         number: S03
     slingshot:
         number: S04
+    leftCoin:
+        number: S05
+    centerCoin:
+        number: S06
+    rightCoin:
+        number: S07

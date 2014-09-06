@@ -19,7 +19,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import boot, machine, oops
+from pinlib import boot, coin, machine, oops
 from pingame import attract, brand
 
 def main():
@@ -34,6 +34,7 @@ def main():
         "next_mode": sys.boot
     })
     sys.attract = attract.AttractMode(sys)
+    sys.coin = coin.CoinMode(sys)
 
     sys.run()
 

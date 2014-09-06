@@ -20,5 +20,9 @@ keyboard_switch_map:
     j: S03
     # Slingshot
     g: S04
+    # Coins
+    1: S05
+    2: S06
+    3: S07
 desktop_dmd_scale: 4
 dmd_cache_path: tmp/cache

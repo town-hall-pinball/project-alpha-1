@@ -1,4 +1,4 @@
-coin.free_play: "Yes"
+coin.free_play: "No"
 coin.pricing: "1 for 0.25"
 coin.max_credits: 99
-coin.door_type: "0.25 0.25 0.25"
+coin.door_type: "0.25 1.00 0.25"
