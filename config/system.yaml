@@ -24,5 +24,8 @@ keyboard_switch_map:
     1: S05
     2: S06
     3: S07
+    # Flippers
+    "[": SD0
+    "]": SD1
 desktop_dmd_scale: 4
 dmd_cache_path: tmp/cache

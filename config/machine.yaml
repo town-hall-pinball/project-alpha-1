@@ -2,6 +2,10 @@ PRGame:
     machineType: wpc
     numBalls: 6
 PRSwitches:
+    flipperL:
+        number: SD0
+    flipperR:
+        number: SD1
     enter:
         number: SD8
     up:
