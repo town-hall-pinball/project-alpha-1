@@ -42,7 +42,7 @@ git clone https://github.com/town-hall-pinball/pyprocgame.git
 ```
 
 Otherwise, register your SSH key and:
-```bash 
+```bash
 git clone git@github.com:town-hall-pinball/no-fear.git
 git clone git@github.com:town-hall-pinball/pinlib.git
 git clone git@github.com:town-hall-pinball/pyprocgame.git
@@ -70,6 +70,8 @@ Only a simple attract mode is available at the moment.
 * ``1``: Left coin slot
 * ``2``: Center coin slot
 * ``3``: Right coin slot
+* ``[``: Left flipper
+* ``]``: Right flipper
 
 Operator service mode:
 
