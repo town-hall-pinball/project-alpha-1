@@ -1,18 +1,18 @@
 Settings:
     Pricing:
         -
-            name: "Free Play"
+            name: "FREE PLAY"
             key: "coin.free_play"
-            options: ["Yes", "No"]
+            options: ["YES", "NO"]
         -
-            name: "Game Pricing"
+            name: "GAME PRICING"
             key: "coin.pricing"
-            options: ["1 for 0.25", "1 for 0.50" , "1 for 0.75", "1 for 1.00"]
+            options: ["1 FOR 0.25", "1 FOR 0.50" , "1 FOR 0.75", "1 FOR 1.00"]
         -
-            name: "Maximum Credits"
+            name: "MAXIMUM CREDITS"
             key: "coin.max_credits"
             options: [10, 20, 30, 50, 75, 99]
         -
-            name: "Coin Door Type"
+            name: "COIN DOOR TYPE"
             key: "coin.door_type"
             options: ["0.25 1.00 0.25", "0.25 0.25 0.25"]
