@@ -29,7 +29,9 @@ class AttractMode(attract.AttractMode):
         self.sys = sys
 
     def mode_started(self):
-        self.layer = (frame.Builder(self.sys.fonts)
+        self.layer = (frame.Builder(self.sys.resources)
+            .image("Splash")
+            .end(3.0)
             .move_y(7)
             .font("plain")
             .println("TOWN HALL PINBALL")
