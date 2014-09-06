@@ -65,8 +65,13 @@ A dot-matrix display should appear.
 
 ## Controls
 
-Only a simple attract mode is available at the moment, but the
-operator service mode can be controlled with:
+Only a simple attract mode is available at the moment.
+
+* ``1``: Left coin slot
+* ``2``: Center coin slot
+* ``3``: Right coin slot
+
+Operator service mode:
 
 * ``7``: Enter
 * ``8``: Up
