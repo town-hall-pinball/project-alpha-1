@@ -51,4 +51,4 @@ aplay /usr/share/sounds/alsa/Noise.wav
 usermod -a -G audio vagrant
 
 mkdir /home/vagrant/.pyprocgame
-ln -s /vagrant/config/system.yaml /home/vagrant/.pyprocgame/config.yaml
+ln -s /vagrant/config/system.json /home/vagrant/.pyprocgame/config.json
