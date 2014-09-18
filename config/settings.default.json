@@ -1,0 +1,16 @@
+{
+    "coin.free_play": "No",
+    "coin.pricing": "1 for 0.25",
+    "coin.max_credits": 99,
+    "coin.door_type": "0.25 - 1.00 - 0.25",
+    "high_score.grand_champion.player": "AAA",
+    "high_score.grand_champion.score": 10000,
+    "high_score.place1.player": "BBB",
+    "high_score.place1.score": 9000,
+    "high_score.place2.player": "CCC",
+    "high_score.place2.score": 8000,
+    "high_score.place3.player": "DDD",
+    "high_score.place3.score": 7000,
+    "high_score.place4.player": "EEE",
+    "high_score.place4.score": 6000
+}
