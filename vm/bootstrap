@@ -31,8 +31,9 @@ apt-get install -y \
     python-imaging \
     python-pyglet \
     python-pygame \
-    python-yaml \
     python-setuptools \
+    python-tk \
+    python-yaml \
     swig
 
 curl -O http://www.townhallpinball.org/precise64/local-libftdi-0.16_amd64.deb
