@@ -3,26 +3,35 @@
 A work in progress, as this is a good test to make sure everyone
 can use git. Add your name here! Alphabetical order in the sections.
 
-## Ruleset
 
-## Engineers
+#### Executive Producer
+- Jon Horner
 
-## Artwork
+#### Ruleset
+- Chris Newsom
 
-## Animations
+#### Engineers
 
-## Sound Effects
+#### Artwork
 
-## Music
+#### Animations
 
-## Software
-* Mike McGann
-* Ken B
+#### Sound Effects
 
-## Testers
+#### Music
 
-## Contributors
-* Dan Hooper
+#### Software
+- Mike McGann
+- Ken B
 
-## Special Thanks
+#### Web Site
+- Bradford Barr
+
+
+#### Testers
+
+#### Contributors
+- Dan Hooper
+
+#### Special Thanks
 TODO: Cite used libraries here
