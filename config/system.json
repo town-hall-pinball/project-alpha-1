@@ -1,6 +1,5 @@
 {
     "font_path": ["resources/fonts"],
-    "pinproc_class": "procgame.fakepinproc.FakePinPROC",
     "config_path": ["config"],
     "keyboard_switch_map": {
         "7": "SD8",

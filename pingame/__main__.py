@@ -35,6 +35,7 @@ def main():
     })
     sys.attract = attract.AttractMode(sys)
     sys.coin = coin.CoinMode(sys)
+    sys.game.enable_flippers(enable=True)
 
     sys.run()
 

@@ -32,6 +32,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provider "virtualbox" do |vb|
       vb.name = "no-fear"
+      vb.gui = true
       if Vagrant::Util::Platform.windows?
           vb.customize ["modifyvm", :id, "--audio", "dsound",
                         "--audiocontroller", "ac97"]

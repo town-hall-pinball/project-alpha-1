@@ -369,6 +369,9 @@
         }
     },
     "PRSwitches": {
+        "rightFliiperEOS": {
+            "number": "SF1"
+        },
         "Outhole": {
             "number": "S18"
         },
@@ -444,11 +447,9 @@
         "flipperLwL": {
             "number": "SF4"
         },
-        "flipperL": {
-            "number": "SF4"
-        },
         "flipperLwR": {
-            "number": "SF2"
+            "number": "SF2",
+            "type": "NC"
         },
         "flipperUpL": {
             "number": "SF8"
