@@ -50,3 +50,10 @@ usermod -a -G audio vagrant
 
 mkdir /home/vagrant/.pyprocgame
 ln -s /vagrant/config/system.json /home/vagrant/.pyprocgame/config.json
+
+cat > /usr/local/bin/pingame <<EOF
+#/bin/bash
+
+( cd /vagrant ; python -m pingame )
+EOF
+chmod 755 /usr/local/bin/pingame

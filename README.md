@@ -56,7 +56,7 @@ Wait for the command to complete, and run the software as follows:
 
 ```bash
 vagrant ssh
-( cd /vagrant ; python -m pingame )
+pingame
 ```
 
 A dot-matrix display should appear.
