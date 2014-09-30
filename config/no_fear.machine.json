@@ -44,7 +44,7 @@
         "sw24":                 { "number": "S24", "unused": true },
         "sw36":                 { "number": "S36", "unused": true },
         "sw43":                 { "number": "S43", "unused": true },
-        "sw44":                 { "number": "S4$", "unused": true },
+        "sw44":                 { "number": "S44", "unused": true },
         "sw45":                 { "number": "S45", "unused": true },
         "sw52":                 { "number": "S52", "unused": true },
         "sw53":                 { "number": "S53", "unused": true },
