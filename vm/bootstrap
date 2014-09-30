@@ -27,20 +27,17 @@ apt-get install -y \
     alsa-utils \
     curl \
     libboost-dev \
-    libyaml-0-2 \
     python-imaging \
     python-pyglet \
     python-pygame \
     python-setuptools \
     python-tk \
-    python-yaml \
     swig
 
 curl -O http://www.townhallpinball.org/precise64/local-libftdi-0.16_amd64.deb
 curl -O http://www.townhallpinball.org/precise64/local-libpinproc-0.0.0_amd64.deb
 curl -O http://www.townhallpinball.org/precise64/local-libusb-0.1.12_amd64.deb
 curl -O http://www.townhallpinball.org/precise64/local-pypinproc-0.0.0_amd64.deb
-curl -O http://www.townhallpinball.org/precise64/local-yaml-cpp-0.3.0_amd64.deb
 dpkg --install *.deb
 
 ldconfig

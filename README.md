@@ -38,14 +38,12 @@ If you are not contributing back to the repositories or prefer to use https:
 ```bash
 git clone https://github.com/town-hall-pinball/no-fear.git
 git clone https://github.com/town-hall-pinball/pinlib.git
-git clone https://github.com/town-hall-pinball/pyprocgame.git
 ```
 
 Otherwise, register your SSH key and:
 ```bash
 git clone git@github.com:town-hall-pinball/no-fear.git
 git clone git@github.com:town-hall-pinball/pinlib.git
-git clone git@github.com:town-hall-pinball/pyprocgame.git
 ```
 
 Then:
@@ -85,11 +83,9 @@ Operator service mode:
 * The ``no-fear`` repository contains the code specific for the
 machine and ruleset.
 * The ``pinlib`` repository contains generic modules that can
-be useful for any machine and ruleset. It also provides an
-abstraction layer over pyprocgame in certain areas.
-* The ``pyprocgame`` repository is a fork to fix certain issues
-that cannot be monkey-patched or abstracted away. Issues for this
-repository should be filed in the ``pinlib`` repository.
+be useful for any machine and ruleset. This provides the ``pyprocgame``
+library that has custom patches applied and new code to provide
+a nicer abstraction layer.
 
 ## Contributing
 
