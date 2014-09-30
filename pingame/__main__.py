@@ -19,25 +19,35 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import boot, coin, machine, oops
-from pingame import attract, brand
+import locale
+
+#from pinlib import boot, coin, machine, oops
+#from pingame import attract, brand
+from pinlib import system
 
 def main():
-    sys = machine.System("wpc")
+    # The score display uses the locale to determine if commas or
+    # periods should be used as the number separator.
+    locale.setlocale(locale.LC_ALL, "")
 
-    sys.boot = boot.BootMode(sys, {
-        "name": brand.name.upper(),
-        "version": brand.version,
-        "date": brand.date
+    machine = system.Machine()
+    machine.use("pingame.attract", {
+        "start": ["request_attract"]
     })
-    sys.oops = oops.OopsMode(sys, {
-        "next_mode": sys.boot
+    machine.use("pinlib.modes.coin", {
+        "start": ["reset"]
     })
-    sys.attract = attract.AttractMode(sys)
-    sys.coin = coin.CoinMode(sys)
-    sys.game.enable_flippers(enable=True)
+    machine.use("pinlib.modes.oops", {
+        "start": ["crashed"],
+        "stop": "reset"
+    })
+    machine.use("pinlib.modes.splash", {
+        "start": ["reset"],
+        "stop": "request_attract"
+    })
 
-    sys.run()
+
+    machine.run()
 
 if __name__ == "__main__":
     main()

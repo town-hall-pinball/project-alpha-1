@@ -1,626 +1,242 @@
 {
-    "PRBallSave": {
-        "pulseCoils": [
-            "slingL",
-            "slingR"
-        ],
-        "resetSwitches": {
-            "slingL": "open",
-            "slingR": "open"
-        },
-        "stopSwitches": {
-            "flipperLwL": "closed",
-            "flipperLwR": "closed",
-            "shooterR": "closed"
-        }
-    },
-    "PRBumpers": [
-        "slingL",
-        "slingR"
-    ],
-    "PRCoils": {
-        "autoFireKicker": {
-            "number": "C03"
-        },
-        "ballRelease": {
-            "number": "C09"
-        },
-        "bumpers": {
-            "number": "C17"
-        },
-        "flasherClockForward": {
-            "number": "C43"
-        },
-        "flasherClockReverse": {
-            "number": "C42"
-        },
-        "flasherGumballMachineHi": {
-            "number": "C38"
-        },
-        "flasherGumballMachineLow": {
-            "number": "C40"
-        },
-        "flasherGumballMachineMid": {
-            "number": "C39"
-        },
-        "flasherUpperRightFlipper": {
-            "number": "C37"
-        },
-        "flasherUpperRightRamp": {
-            "number": "C41"
-        },
-        "flipperLwLHold": {
-            "number": "FLLH"
-        },
-        "flipperLwLMain": {
-            "number": "FLLM"
-        },
-        "flipperLwRHold": {
-            "number": "FLRH"
-        },
-        "flipperLwRMain": {
-            "number": "FLRM"
-        },
-        "flipperUpLHold": {
-            "number": "FULH"
-        },
-        "flipperUpLMain": {
-            "number": "FULM"
-        },
-        "flipperUpRHold": {
-            "number": "FURH"
-        },
-        "flipperUpRMain": {
-            "number": "FURM"
-        },
-        "gumballDiverter": {
-            "number": "C06"
-        },
-        "gumballMotor": {
-            "number": "C24"
-        },
-        "gumballPopper": {
-            "number": "C04"
-        },
-        "insideRamp": {
-            "number": "C28"
-        },
-        "knocker": {
-            "number": "C07"
-        },
-        "leftMagnet": {
-            "number": "C21"
-        },
-        "leftMiniMagnet": {
-            "number": "C25"
-        },
-        "leftRampDiverter": {
-            "number": "C27"
-        },
-        "lockRelease": {
-            "number": "C15"
-        },
-        "lowerRightMagnet": {
-            "number": "C23"
-        },
-        "miniPf": {
-            "number": "C19"
-        },
-        "outhole": {
-            "number": "C08"
-        },
-        "popB": {
-            "number": "C12"
-        },
-        "popL": {
-            "number": "C13"
-        },
-        "popR": {
-            "number": "C14"
-        },
-        "powerPayoff": {
-            "number": "C18"
-        },
-        "rightMiniMagnet": {
-            "number": "C26"
-        },
-        "rightRampDiverter": {
-            "number": "C05"
-        },
-        "rocketKicker": {
-            "number": "C02"
-        },
-        "shooterDiverter": {
-            "number": "C16"
-        },
-        "slingL": {
-            "number": "C11"
-        },
-        "slingR": {
-            "number": "C10"
-        },
-        "slotKickout": {
-            "number": "C01"
-        },
-        "unused": {
-            "number": "C22"
-        },
-        "upperLeftRamp": {
-            "number": "C20"
-        }
-    },
-    "PRFlippers": [
-        "flipperLwR",
-        "flipperLwL",
-        "flipperUpR",
-        "flipperUpL"
-    ],
+    "game.name": "No Fear",
+    "game.version": "Version 0.0",
+    "game.release": "Jan 1, 1970",
+
     "PRGame": {
         "machineType": "wpc",
-        "numBalls": 6
+        "numBalls": 4
     },
-    "PRLamps": {
-        "Camera": {
-            "number": "L55"
-        },
-        "battleThePowerDoor": {
-            "number": "L24"
-        },
-        "buyIn": {
-            "number": "L87"
-        },
-        "cameraDoor": {
-            "number": "L11"
-        },
-        "clockChaosDoor": {
-            "number": "L13"
-        },
-        "clockMillionDoor": {
-            "number": "L26"
-        },
-        "clockMillions": {
-            "number": "L82"
-        },
-        "deadEnd": {
-            "number": "L38"
-        },
-        "doorHandle": {
-            "number": "L34"
-        },
-        "doorPanelBall": {
-            "number": "L28"
-        },
-        "doorPanelGum": {
-            "number": "L36"
-        },
-        "doorPanelLock1": {
-            "number": "L32"
-        },
-        "doorPanelLock2": {
-            "number": "L21"
-        },
-        "fastLockDoor": {
-            "number": "L15"
-        },
-        "gi01": {
-            "number": "G01"
-        },
-        "gi02": {
-            "number": "G02"
-        },
-        "gi03": {
-            "number": "G03"
-        },
-        "gi04": {
-            "number": "G04"
-        },
-        "gi05": {
-            "number": "G05"
-        },
-        "greedDoor": {
-            "number": "L22"
-        },
-        "hitchhikerDoor": {
-            "number": "L12"
-        },
-        "inlaneL1": {
-            "number": "L33"
-        },
-        "inlaneL2": {
-            "number": "L35"
-        },
-        "inlaneR": {
-            "number": "L48"
-        },
-        "leftExtraBall": {
-            "number": "L31"
-        },
-        "leftPowerball": {
-            "number": "L54"
-        },
-        "leftRampBonusX": {
-            "number": "L51"
-        },
-        "leftRampMultiball": {
-            "number": "L52"
-        },
-        "leftRampSuperSkill": {
-            "number": "L53"
-        },
-        "leftSpiral": {
-            "number": "L81"
-        },
-        "liteExtraBallDoor": {
-            "number": "L18"
-        },
-        "liteGumballDoor": {
-            "number": "L16"
-        },
-        "lockArrow": {
-            "number": "L58"
-        },
-        "lockExtraBall": {
-            "number": "L57"
-        },
-        "lowerLeft5Million": {
-            "number": "L37"
-        },
-        "lowerRight5Million": {
-            "number": "L71"
-        },
-        "middleLeft5Million": {
-            "number": "L64"
-        },
-        "middleRight5Million1": {
-            "number": "L73"
-        },
-        "middleRight5Million2": {
-            "number": "L72"
-        },
-        "miniPf1000000": {
-            "number": "L77"
-        },
-        "miniPf500000": {
-            "number": "L76"
-        },
-        "miniPf750000": {
-            "number": "L78"
-        },
-        "pianoRed": {
-            "number": "L84"
-        },
-        "pianoYellow": {
-            "number": "L83"
-        },
-        "popB": {
-            "number": "L62"
-        },
-        "popL": {
-            "number": "L61"
-        },
-        "popR": {
-            "number": "L63"
-        },
-        "powerPayoff": {
-            "number": "L74"
-        },
-        "rightLaneGumball": {
-            "number": "L86"
-        },
-        "rightLaneSpiral": {
-            "number": "L68"
-        },
-        "rightPowerball": {
-            "number": "L67"
-        },
-        "rightRampThePower": {
-            "number": "L56"
-        },
-        "rightSpecial": {
-            "number": "L66"
-        },
-        "shootAgain": {
-            "number": "L47"
-        },
-        "slotMachine": {
-            "number": "L85"
-        },
-        "spiral10Million": {
-            "number": "L45"
-        },
-        "spiral2Million": {
-            "number": "L41"
-        },
-        "spiral4Million": {
-            "number": "L43"
-        },
-        "spiralExtraBall": {
-            "number": "L46"
-        },
-        "spiralLeftBattlePower": {
-            "number": "L42"
-        },
-        "spiralRightBattlePower": {
-            "number": "L44"
-        },
-        "startButton": {
-            "number": "L88"
-        },
-        "superSkillDoor": {
-            "number": "L14"
-        },
-        "superSlotDoor": {
-            "number": "L27"
-        },
-        "tenMillionDoor": {
-            "number": "L23"
-        },
-        "theSpiralDoor": {
-            "number": "L25"
-        },
-        "townSquareMadnessDoor": {
-            "number": "L17"
-        },
-        "upperLeft5Million": {
-            "number": "L65"
-        },
-        "upperRight5Million": {
-            "number": "L75"
-        }
-    },
+
     "PRSwitches": {
-        "rightFliiperEOS": {
-            "number": "SF1"
+        "ballLaunch": {
+            "number": "S11",
+            "name": "Ball Launch"
         },
-        "Outhole": {
-            "number": "S18"
+        "coinDoorClosed": {
+            "number": "S22",
+            "name": "Coin Door Closed"
         },
-        "alwaysClosed": {
-            "number": "S24"
+        "coinLeft": {
+            "number": "SD1",
+            "name": "Coin Chute, Left"
         },
-        "autoFireKicker": {
-            "number": "S72"
+        "coinCenter": {
+            "number": "SD2",
+            "name": "Coin Chute, Center"
         },
-        "buyIn": {
-            "number": "S23"
+        "coinRight": {
+            "number": "SD3",
+            "name": "Coin Chute, Right"
         },
-        "camera": {
-            "number": "S42"
+        "coinFourth": {
+            "number": "SD4",
+            "name": "Coin Chute, Fourth"
         },
-        "centerLock": {
-            "number": "S84"
+        "dropTarget": {
+            "number": "S51",
+            "name": "Drop Target"
         },
-        "centerSkill": {
-            "number": "S62"
+        "eject": {
+            "number": "S61",
+            "name": "Eject"
         },
-        "clock0Minutes": {
-            "number": "S92"
+        "extraBallBuy": {
+            "number": "S23",
+            "name": "Buy Extra Ball"
         },
-        "clock15Minutes": {
-            "number": "S91"
+        "flipperLeft": {
+            "number": "SF4",
+            "name": "Flipper, Lower Left"
         },
-        "clock1Hour": {
-            "number": "S95"
-        },
-        "clock2Hour": {
-            "number": "S96"
-        },
-        "clock30Minutes": {
-            "number": "S94"
-        },
-        "clock3Hour": {
-            "number": "S97"
-        },
-        "clock45Minutes": {
-            "number": "S93"
-        },
-        "clock4Hour": {
-            "number": "S98"
-        },
-        "clockMillions": {
-            "number": "S47"
-        },
-        "coinDoor": {
-            "number": "S22"
-        },
-        "coinL": {
-            "number": "SD1"
-        },
-        "coinC": {
-            "number": "SD2"
-        },
-        "coinR": {
-            "number": "SD3"
-        },
-        "deadEnd": {
-            "number": "S41"
-        },
-        "down": {
-            "number": "SD6"
-        },
-        "enter": {
-            "number": "SD8"
-        },
-        "exit": {
-            "number": "SD5"
-        },
-        "flipperLwL": {
-            "number": "SF4"
-        },
-        "flipperLwR": {
+        "flipperRight": {
             "number": "SF2",
-            "type": "NC"
+            "name": "Flipper, Lower Right"
         },
-        "flipperUpL": {
-            "number": "SF8"
+        "kickback": {
+            "number": "S25",
+            "name": "Kickback"
         },
-        "flipperUpR": {
-            "number": "SF6"
+        "kickbackLightBottom": {
+            "number": "S56",
+            "name": "Kickback, Light Bottom"
         },
-        "gumallExit": {
-            "number": "S56"
+        "kickbackLightTop": {
+            "number": "S57",
+            "name": "Kickback, Light Top"
         },
-        "gumballEnter": {
-            "number": "S87"
+        "loopInner": {
+            "number": "S55",
+            "name": "Loop, Inner"
         },
-        "gumballGeneva": {
-            "number": "S55"
+        "loopLeft": {
+            "number": "S62",
+            "name": "Loop, Left"
         },
-        "gumballPopper": {
-            "number": "S74"
+        "loopRight": {
+            "number": "S58",
+            "name": "Loop, Right"
         },
-        "gumballPopperLane": {
-            "number": "S51"
+        "magnetLeft": {
+            "number": "S46",
+            "type": "NC",
+            "name": "Magnet, Left"
         },
-        "hitchhiker": {
-            "number": "S52"
+        "magnetCenter": {
+            "number": "S47",
+            "type": "NC",
+            "name": "Magnet, Center"
         },
-        "inlaneL1": {
-            "number": "S37"
+        "magnetRight": {
+            "number": "S48",
+            "type": "NC",
+            "name": "Magnet, Right"
         },
-        "inlaneL2": {
-            "number": "S38"
+        "outlaneRight": {
+            "number": "S17",
+            "name": "Outlane, Right"
         },
-        "inlaneR": {
-            "number": "S11"
+        "popperRight1": {
+            "number": "S41",
+            "type": "NC",
+            "name": "Popper, Right 1"
         },
-        "leftMagnet": {
-            "number": "S83"
+        "popperRight2": {
+            "number": "S42",
+            "type": "NC",
+            "name": "Popper, Right 2"
         },
-        "leftRamp": {
-            "number": "S54"
+        "rampLeftEnter": {
+            "number": "S63",
+            "name": "Ramp, Left Enter"
         },
-        "leftRampEnter": {
-            "number": "S53"
+        "rampLeftMiddle": {
+            "number": "S64",
+            "name": "Ramp, Left Middle"
         },
-        "lowerLeft5Million": {
-            "number": "S48"
+        "rampRightEnter": {
+            "number": "S66",
+            "name": "Ramp, Right Enter"
         },
-        "lowerLock": {
-            "number": "S88"
+        "rampRightExit": {
+            "number": "S67",
+            "name": "Ramp, Right Exit"
         },
-        "lowerRight5Million": {
-            "number": "S68"
+        "returnLeft": {
+            "number": "S26",
+            "name": "Return, Left"
         },
-        "lowerRightMagnet": {
-            "number": "S81"
+        "returnRight": {
+            "number": "S18",
+            "name": "Return, Right"
         },
-        "lowerSkill": {
-            "number": "S61"
+        "serviceDown": {
+            "number": "SD6",
+            "name": "Service, Down"
         },
-        "middleLeft5Million": {
-            "number": "S77"
+        "serviceEnter": {
+            "number": "SD8",
+            "name": "Service, Enter"
         },
-        "middleRight5Million1": {
-            "number": "S66"
+        "serviceExit": {
+            "number": "SD5",
+            "name": "Service, Exit"
         },
-        "middleRight5Million2": {
-            "number": "S67"
+        "serviceUp": {
+            "number": "SD7",
+            "name": "Service, Up"
         },
-        "miniPfEnter": {
-            "number": "S44"
+        "shooterLane": {
+            "number": "S15",
+            "name": "Shooter Lane"
         },
-        "miniPfExit": {
-            "number": "S76"
+        "slingshotLeft": {
+            "number": "S27",
+            "name": "Slingshot, Left"
         },
-        "miniPfLeft": {
-            "number": "S45"
+        "slingshotRight": {
+            "number": "S28",
+            "name": "Slingshot, Right"
         },
-        "miniPfRight": {
-            "number": "S46"
-        },
-        "miniPfTop": {
-            "number": "S75"
-        },
-        "outlaneL": {
-            "number": "S36"
-        },
-        "outlaneR": {
-            "number": "S12"
-        },
-        "playerPiano": {
-            "number": "S43"
-        },
-        "popB": {
-            "number": "S33"
-        },
-        "popL": {
-            "number": "S31"
-        },
-        "popR": {
-            "number": "S32"
-        },
-        "powerPayoff": {
-            "number": "S65"
-        },
-        "rightRamp": {
-            "number": "S73"
-        },
-        "rocketKicker": {
-            "number": "S28"
-        },
-        "s71": {
-            "number": "S71"
-        },
-        "s82": {
-            "number": "S82"
-        },
-        "s86": {
-            "number": "S86"
-        },
-        "shooterR": {
-            "number": "S27"
-        },
-        "slamTilt": {
-            "number": "S21"
-        },
-        "slingL": {
-            "number": "S34"
-        },
-        "slingR": {
-            "number": "S35"
-        },
-        "slotKickout": {
-            "number": "S58"
-        },
-        "slotProximity": {
-            "number": "S57"
+        "spinner": {
+            "number": "S16",
+            "name": "Spinner"
         },
         "startButton": {
-            "number": "S13"
+            "number": "S13",
+            "name": "Start Button"
         },
         "tilt": {
-            "number": "S14"
+            "number": "S14",
+            "name": "Tilt, Plumb"
         },
-        "troughC": {
-            "number": "S16"
+        "tiltSlam": {
+            "number": "S21",
+            "name": "Tilt, Slam"
         },
-        "troughFarL": {
-            "number": "S25"
+        "troughEnterCenter": {
+            "number": "S37",
+            "name": "Trough, Enter Center"
         },
-        "troughL": {
-            "number": "S17"
+        "troughEnterLeft": {
+            "number": "S38",
+            "name": "Trough, Enter Left"
         },
-        "troughProximity": {
-            "number": "S26"
+        "troughStack": {
+            "number": "S31",
+            "type": "NC",
+            "name": "Trough, Stack"
         },
-        "troughR": {
-            "number": "S15"
+        "trough1": {
+            "number": "S32",
+            "type": "NC",
+            "name": "Trough, Far Right"
         },
-        "up": {
-            "number": "SD7"
+        "trough2": {
+            "number": "S33",
+            "type": "NC",
+            "name": "Trough, Center Right"
         },
-        "upperLeft5Million": {
-            "number": "S78"
+        "trough3": {
+            "number": "S34",
+            "type": "NC",
+            "name": "Trough, Center Left"
         },
-        "upperLock": {
-            "number": "S85"
+        "trough4": {
+            "number": "S35",
+            "type": "NC",
+            "name": "Trough, Far Left"
         },
-        "upperRight5Million": {
-            "number": "S64"
+        "wireformLeft": {
+            "number": "S54",
+            "name": "Wireform, Left"
         },
-        "upperSkill": {
-            "number": "S63"
-        }
+
+        "sw12":  { "number": "S12", "unused": true },
+        "sw24":  { "number": "S24", "unused": true },
+        "sw36":  { "number": "S36", "unused": true },
+        "sw43":  { "number": "S43", "unused": true },
+        "sw44":  { "number": "S4$", "unused": true },
+        "sw45":  { "number": "S45", "unused": true },
+        "sw52":  { "number": "S52", "unused": true },
+        "sw53":  { "number": "S53", "unused": true },
+        "sw65":  { "number": "S65", "unused": true },
+        "sw68":  { "number": "S68", "unused": true },
+        "sw71":  { "number": "S71", "unused": true },
+        "sw72":  { "number": "S72", "unused": true },
+        "sw73":  { "number": "S73", "unused": true },
+        "sw74":  { "number": "S74", "unused": true },
+        "sw75":  { "number": "S75", "unused": true },
+        "sw76":  { "number": "S75", "unused": true },
+        "sw77":  { "number": "S76", "unused": true },
+        "sw78":  { "number": "S78", "unused": true },
+        "sw81":  { "number": "S81", "unused": true },
+        "sw82":  { "number": "S82", "unused": true },
+        "sw83":  { "number": "S83", "unused": true },
+        "sw84":  { "number": "S84", "unused": true },
+        "sw85":  { "number": "S85", "unused": true },
+        "sw86":  { "number": "S85", "unused": true },
+        "sw87":  { "number": "S86", "unused": true },
+        "sw88":  { "number": "S88", "unused": true }
     }
 }

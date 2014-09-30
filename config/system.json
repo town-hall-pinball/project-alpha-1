@@ -1,4 +1,5 @@
 {
+    "pinproc_class": "procgame.fakepinproc.FakePinPROC",
     "font_path": ["resources/fonts"],
     "config_path": ["config"],
     "keyboard_switch_map": {

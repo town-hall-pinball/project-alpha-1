@@ -19,30 +19,14 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-import locale
-from procgame import game
-from pinlib import attract, frame
+from pinlib import util
+from pinlib.modes import attract
 
-class AttractMode(attract.AttractMode):
+class Mode(attract.Mode):
 
-    def __init__(self, sys):
-        super(AttractMode, self).__init__(sys)
-        self.sys = sys
-        self.widgets = {}
-
-    def mode_started(self):
-        gc = locale.format("%d",
-            int(self.sys.settings["high_score.grand_champion.score"]), True)
-        hs1 = locale.format("%d",
-            int(self.sys.settings["high_score.place1.score"]), True)
-        hs2 = locale.format("%d",
-            int(self.sys.settings["high_score.place2.score"]), True)
-        hs3 = locale.format("%d",
-            int(self.sys.settings["high_score.place3.score"]), True)
-        hs4 = locale.format("%d",
-            int(self.sys.settings["high_score.place4.score"]), True)
-
-        self.layer = (frame.Builder(self.sys.resources, self.widgets)
+    def __init__(self, options):
+        super(Mode, self).__init__(options)
+        self.set_layer(self.graphics(self.widgets)
             .image("Splash")
             .end(3.0)
             .move_y(7)
@@ -63,9 +47,9 @@ class AttractMode(attract.AttractMode):
 
             .move_y(5)
             .font("bold")
-            .println("CREDITS", "credits")
+            .println("FREE PLAY", "credits")
             .move_y(4)
-            .println("CREDITS MESSAGE", "credits_message")
+            .println("PRESS START", "credits_message")
             .end(6.0)
 
             .move_y(5)
@@ -74,10 +58,10 @@ class AttractMode(attract.AttractMode):
             .move_y(4)
             .align("left")
             .left(3)
-            .prints(self.sys.settings["high_score.grand_champion.player"])
+            .prints("---", "gc.name")
             .align("right")
             .right(3)
-            .println(gc)
+            .println("0", "gc.score")
             .end(3.0)
 
             .move_y(12)
@@ -88,41 +72,43 @@ class AttractMode(attract.AttractMode):
             .align("left")
             .left(3)
             .prints("1. ")
-            .prints(self.sys.settings["high_score.place1.player"])
+            .prints("---", "hs1.name")
             .align("right")
             .right(3)
-            .println(hs1)
+            .println("0", "hs1.score")
             .move_y(4)
 
             .align("left")
             .left(3)
             .prints("2. ")
-            .prints(self.sys.settings["high_score.place2.player"])
+            .prints("---", "hs2.name")
             .align("right")
             .right(3)
-            .println(hs2)
+            .println("0", "hs2.score")
             .end(3.0)
 
             .move_y(5)
             .align("left")
             .left(3)
             .prints("3. ")
-            .prints(self.sys.settings["high_score.place3.player"])
+            .prints("---", "hs3.name")
             .align("right")
             .right(3)
-            .println(hs3)
+            .println("0", "hs3.score")
             .move_y(4)
 
             .align("left")
             .left(3)
             .prints("4. ")
-            .prints(self.sys.settings["high_score.place4.player"])
+            .prints("---", "hs4.name")
             .align("right")
             .right(3)
-            .println(hs4)
+            .println("0", "hs4.score")
             .end(3.0)
 
             .empty(10.0)
             .script()
         )
-        self.update_credits()
+
+    def start(self):
+        self.update()
