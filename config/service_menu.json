@@ -27,10 +27,10 @@
                 "key": "coin.earnings"
             },{
                 "name": "Paid Credits",
-                "key": "coin.paid_credits"
+                "key": "coin.credits.total_paid"
             },{
                 "name": "Service Credits",
-                "key": "coin.service_credits"
+                "key": "coin.credits.total_service"
             }
         ]
     }

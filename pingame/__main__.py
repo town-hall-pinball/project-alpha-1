@@ -37,9 +37,15 @@ def main():
     machine.use("pinlib.modes.coin", {
         "start": ["reset"]
     })
+    machine.use("pinlib.modes.core", {
+        "start": ["reset"]
+    })
     machine.use("pinlib.modes.oops", {
         "start": ["crashed"],
         "stop": "reset"
+    })
+    machine.use("pinlib.modes.service", {
+        "start": ["request_service"]
     })
     machine.use("pinlib.modes.splash", {
         "start": ["reset"],
