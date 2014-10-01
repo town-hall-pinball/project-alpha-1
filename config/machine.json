@@ -238,5 +238,124 @@
         "sw86":  { "number": "S85", "unused": true },
         "sw87":  { "number": "S86", "unused": true },
         "sw88":  { "number": "S88", "unused": true }
+    },
+
+    "PRCoils": {
+        "autoPlunger": {
+            "number": "C02",
+            "name": "Auto Plunger"
+        },
+        "dropTargetDown": {
+            "number": "C08",
+            "name": "Drop Target, Down"
+        },
+        "dropTargetUp": {
+            "number": "C12",
+            "name": "Drop Target, Up"
+        },
+        "eject": {
+            "number": "C15",
+            "name": "Eject"
+        },
+        "kickback": {
+            "number": "C04",
+            "name": "Kickback"
+        },
+        "knocker": {
+            "number": "C07",
+            "name": "Knocker"
+        },
+        "magnetCenter": {
+            "number": "C05",
+            "name": "Magnet, Center"
+        },
+        "magnetLeft": {
+            "number": "C06",
+            "name": "Magnet, Left"
+        },
+        "magnetRight": {
+            "number": "C03",
+            "name": "Magnet, Right"
+        },
+        "popperRight": {
+            "number": "C01",
+            "name": "Popper, Right"
+        },
+        "skullMouth": {
+            "number": "C16",
+            "name": "Skull Mouth"
+        },
+        "slingshotLeft": {
+            "number": "C11",
+            "name": "Slingshot, Left"
+        },
+        "slingshotRight": {
+            "number": "C10",
+            "name": "Slingshot, RIght"
+        },
+        "trough": {
+            "number": "C14",
+            "name": "Trough"
+        },
+
+        "flashserAutoFire": {
+            "number": "C25",
+            "name": "Flasher, Auto Fire"
+        },
+        "flasherFlippeReturn": {
+            "number": "C17",
+            "name": "Flasher, Flipper Return"
+        },
+        "flasherInsertExplode": {
+            "number": "C22",
+            "name": "Flasher, Explode Insert"
+        },
+        "flasherInsertTopLeft": {
+            "number": "C26",
+            "name": "Flasher, Top Left Insert"
+        },
+        "flasherInsertTopRight": {
+            "number": "C27",
+            "name": "Flasher, Top Right Insert"
+        },
+        "flasherNoFear": {
+            "number": "C19",
+            "name": "Flasher, No Fear"
+        },
+        "flasherPopperRight": {
+            "number": "C28",
+            "name": "Flasher, Right Popper"
+        },
+        "flasherLeftRamp": {
+            "number": "C23",
+            "name": "Flasher, Left Ramp"
+        },
+        "flahserRampRight": {
+            "number": "C20",
+            "name": "Flasher, Right Ramp"
+        },
+        "flasherSkull": {
+            "number": "C21",
+            "name": "flasherSkull"
+        },
+        "flasherSpinner": {
+            "number": "C18",
+            "name": "Flasher, Spinner"
+        },
+        "flasherTopLeft": {
+            "number": "C24",
+            "name": "Flasher, Top Left"
+        },
+
+        "c09": { "number": "C09", "unused": true},
+        "c13": { "number": "C13", "unused": true},
+        "c37": { "number": "C37", "unused": true},
+        "c38": { "number": "C38", "unused": true},
+        "c39": { "number": "C39", "unused": true},
+        "c40": { "number": "C40", "unused": true},
+        "c41": { "number": "C41", "unused": true},
+        "c42": { "number": "C42", "unused": true},
+        "c43": { "number": "C43", "unused": true},
+        "c44": { "number": "C44", "unused": true}
     }
 }
