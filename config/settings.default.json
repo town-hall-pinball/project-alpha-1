@@ -1,8 +1,6 @@
 {
-    "coin.free_play": "No",
-    "coin.pricing": "0.25",
-    "coin.max_credits": 99,
-    "coin.door_type": "0.25 - 1.00 - 0.25",
+    "coin.free_play": true,
+    "coin.pricing": 0.50,
     "high_score.grand_champion.player": "THP",
     "high_score.grand_champion.score": 10000,
     "high_score.place1.player": "THP",

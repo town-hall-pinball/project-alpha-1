@@ -20,9 +20,8 @@
 # DEALINGS IN THE SOFTWARE.
 
 import locale
-
-#from pinlib import boot, coin, machine, oops
-#from pingame import attract, brand
+import traceback
+import os
 from pinlib import system
 
 def main():
@@ -56,4 +55,8 @@ def main():
     machine.run()
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print traceback.format_exc()
+        os._exit(1)
