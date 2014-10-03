@@ -19,7 +19,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import util
+from pinlib import dmd, util
 from pinlib.modes import attract
 from pinlib.dmd import highscore
 
@@ -46,18 +46,9 @@ class Mode(attract.Mode):
             .message("GAME OVER")
             .end(6.0)
 
-            .move_y(5)
-            .font("bold")
-            .println("FREE PLAY", "credits")
-            .move_y(4)
-            .println("PRESS START", "credits_message")
-            .end(6.0)
-
+            .append(dmd.credits(self))
             .append(highscore.classic(self))
 
             .empty(10.0)
             .script()
         )
-
-    def start(self):
-        self.update()
