@@ -21,6 +21,7 @@
 
 from pinlib import util
 from pinlib.modes import attract
+from pinlib.dmd import highscore
 
 class Mode(attract.Mode):
 
@@ -29,6 +30,7 @@ class Mode(attract.Mode):
         self.set_layer(self.graphics(self.widgets)
             .image("Splash")
             .end(3.0)
+
             .move_y(7)
             .font("plain")
             .println("TOWN HALL PINBALL")
@@ -36,13 +38,12 @@ class Mode(attract.Mode):
             .move_y(2)
             .println("PRESENTS")
             .end(3.0)
-            .move_y(12)
-            .println("NO FEAR")
+
+            .message("NO FEAR")
             .end(3.0)
             .transition("push", direction="north")
 
-            .move_y(12)
-            .println("GAME OVER")
+            .message("GAME OVER")
             .end(6.0)
 
             .move_y(5)
@@ -52,59 +53,7 @@ class Mode(attract.Mode):
             .println("PRESS START", "credits_message")
             .end(6.0)
 
-            .move_y(5)
-            .font("bold")
-            .println("GRAND CHAMPION")
-            .move_y(4)
-            .align("left")
-            .left(3)
-            .prints("---", "gc.name")
-            .align("right")
-            .right(3)
-            .println("0", "gc.score")
-            .end(3.0)
-
-            .move_y(12)
-            .println("HIGHEST SCORES")
-            .end(3.0)
-
-            .move_y(5)
-            .align("left")
-            .left(3)
-            .prints("1. ")
-            .prints("---", "hs1.name")
-            .align("right")
-            .right(3)
-            .println("0", "hs1.score")
-            .move_y(4)
-
-            .align("left")
-            .left(3)
-            .prints("2. ")
-            .prints("---", "hs2.name")
-            .align("right")
-            .right(3)
-            .println("0", "hs2.score")
-            .end(3.0)
-
-            .move_y(5)
-            .align("left")
-            .left(3)
-            .prints("3. ")
-            .prints("---", "hs3.name")
-            .align("right")
-            .right(3)
-            .println("0", "hs3.score")
-            .move_y(4)
-
-            .align("left")
-            .left(3)
-            .prints("4. ")
-            .prints("---", "hs4.name")
-            .align("right")
-            .right(3)
-            .println("0", "hs4.score")
-            .end(3.0)
+            .append(highscore.classic(self))
 
             .empty(10.0)
             .script()
