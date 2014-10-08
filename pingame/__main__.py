@@ -22,6 +22,7 @@
 import locale
 import traceback
 import os
+import pinlib
 from pinlib import system
 
 def main():
@@ -29,30 +30,29 @@ def main():
     # periods should be used as the number separator.
     locale.setlocale(locale.LC_ALL, "")
 
-    machine = system.Machine()
-    machine.use("pingame.attract", {
+    system.init()
+    pinlib.use("pingame.attract", {
         "start": ["request_attract"]
     })
-    machine.use("pinlib.modes.coin", {
+    pinlib.use("pinlib.modes.coin", {
         "start": ["reset"]
     })
-    machine.use("pinlib.modes.core", {
-        "start": ["reset"]
-    })
-    machine.use("pinlib.modes.oops", {
-        "start": ["crashed"],
-        "stop": "reset"
-    })
-    machine.use("pinlib.modes.service", {
-        "start": ["request_service"]
-    })
-    machine.use("pinlib.modes.splash", {
+    #machine.use("pinlib.modes.core", {
+    #    "start": ["reset"]
+    #})
+    #machine.use("pinlib.modes.oops", {
+    #    "start": ["crashed"],
+    #    "stop": "reset"
+    #})
+    #machine.use("pinlib.modes.service", {
+    #    "start": ["request_service"]
+    #})
+    pinlib.use("pinlib.modes.splash", {
         "start": ["reset"],
         "stop": "request_attract"
     })
 
-
-    machine.run()
+    system.run()
 
 if __name__ == "__main__":
     try:

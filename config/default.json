@@ -1,4 +1,6 @@
 {
+    "coin.free_play": false,
+    "coin.pricing": 0.50,
     "highscores": [
         [ "THP",  10000 ],
         [ "THP",   9000 ],

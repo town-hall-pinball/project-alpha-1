@@ -19,15 +19,15 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import dmd, util
+from pinlib import *
+from pinlib import display, util
 from pinlib.modes import attract
-from pinlib.dmd import highscore
 
 class Mode(attract.Mode):
 
     def __init__(self, options):
         super(Mode, self).__init__(options)
-        self.set_layer(self.graphics(self.widgets)
+        self.set_layer(graphics(self.widgets)
             .image("Splash")
             .end(3.0)
 
@@ -46,8 +46,8 @@ class Mode(attract.Mode):
             .message("GAME OVER")
             .end(6.0)
 
-            .append(dmd.credits(self))
-            .append(highscore.classic(self))
+            .append(display.credits())
+            .append(display.highscore("classic"))
 
             .empty(10.0)
             .script()
