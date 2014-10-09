@@ -1,31 +1,45 @@
-{
-    "Settings": {
-        "Pricing": [
-            {
-                "name": "Free Play",
-                "key": "coin.free_play",
-                "options": ["Yes", "No"],
-                "values": [true, false]
-            },{
-                "name": "Game Pricing",
-                "key": "coin.pricing",
-                "options": ["1 for 0.25", "1 for 0.50", "1 for 0.75", "1 for 1.00"],
-                "values": [0.25, 0.50, 0.75, 1.00]
-            }
-        ]
-    },
-    "Statistics": {
-        "Earnings": [
-            {
-                "name": "Earnings",
-                "key": "coin.earnings"
-            },{
-                "name": "Paid Credits",
-                "key": "coin.credits.paid"
-            },{
-                "name": "Service Credits",
-                "key": "coin.credits.service"
-            }
-        ]
-    }
-}
+[{
+    "name": "Settings",
+    "icon": "settings",
+    "entries": [{
+        "name": "Pricing",
+        "entries": [{
+            "name": "Free Play",
+            "data": "coin.free_play",
+            "type": "boolean"
+        },{
+            "name": "Game Pricing",
+            "data": "coin.pricing",
+            "options": [
+                [ 0.25, "1 for 0.25" ],
+                [ 0.50, "1 for 0.50" ],
+                [ 0.75, "1 for 0.75" ],
+                [ 1.00, "1 for 1.00" ]
+            ]
+        }]
+    }]
+},{
+    "name": "Tests",
+    "icon": "tests",
+    "entries": [{}]
+},{
+    "name": "Audits",
+    "icon": "audits",
+    "entries": [{
+        "name": "Earnings",
+        "entries": [{
+            "name": "Earnings",
+            "data": "coin.earnings"
+        },{
+            "name": "Paid Credits",
+            "data": "coin.credits.paid"
+        },{
+            "name": "Service Credits",
+            "data": "coin.credits.service"
+        }]
+    }]
+},{
+    "name": "Utilities",
+    "icon": "utilities",
+    "entries": [{}]
+}]
