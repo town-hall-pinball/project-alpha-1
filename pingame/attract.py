@@ -28,8 +28,7 @@ class Mode(attract.Mode):
     def __init__(self, options):
         super(Mode, self).__init__(options)
         self.set_layer(graphics(self.widgets)
-            #.image("Splash")
-            .image("gear")
+            .image("Splash")
             .end(3.0)
 
             .move_y(7)
