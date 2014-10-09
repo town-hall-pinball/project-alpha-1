@@ -31,12 +31,12 @@ def main():
     locale.setlocale(locale.LC_ALL, "")
 
     system.init()
-    pinlib.use("pingame.attract", {
-        "start": ["request_attract"]
-    })
-    pinlib.use("pinlib.modes.coin", {
-        "start": ["reset"]
-    })
+    #pinlib.use("pingame.attract", {
+    #    "start": ["request_attract"]
+    #})
+    #pinlib.use("pinlib.modes.coin", {
+    #    "start": ["reset"]
+    #})
     #machine.use("pinlib.modes.core", {
     #    "start": ["reset"]
     #})
@@ -44,13 +44,14 @@ def main():
     #    "start": ["crashed"],
     #    "stop": "reset"
     #})
-    #machine.use("pinlib.modes.service", {
-    #    "start": ["request_service"]
-    #})
-    pinlib.use("pinlib.modes.splash", {
-        "start": ["reset"],
-        "stop": "request_attract"
+    pinlib.use("pinlib.modes.service", {
+        #"start": ["request_service"]
+        "start": ["reset"]
     })
+    #pinlib.use("pinlib.modes.splash", {
+    #    "start": ["reset"],
+    #    "stop": "request_attract"
+    #})
 
     system.run()
 
