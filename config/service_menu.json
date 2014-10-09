@@ -1,45 +1,58 @@
-[{
-    "name": "Settings",
-    "icon": "settings",
+{
+    "menu": "icon",
     "entries": [{
-        "name": "Pricing",
+        "name": "Settings",
+        "icon": "settings",
         "entries": [{
-            "name": "Free Play",
-            "data": "coin.free_play",
-            "type": "boolean"
-        },{
-            "name": "Game Pricing",
-            "data": "coin.pricing",
-            "options": [
-                [ 0.25, "1 for 0.25" ],
-                [ 0.50, "1 for 0.50" ],
-                [ 0.75, "1 for 0.75" ],
-                [ 1.00, "1 for 1.00" ]
-            ]
+            "name": "Pricing",
+            "entries": [{
+                "name": "Free Play",
+                "data": "coin.free_play",
+                "type": "boolean"
+            },{
+                "name": "Game Pricing",
+                "data": "coin.pricing",
+                "options": [
+                    [ 0.25, "1 for 0.25" ],
+                    [ 0.50, "1 for 0.50" ],
+                    [ 0.75, "1 for 0.75" ],
+                    [ 1.00, "1 for 1.00" ]
+                ]
+            }]
         }]
-    }]
-},{
-    "name": "Tests",
-    "icon": "tests",
-    "entries": [{}]
-},{
-    "name": "Audits",
-    "icon": "audits",
-    "entries": [{
-        "name": "Earnings",
+    },{
+        "name": "Tests",
+        "icon": "tests",
+        "menu": "icon",
+        "entries": [{
+            "name": "Switches",
+            "icon": "switches"
+        },{
+            "name": "Coils",
+            "icon": "coils"
+        },{
+            "name": "Lamps",
+            "icon": "lamps"
+        }]
+    },{
+        "name": "Audits",
+        "icon": "audits",
         "entries": [{
             "name": "Earnings",
-            "data": "coin.earnings"
-        },{
-            "name": "Paid Credits",
-            "data": "coin.credits.paid"
-        },{
-            "name": "Service Credits",
-            "data": "coin.credits.service"
+            "entries": [{
+                "name": "Earnings",
+                "data": "coin.earnings"
+            },{
+                "name": "Paid Credits",
+                "data": "coin.credits.paid"
+            },{
+                "name": "Service Credits",
+                "data": "coin.credits.service"
+            }]
         }]
+    },{
+        "name": "Utilities",
+        "icon": "utilities",
+        "entries": [{}]
     }]
-},{
-    "name": "Utilities",
-    "icon": "utilities",
-    "entries": [{}]
-}]
+}
