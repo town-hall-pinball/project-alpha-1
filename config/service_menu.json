@@ -3,8 +3,11 @@
     "entries": [{
         "name": "Settings",
         "icon": "settings",
+        "menu": "icon",
         "entries": [{
             "name": "Pricing",
+            "icon": "money",
+            "menu": "text",
             "entries": [{
                 "name": "Free Play",
                 "data": "coin.free_play",
