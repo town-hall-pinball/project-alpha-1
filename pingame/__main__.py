@@ -34,9 +34,9 @@ def main():
     pinlib.use("pingame.attract", {
         "start": ["request_attract"]
     })
-    #pinlib.use("pinlib.modes.coin", {
-    #    "start": ["reset"]
-    #})
+    pinlib.use("pinlib.modes.coin", {
+        "start": ["reset"]
+    })
     pinlib.use("pinlib.modes.core", {
         "start": ["reset"]
     })
