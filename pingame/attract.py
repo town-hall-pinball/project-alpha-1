@@ -19,7 +19,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import *
+import pinlib as p
 from pinlib import display, util
 from pinlib.modes import attract
 
@@ -27,7 +27,7 @@ class Mode(attract.Mode):
 
     def __init__(self, options):
         super(Mode, self).__init__(options)
-        self.set_layer(graphics(self.widgets)
+        self.set_layer(p.graphics(self.widgets)
             .image("Splash")
             .end(3.0)
 
