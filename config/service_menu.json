@@ -7,11 +7,14 @@
         "entries": [{
             "name": "Pricing",
             "icon": "money",
-            "menu": "text",
+            "menu": "value",
             "entries": [{
                 "name": "Free Play",
                 "data": "coin.free_play",
-                "type": "boolean"
+                "options": [
+                    [ true, "Yes" ],
+                    [ false, "No" ]
+                ]
             },{
                 "name": "Game Pricing",
                 "data": "coin.pricing",
