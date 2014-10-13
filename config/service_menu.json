@@ -55,6 +55,14 @@
     },{
         "name": "Utilities",
         "icon": "utilities",
-        "entries": [{}]
+        "entries": [{
+            "name": "Clear",
+            "icon": "clear",
+            "entries": [{
+                "name": "Credits",
+                "action": "pinlib.service.clear_credits",
+                "confirm": true
+            }]
+        }]
     }]
 }
