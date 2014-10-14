@@ -23,10 +23,10 @@ import pinlib as p
 from pinlib import display, util
 from pinlib.modes import attract
 
-class Mode(attract.Mode):
+class Attract(attract.Attract):
 
     def __init__(self, options):
-        super(Mode, self).__init__(options)
+        super(Attract, self).__init__(options)
         self.set_layer(p.graphics(self.widgets)
             .image("Splash")
             .end(3.0)
