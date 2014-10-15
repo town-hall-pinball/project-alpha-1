@@ -43,7 +43,8 @@
             "name": "Earnings",
             "entries": [{
                 "name": "Earnings",
-                "data": "coin.earnings"
+                "data": "coin.earnings",
+                "format": "{:.2f}"
             },{
                 "name": "Paid Credits",
                 "data": "coin.credits.paid"
@@ -60,7 +61,19 @@
             "icon": "clear",
             "entries": [{
                 "name": "Credits",
-                "action": "pinlib.service.clear_credits",
+                "action": "pinlib.modes.service.save",
+                "args": [[
+                    ["coin.credits", 0]
+                ]],
+                "confirm": true
+            },{
+                "name": "Audits",
+                "action": "pinlib.modes.service.save",
+                "args": [[
+                    [ "coin.earnings", 0 ],
+                    [ "coin.credits.paid", 0 ],
+                    [ "coin.credits.service", 0 ]
+                ]],
                 "confirm": true
             }]
         }]
