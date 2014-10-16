@@ -1,23 +1,12 @@
 # no-fear
 
-Town Hall Pinball is working on a customized pinball machine. The
-overall plan is to:
+Visit our blog at:
 
-* Use an existing pinball machine, likely "No Fear"
-* Completely rebrand it with a new play-field, backglass, and cabinet
-  artwork
-* Design a new theme
-* Design a new ruleset
-* Design and/or use new animations, sound effects, and music
-* Design new software
+http://townhallpinball.org
 
 Since the theme and the name of the game has not yet been decided,
 this repository will be called "no-fear" for now. It will be renamed
 in the future.
-
-We are very early in the process and it will probably be some time
-until real progress is made. In the mean time, feel free to clone
-this repository and see development in action.
 
 ## Requirements
 
