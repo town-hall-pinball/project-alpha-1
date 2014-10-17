@@ -7,5 +7,6 @@
         [ "THP",   8000 ],
         [ "THP",   7000 ],
         [ "THP",   6000 ]
-    ]
+    ],
+    "game.balls_per_game": 3
 }

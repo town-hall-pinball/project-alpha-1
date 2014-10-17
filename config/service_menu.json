@@ -22,8 +22,19 @@
                     [ 1.00, "1 for 1.00" ]
                 ]
             }]
-        }]
-    },{
+        },{
+            "name": "Gameplay",
+            "icon": "game_settings",
+            "entries": [{
+                "name": "Balls Per Game",
+                "data": "game.balls_per_game",
+                "options": [
+                    [3, "3"],
+                    [5, "5"]
+                ]
+            }]
+        }
+    ]},{
         "name": "Tests",
         "icon": "tests",
         "entries": [{
