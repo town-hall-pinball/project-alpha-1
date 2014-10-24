@@ -34,10 +34,10 @@ apt-get install -y \
     python-tk \
     swig
 
-curl -O http://www.townhallpinball.org/precise64/local-libftdi-0.16_amd64.deb
-curl -O http://www.townhallpinball.org/precise64/local-libpinproc-0.0.0_amd64.deb
-curl -O http://www.townhallpinball.org/precise64/local-libusb-0.1.12_amd64.deb
-curl -O http://www.townhallpinball.org/precise64/local-pypinproc-0.0.0_amd64.deb
+curl -O http://www.blackchip.org/precise64/local-libftdi-0.16_amd64.deb
+curl -O http://www.blackchip.org/precise64/local-libpinproc-0.0.0_amd64.deb
+curl -O http://www.blackchip.org/precise64/local-libusb-0.1.12_amd64.deb
+curl -O http://www.blackchip.org/precise64/local-pypinproc-0.0.0_amd64.deb
 dpkg --install *.deb
 
 ldconfig
@@ -54,6 +54,7 @@ ln -s /vagrant/config/system.json /home/vagrant/.pyprocgame/config.json
 cat > /usr/local/bin/pingame <<EOF
 #/bin/bash
 
+export DISPLAY=$(ip route show default | head -1 | awk '{print $3}'):0
 ( cd /vagrant ; python -m pingame )
 EOF
 chmod 755 /usr/local/bin/pingame
