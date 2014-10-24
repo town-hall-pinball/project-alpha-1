@@ -23,6 +23,8 @@ in the future.
 
 Setup a development environment as follows:
 
+Open a terminal (open Cygwin in Windows)
+
 ```bash
 mkdir town-hall-pinball
 cd town-hall-pinball
