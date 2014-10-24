@@ -12,18 +12,21 @@ in the future.
 
 * [VirtualBox](https://www.virtualbox.org/)
 * [Vagrant](https://www.vagrantup.com/)
-* X11, [Mac OS X](http://xquartz.macosforge.org/trac/wiki)
+
+### Mac OS X Specific
+
+* X11, [Xquartz](http://xquartz.macosforge.org/trac/wiki)
 
 ### Windows Specific
 
 * [Cygwin](https://www.cygwin.com)
-* [Xming](https://sourceforge.net/projects/xming/files/latest/download)
+* X11, [Xming](https://sourceforge.net/projects/xming/files/latest/download)
 
 ## Running
 
 Setup a development environment as follows:
 
-Open a terminal (open Cygwin in Windows)
+Open a terminal (open Cygwin in Windows):
 
 ```bash
 mkdir town-hall-pinball
