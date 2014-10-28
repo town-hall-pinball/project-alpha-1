@@ -357,5 +357,254 @@
         "c42": { "number": "C42", "unused": true},
         "c43": { "number": "C43", "unused": true},
         "c44": { "number": "C44", "unused": true}
+    },
+
+    "PRLamps": {
+        "buttonBallLaunch": {
+            "number": "L86",
+            "name": "Ball Launch Button"
+        },
+        "buttonBuyIn": {
+            "number": "L87",
+            "name": "Buy-In Button"
+        },
+        "buttonStart": {
+            "number": "L88",
+            "name": "Start Button"
+        },
+        "circle1": {
+            "number": "L26",
+            "name": "Circle, 1 O'Clock Position"
+        },
+        "circle2": {
+            "number": "L25",
+            "name": "Circle, 2 O'Clock Position"
+        },
+        "circle3": {
+            "number": "L24",
+            "name": "Circle, 3 O'Clock Position"
+        },
+        "circle4": {
+            "number": "L23",
+            "name": "Circle, 4 O'Clock Position"
+        },
+        "circle5": {
+            "number": "L22",
+            "name": "Circle, 5 O'Clock Position"
+        },
+        "circle6": {
+            "number": "L11",
+            "name": "Circle, 6 O'Clock Position"
+        },
+        "circle7": {
+            "number": "L12",
+            "name": "Circle, 7 O'Clock Position"
+        },
+        "circle8": {
+            "number": "L13",
+            "name": "Circle, 8 O'Clock Position"
+        },
+        "circle9": {
+            "number": "L14",
+            "name": "Circle, 9 O'Clock Position"
+        },
+        "circle10": {
+            "number": "L15",
+            "name": "Circle, 10 O'Clock Position"
+        },
+        "circle11": {
+            "number": "L16",
+            "name": "Circle, 11 O'Clock Position"
+        },
+        "circle12": {
+            "number": "L18",
+            "name": "Circle, 12 O'Clock Position"
+        },
+        "circleCenter": {
+            "number": "L21",
+            "name": "Circle, Center Position"
+        },
+        "inlaneLeft": {
+            "number": "L66",
+            "name": "Left Inlane"
+        },
+        "inlaneRight": {
+            "number": "L73",
+            "name": "Right Inlane"
+        },
+        "kickbackArrow": {
+            "number": "L68",
+            "name": "Kickback Arrow"
+        },
+        "midPlayfieldCenter": {
+            "number": "L28",
+            "name": "Mid Playfield, Center"
+        },
+        "midPlayfieldFarLeft": {
+            "number": "L48",
+            "name": "Mid Playfield, Far Left (2 lamps)"
+        },
+        "midPlayfieldFarRight": {
+            "number": "L37",
+            "name": "Mid Playfield, Far Right (2 lamps)"
+        },
+        "midPlayfieldLeft": {
+            "number": "L17",
+            "name": "Mid Playfield, Left"
+        },
+        "midPlayfieldRight": {
+            "number": "L27",
+            "name": "Mid Playfield, Right"
+        },
+        "orbitLeftArrow1": {
+            "number": "L57",
+            "name": "Left Orbit, 1st Arrow"
+        },
+        "orbitLeftArrow2": {
+            "number": "L51",
+            "name": "Left Orbit, 2nd Arrow"
+        },
+        "orbitLeftLamp3": {
+            "number": "L53",
+            "name": "Left Orbit, 3rd Lamp"
+        },
+        "orbitLeftSign": {
+            "number": "L38",
+            "name": "Left Orbit, Sign"
+        },
+        "orbitRightArrow1": {
+            "number": "L77",
+            "name": "Right Orbit, 1st Arrow"
+        },
+        "orbitRightArrow2": {
+            "number": "L78",
+            "name": "Right Orbit, 2nd Arrow"
+        },
+        "outlaneLeft": {
+            "number": "L67",
+            "name": "Left Outlane"
+        },
+        "outlaneRight": {
+            "number": "L74",
+            "name": "Right Outlane"
+        },
+        "rampLeftArrow": {
+            "number": "L56",
+            "name": "Left Ramp, Arrow"
+        },
+        "rampLeftCircle1": {
+            "number": "L55",
+            "name": "Left Ramp, 1st Circle"
+        },
+        "rampLeftCircle2": {
+            "number": "L52",
+            "name": "Left Ramp, 2nd Circle"
+        },
+        "rampLeftCircle3": {
+            "number": "L54",
+            "name": "Left Ramp, 3rd Circle"
+        },
+        "rampLeftSignBottom": {
+            "number": "L83",
+            "name": "Left Ramp, Sign Bottom"
+        },
+        "rampLeftSignTop": {
+            "number": "L84",
+            "name": "Left Ramp, Sign Top"
+        },
+        "rampRightArrow1": {
+            "number": "L75",
+            "name": "Right Ramp, 1st Arrow"
+        },
+        "rightRampArrow2": {
+            "number": "L76",
+            "name": "Right Ramp, 2nd Arrow"
+        },
+        "rampRightCircle1": {
+            "number": "L63",
+            "name": "Right Ramp, 1st Circle"
+        },
+        "rampRightCircle2": {
+            "number": "L64",
+            "name": "Right Ramp, 2nd Circle"
+        },
+        "rampRightCircle3": {
+            "number": "L65",
+            "name": "Right Ramp, 3rd Circle"
+        },
+        "scoopDropArrow1": {
+            "number": "L45",
+            "name": "Drop Target Scoop, 1st Arrow"
+        },
+        "scoopDropArrow2": {
+            "number": "L46",
+            "name": "Drop Target Scoop, 2nd Arrow"
+        },
+        "scoopDropArrow3": {
+            "number": "L47",
+            "name": "Drop Target Scoop, 3rd Arrow"
+        },
+        "scoopSkullArrow1": {
+            "number": "L31",
+            "name": "Skull Scoop, 1st Arrow"
+        },
+        "scoopSkullArrow2": {
+            "number": "L33",
+            "name": "Skull Scoop, 2nd Arrow"
+        },
+        "scoopSkullArrow3": {
+            "number": "L34",
+            "name": "Skull Scoop, 3rd Arrow"
+        },
+        "scoopSkullArrow4": {
+            "number": "L36",
+            "name": "Skull Scoop, 4th Arrow"
+        },
+        "scoopSkullCircle": {
+            "number": "L35",
+            "name": "Skull Scoop, Circle"
+        },
+        "shootAgain": {
+            "number": "L81",
+            "name": "Shoot Again"
+        },
+        "skullEyeLeft": {
+            "number": "L82",
+            "name": "Skull, Left Eye"
+        },
+        "skullEyeRight": {
+            "number": "L85",
+            "name": "Skull, Right Eye"
+        },
+        "standupArrowBottom": {
+            "number": "L72",
+            "name": "Standup Target Arrow, Bottom"
+        },
+        "standupArrowTop": {
+            "number": "L71",
+            "name": "Standup Target Arrow, Top"
+        },
+        "uTurnLeftArrow": {
+            "number": "L41",
+            "name": "U-Turn, Left Arrow"
+        },
+        "uTurnLeftCircle1": {
+            "number": "L42",
+            "name": "U-Turn, Left 1st Circle"
+        },
+        "uTurnLeftCircle2": {
+            "number": "L43",
+            "name": "U-Turn, Left 2nd Circle"
+        },
+        "uTurnLeftCircle3": {
+            "number": "L44",
+            "name": "U-Turn, Left 3rd Circle"
+        },
+        "uTurnRightArrow": {
+            "number": "L32",
+            "name": "U-Turn, Right Arrow"
+        },
+
+        "l58": { "number": "L58", "unused": true}
     }
 }
