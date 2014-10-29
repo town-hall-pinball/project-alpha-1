@@ -19,15 +19,18 @@
         },
         "coinLeft": {
             "number": "SD1",
-            "name": "Coin Chute, Left"
+            "name": "Coin Chute, Left",
+            "keyboard": "1"
         },
         "coinCenter": {
             "number": "SD2",
-            "name": "Coin Chute, Center"
+            "name": "Coin Chute, Center",
+            "keyboard": "2"
         },
         "coinRight": {
             "number": "SD3",
-            "name": "Coin Chute, Right"
+            "name": "Coin Chute, Right",
+            "keyboard": "3"
         },
         "coinFourth": {
             "number": "SD4",
@@ -47,11 +50,13 @@
         },
         "flipperLeft": {
             "number": "SF4",
-            "name": "Flipper, Lower Left"
+            "name": "Flipper, Lower Left",
+            "keyboard": "["
         },
         "flipperRight": {
             "number": "SF2",
-            "name": "Flipper, Lower Right"
+            "name": "Flipper, Lower Right",
+            "keyboard": "]"
         },
         "kickback": {
             "number": "S25",
@@ -132,19 +137,23 @@
         },
         "serviceDown": {
             "number": "SD6",
-            "name": "Service, Down"
+            "name": "Service, Down",
+            "keyboard": "9"
         },
         "serviceEnter": {
             "number": "SD8",
-            "name": "Service, Enter"
+            "name": "Service, Enter",
+            "keyboard": "7"
         },
         "serviceExit": {
             "number": "SD5",
-            "name": "Service, Exit"
+            "name": "Service, Exit",
+            "keyboard": "0"
         },
         "serviceUp": {
             "number": "SD7",
-            "name": "Service, Up"
+            "name": "Service, Up",
+            "keyboard": "8"
         },
         "shooterLane": {
             "number": "S15",
@@ -164,7 +173,8 @@
         },
         "startButton": {
             "number": "S13",
-            "name": "Start Button"
+            "name": "Start Button",
+            "keyboard": "s"
         },
         "tilt": {
             "number": "S14",
