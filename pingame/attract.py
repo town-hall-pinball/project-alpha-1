@@ -21,34 +21,24 @@
 
 import pinlib as p
 from pinlib import display, util
-from pinlib.modes import attract
+from pinlib.modules import coin, highscore, script
 
-class Attract(attract.Attract):
+class Attract(script.Script):
 
     def __init__(self, options):
-        super(Attract, self).__init__(options)
-        self.set_layer(p.graphics(self.widgets)
-            .image("Splash")
-            .end(3.0)
+        super(Attract, self).__init__(options, priority=22)
+        self.script = p.gfx.ScriptPanel()
 
-            .move_y(7)
-            .font("plain")
-            .println("TOWN HALL PINBALL")
-            .font("bold")
-            .move_y(2)
-            .println("PRESENTS")
-            .end(3.0)
+        background = p.gfx.Background("Splash")
+        presents = p.gfx.Message("TOWN HALL PINBALL", "plain").add("PRESENTS")
+        no_fear = p.gfx.Message("NO FEAR")
+        game_over = p.gfx.Message("GAME OVER")
 
-            .message("NO FEAR")
-            .end(3.0)
-            .transition("push", direction="north")
-
-            .message("GAME OVER")
-            .end(6.0)
-
-            .append(display.credits())
-            .append(display.highscore("classic"))
-
-            .empty(10.0)
-            .script()
-        )
+        self.script.add(background, 3.0)
+        self.script.add(presents, 3.0)
+        self.script.add(no_fear, 3.0)
+        self.script.add(game_over, 6.0)
+        self.script.add(coin.credits(), 6.0)
+        self.script.add(highscore.table_classic())
+        self.script.add(None, 10.0)
+        self.set_layer(self.script)

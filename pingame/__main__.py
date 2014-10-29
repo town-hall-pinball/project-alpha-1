@@ -19,49 +19,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-import locale
-import traceback
-import os
-import pinlib
 from pinlib import system
 
-def main():
-    # The score display uses the locale to determine if commas or
-    # periods should be used as the number separator.
-    locale.setlocale(locale.LC_ALL, "")
-
-    system.init()
-    #pinlib.use("pinlib.modes.demo", { "start": ["reset"] })
-
-    pinlib.use("pingame.attract.Attract", {
-        "start": ["request_attract"]
-    })
-    pinlib.use("pinlib.modes.coin.Coin", {
-        "start": ["reset"]
-    })
-    pinlib.use("pinlib.modes.core.Core", {
-        "start": ["reset"]
-    })
-    #machine.use("pinlib.modes.oops", {
-    #    "start": ["crashed"],
-    #    "stop": "reset"
-    #})
-#    pinlib.use("pinlib.modes.service.Service", {
-#        "start": ["reset"]
-#    })
-    pinlib.use("pinlib.modes.service.Service", {
-        "start": ["request_service"]
-    })
-    pinlib.use("pinlib.modes.splash.Splash", {
-        "start": ["reset"],
-        "stop": "request_attract"
-    })
-
-    system.run()
-
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        print traceback.format_exc()
-        os._exit(1)
+    system.run()
