@@ -1,16 +1,17 @@
 {
-    "entries": [{
+    "name": "Service",
+    "menu": [{
         "name": "Settings",
         "icon": "settings",
-        "entries": [{
+        "menu": [{
             "name": "Pricing",
             "icon": "money",
-            "entries": [{
+            "menu": [{
                 "name": "Free Play",
                 "data": "coin.free_play",
                 "options": [
-                    [ true, "Yes" ],
-                    [ false, "No" ]
+                    [true, "Yes"],
+                    [false, "No"]
                 ]
             },{
                 "name": "Game Pricing",
@@ -25,68 +26,19 @@
         },{
             "name": "Gameplay",
             "icon": "game_settings",
-            "entries": [{
-                "name": "Balls Per Game",
-                "data": "game.balls_per_game",
-                "options": [
-                    [3, "3"],
-                    [5, "5"]
-                ]
-            }]
-        }
-    ]},{
+            "menu": []
+        }]
+    },{
         "name": "Tests",
         "icon": "tests",
-        "entries": [{
-            "name": "Switches",
-            "icon": "switches"
-        },{
-            "name": "Coils",
-            "icon": "coils"
-        },{
-            "name": "Lamps",
-            "icon": "lamps"
-        }]
+        "menu": []
     },{
         "name": "Audits",
         "icon": "audits",
-        "entries": [{
-            "name": "Earnings",
-            "entries": [{
-                "name": "Earnings",
-                "data": "coin.earnings",
-                "format": "{:.2f}"
-            },{
-                "name": "Paid Credits",
-                "data": "coin.credits.paid"
-            },{
-                "name": "Service Credits",
-                "data": "coin.credits.service"
-            }]
-        }]
+        "menu": []
     },{
         "name": "Utilities",
         "icon": "utilities",
-        "entries": [{
-            "name": "Clear",
-            "icon": "clear",
-            "entries": [{
-                "name": "Credits",
-                "action": "pinlib.modes.service.save",
-                "args": [[
-                    ["coin.credits", 0]
-                ]],
-                "confirm": true
-            },{
-                "name": "Audits",
-                "action": "pinlib.modes.service.save",
-                "args": [[
-                    [ "coin.earnings", 0 ],
-                    [ "coin.credits.paid", 0 ],
-                    [ "coin.credits.service", 0 ]
-                ]],
-                "confirm": true
-            }]
-        }]
+        "menu": []
     }]
 }

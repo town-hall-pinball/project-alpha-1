@@ -9,5 +9,8 @@
     },{
         "mode": "pinlib.modules.coin.Coin",
         "start": ["reset"]
+    },{
+        "mode": "pinlib.modules.service.Service",
+        "start": ["request-service-menu"]
     }]
 }
