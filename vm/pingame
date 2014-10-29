@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#/bin/bash
 #
-# Copyright (c) 2014 blackchip.org
+# Copyright (c) 2014 townhallpinball.org
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
 # copy of this software and associated documentation files (the "Software"),
@@ -20,32 +20,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-set -x
-
-apt-get update
-apt-get install -y \
-    alsa-utils \
-    curl \
-    libboost-dev \
-    python-imaging \
-    python-pyglet \
-    python-pygame \
-    python-setuptools \
-    python-tk \
-    swig
-
-curl -O http://www.blackchip.org/precise64/local-libftdi-0.16_amd64.deb
-curl -O http://www.blackchip.org/precise64/local-libpinproc-0.0.0_amd64.deb
-curl -O http://www.blackchip.org/precise64/local-libusb-0.1.12_amd64.deb
-curl -O http://www.blackchip.org/precise64/local-pypinproc-0.0.0_amd64.deb
-dpkg --install *.deb
-
-ldconfig
-
-amixer -c 0 -- sset Master 100% unmute
-amixer -c 0 -- sset PCM 100% unmute
-aplay /usr/share/sounds/alsa/Front_Center.wav
-aplay /usr/share/sounds/alsa/Noise.wav
-usermod -a -G audio vagrant
-
-install -m 755 /vagrant/vm/pingame /usr/local/bin/pingame
+if [ -z "$DISPLAY" ] ; then
+    export DISPLAY=$(ip route show default | head -1 | awk '{print $3}'):0
+fi
+( cd /vagrant ; python -m pingame )
