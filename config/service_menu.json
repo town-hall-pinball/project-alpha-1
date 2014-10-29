@@ -31,14 +31,51 @@
     },{
         "name": "Tests",
         "icon": "tests",
-        "menu": []
+        "menu": [{
+            "name": "Switches",
+            "icon": "switches",
+            "event": "request-switch-test"
+        },{
+            "name": "Coils",
+            "icon": "coils",
+            "event": "request-coil-test"
+        },{
+            "name": "Lights",
+            "icon": "lamps",
+            "event": "request-light-test"
+        }]
     },{
         "name": "Audits",
         "icon": "audits",
-        "menu": []
+        "menu": [{
+            "name": "Earnings",
+            "menu": [{
+                "name": "Earnings",
+                "data": "coin.earnings",
+                "format": "{:.2f}"
+            },{
+                "name": "Paid Credits",
+                "data": "coin.credits.paid"
+            },{
+                "name": "Service Credits",
+                "data": "coin.credits.service"
+            }]
+        }]
     },{
         "name": "Utilities",
         "icon": "utilities",
-        "menu": []
+        "menu": [{
+            "name": "Clear",
+            "icon": "clear",
+            "menu": [{
+                "name": "Credits",
+                "event": "credits-clear",
+                "confirm": true
+            },{
+                "name": "Audits",
+                "event": "audits-clear",
+                "confirm": true
+            }]
+        }]
     }]
 }
