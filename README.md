@@ -96,7 +96,7 @@ to the discussion.
 
 * no-fear: Copyright &copy; 2014 townhallpinball.org
 * pinlib: Copyright &copy; 2014 townhallpinball.org
-* pyprogame: Copyright &copy; 2009-2011 Adam Preble and Gerry Stellenberg
+* pyprocgame: Copyright &copy; 2009-2011 Adam Preble and Gerry Stellenberg
 
 See the [full license](LICENSE.md) for more information.
 
