@@ -23,4 +23,4 @@
 if [ -z "$DISPLAY" ] ; then
     export DISPLAY=$(ip route show default | head -1 | awk '{print $3}'):0
 fi
-( cd /vagrant ; python -m pingame )
+( cd /vagrant ; python -m pingame "$@" )
