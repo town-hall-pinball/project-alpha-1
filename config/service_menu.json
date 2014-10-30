@@ -21,7 +21,8 @@
                     [ 0.50, "1 for 0.50" ],
                     [ 0.75, "1 for 0.75" ],
                     [ 1.00, "1 for 1.00" ]
-                ]
+                ],
+                "event": "pricing-change"
             }]
         },{
             "name": "Gameplay",
