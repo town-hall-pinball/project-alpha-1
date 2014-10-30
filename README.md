@@ -84,7 +84,7 @@ machine and ruleset.
 * The ``pinlib`` repository contains generic modules that can
 be useful for any machine and ruleset. This provides the ``pyprocgame``
 library that has custom patches applied and new code to provide
-a nicer abstraction layer.
+a nicer abstraction laπyer.
 
 ## Contributing
 
@@ -94,5 +94,10 @@ to the discussion.
 
 ## Administrivia
 
-* Licensed under the [MIT license](LICENSE.md)
-* [Credits](CREDITS.md)
+* no-fear: Copyright &copy; 2014 townhallpinball.org
+* pinlib: Copyright &copy; 2014 townhallpinball.org
+* pyprogame: Copyright &copy; 2009-2011 Adam Preble and Gerry Stellenberg
+
+See the [full license](LICENSE.md) for more information.
+
+[Credits](CREDITS.md)
