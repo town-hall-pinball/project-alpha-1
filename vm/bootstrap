@@ -26,6 +26,7 @@ apt-get update
 apt-get install -y \
     alsa-utils \
     curl \
+    dos2unix \
     libboost-dev \
     python-imaging \
     python-pyglet \
@@ -49,3 +50,4 @@ aplay /usr/share/sounds/alsa/Noise.wav
 usermod -a -G audio vagrant
 
 install -m 755 /vagrant/vm/pingame /usr/local/bin/pingame
+dos2unix /usr/local/bin/pingame
