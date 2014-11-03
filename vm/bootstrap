@@ -23,31 +23,13 @@
 set -x
 
 apt-get update
-apt-get install -y \
-    alsa-utils \
-    curl \
-    dos2unix \
-    libboost-dev \
-    python-imaging \
-    python-pyglet \
-    python-pygame \
-    python-setuptools \
-    python-tk \
-    swig
+apt-get install -y curl git
 
-curl -O http://www.blackchip.org/precise64/local-libftdi-0.16_amd64.deb
-curl -O http://www.blackchip.org/precise64/local-libpinproc-0.0.0_amd64.deb
-curl -O http://www.blackchip.org/precise64/local-libusb-0.1.12_amd64.deb
-curl -O http://www.blackchip.org/precise64/local-pypinproc-0.0.0_amd64.deb
-dpkg --install *.deb
+git clone https://github.com/town-hall-pinball/PinOS.git
+PinOS/ext/download-dependencies
+PinOS/ext/install-run-dependencies
 
-ldconfig
-
-amixer -c 0 -- sset Master 100% unmute
-amixer -c 0 -- sset PCM 100% unmute
-aplay /usr/share/sounds/alsa/Front_Center.wav
-aplay /usr/share/sounds/alsa/Noise.wav
-usermod -a -G audio vagrant
-
-install -m 755 /vagrant/vm/pingame /usr/local/bin/pingame
-dos2unix /usr/local/bin/pingame
+cat > /etc/default/pingame << EOF
+MODULE=pingame
+DIR=/vagrant
+EOF
