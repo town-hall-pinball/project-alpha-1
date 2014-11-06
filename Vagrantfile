@@ -29,6 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, path: "vm/bootstrap"
   config.vm.hostname = "no-fear"
   config.ssh.forward_x11 = true
+  config.vm.network "forwarded_port", guest: 9000, host: 9000
 
   config.vm.provider "virtualbox" do |vb|
       vb.name = "no-fear"
@@ -41,6 +42,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                         "--audiocontroller", "ac97"]
       end
       config.vm.synced_folder "../pinlib/pinlib", "/usr/local/lib/python2.7/dist-packages/pinlib"
+      config.vm.synced_folder "../pinlib/pinws", "/usr/local/lib/python2.7/dist-packages/pinws"
       config.vm.synced_folder "../pinlib/procgame", "/usr/local/lib/python2.7/dist-packages/procgame"
   end
 end
