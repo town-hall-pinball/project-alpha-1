@@ -42,7 +42,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                         "--audiocontroller", "ac97"]
       end
       config.vm.synced_folder "../pinlib/pinlib", "/usr/local/lib/python2.7/dist-packages/pinlib"
-      config.vm.synced_folder "../pinlib/pinws", "/usr/local/lib/python2.7/dist-packages/pinws"
       config.vm.synced_folder "../pinlib/procgame", "/usr/local/lib/python2.7/dist-packages/procgame"
   end
 end
