@@ -19,14 +19,17 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-import pinlib as p
-from pinlib import display, util
+from pinlib import p, display, util
 from pinlib.modules import coin, highscore, script
 
-class Attract(script.Script):
+def init():
+    p.load_mode("pingame.attract.AttractMode", { "start": ["request-attract"] })
+
+
+class AttractMode(script.Script):
 
     def __init__(self, options):
-        super(Attract, self).__init__(options, priority=22)
+        super(AttractMode, self).__init__(options, priority=22)
         self.script = p.gfx.ScriptPanel()
 
         background = p.gfx.Background("attract/p-roc")

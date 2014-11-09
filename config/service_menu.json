@@ -66,6 +66,32 @@
         "name": "Utilities",
         "icon": "service/utilities",
         "menu": [{
+            "name": "Server",
+            "icon": "service/server",
+            "menu": [{
+                "name": "Enable Server",
+                "data": "server.enabled",
+                "options": [
+                    [true, "Yes"],
+                    [false, "No"]
+                ],
+                "event": "server-adjust"
+            },{
+                "name": "Publish Events",
+                "data": "server.publish_events",
+                "options": [
+                    [true, "Yes"],
+                    [false, "No"]
+                ]
+            },{
+                "name": "Remote Control",
+                "data": "server.remote_control",
+                "options": [
+                    [true, "Yes"],
+                    [false, "No"]
+                ]
+            }]
+        },{
             "name": "Clear",
             "icon": "service/clear",
             "menu": [{

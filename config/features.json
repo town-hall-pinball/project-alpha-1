@@ -1,0 +1,14 @@
+{
+    "modules": [
+        "pinlib.modules.splash",
+        "pingame.attract",
+        "pinlib.modules.coin",
+        "pinlib.modules.server",
+        "pinlib.modules.service"
+    ],
+    "modes": [{
+        "name": "pinlib.modules.splash.SplashMode",
+        "start": ["reset"],
+        "stop": ["request-attract"]
+    }]
+}
