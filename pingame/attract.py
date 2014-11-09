@@ -29,7 +29,7 @@ class Attract(script.Script):
         super(Attract, self).__init__(options, priority=22)
         self.script = p.gfx.ScriptPanel()
 
-        background = p.gfx.Background("Splash")
+        background = p.gfx.Background("attract/p-roc")
         presents = p.gfx.Message("TOWN HALL PINBALL", "plain").add("PRESENTS")
         no_fear = p.gfx.Message("NO FEAR")
         game_over = p.gfx.Message("GAME OVER")

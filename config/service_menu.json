@@ -2,10 +2,10 @@
     "name": "Service",
     "menu": [{
         "name": "Settings",
-        "icon": "settings",
+        "icon": "service/settings",
         "menu": [{
             "name": "Pricing",
-            "icon": "money",
+            "icon": "service/money",
             "menu": [{
                 "name": "Free Play",
                 "data": "coin.free_play",
@@ -31,23 +31,23 @@
         }]
     },{
         "name": "Tests",
-        "icon": "tests",
+        "icon": "service/tests",
         "menu": [{
             "name": "Switches",
-            "icon": "switches",
+            "icon": "service/switches",
             "event": "request-switch-test"
         },{
             "name": "Coils",
-            "icon": "coils",
+            "icon": "service/coils",
             "event": "request-coil-test"
         },{
             "name": "Lights",
-            "icon": "lamps",
+            "icon": "service/lamps",
             "event": "request-light-test"
         }]
     },{
         "name": "Audits",
-        "icon": "audits",
+        "icon": "service/audits",
         "menu": [{
             "name": "Earnings",
             "menu": [{
@@ -64,10 +64,10 @@
         }]
     },{
         "name": "Utilities",
-        "icon": "utilities",
+        "icon": "service/utilities",
         "menu": [{
             "name": "Clear",
-            "icon": "clear",
+            "icon": "service/clear",
             "menu": [{
                 "name": "Credits",
                 "event": "credits-clear",
