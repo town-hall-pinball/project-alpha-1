@@ -103,6 +103,18 @@
                 "event": "audits-clear",
                 "confirm": true
             }]
+        },{
+            "name": "Debug",
+            "icon": "service/debug",
+            "menu": [{
+                "name": "Alignment Grid",
+                "data": "debug.alignment_grid",
+                "options": [
+                    [false, "Disable"],
+                    [true, "Enable"]
+                ],
+                "event": "alignment-grid-toggle"
+            }]
         }]
     }]
 }
