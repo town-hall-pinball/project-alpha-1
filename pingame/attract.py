@@ -43,5 +43,5 @@ class AttractMode(script.Script):
         self.script.add(game_over, 6.0)
         self.script.add(coin.credits(), 6.0)
         self.script.add(highscore.ClassicTable())
-        self.script.add(None, 10.0)
+        #self.script.add(None, 10.0)
         self.set_layer(self.script)
