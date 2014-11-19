@@ -19,7 +19,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import p, display, util
+from pinlib import p, util
 from pinlib.modules import coin, highscore, script
 
 def init():
