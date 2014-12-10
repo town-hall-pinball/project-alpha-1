@@ -645,6 +645,27 @@
             "name": "U-Turn, Right Arrow"
         },
 
-        "l58": { "number": "L58", "unused": true}
+        "l58": { "number": "L58", "unused": true},
+
+        "gi01": {
+            "number": "G01",
+            "name": "GI01"
+        },
+        "gi02": {
+            "number": "G02",
+            "name": "GI02"
+        },
+        "gi03": {
+            "number": "G03",
+            "name": "GI03"
+        },
+        "gi04": {
+            "number": "G04",
+            "name": "GI04"
+        },
+        "gi05": {
+            "number": "G05",
+            "name": "GI05"
+        }
     }
 }
