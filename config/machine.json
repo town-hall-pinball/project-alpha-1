@@ -8,6 +8,14 @@
         "numBalls": 4
     },
 
+    "PRFlippers": [
+        "flipperLeft",
+        "flipperRight",
+        "flipperRightUp"
+    ],
+
+    "PRBumpers": [],
+
     "PRSwitches": {
         "ballLaunch": {
             "number": "S11",
@@ -57,6 +65,10 @@
             "number": "SF2",
             "name": "Flipper, Lower Right",
             "keyboard": "]"
+        },
+        "flipperRightUp": {
+            "number": "SF6",
+            "name": "Flipper, Upper Right"
         },
         "kickback": {
             "number": "S25",
@@ -251,6 +263,24 @@
     },
 
     "PRCoils": {
+        "flipperLeftMain": {
+            "number": "FLLM"
+        },
+        "flipperLeftHold": {
+            "number": "FLLH"
+        },
+        "flipperRightMain": {
+            "number": "FLRM"
+        },
+        "flipperRightHold": {
+            "number": "FLRH"
+        },
+        "flipperRightUpMain": {
+            "number": "FURM"
+        },
+        "flipperRightUpHold": {
+            "number": "FURH"
+        },
         "autoPlunger": {
             "number": "C02",
             "name": "Auto Plunger"
