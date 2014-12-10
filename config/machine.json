@@ -14,7 +14,7 @@
         "flipperRightUp"
     ],
 
-    "PRBumpers": ["slingLeft","SlingRright"],
+    "PRBumpers": ["slingLeft","slingRright"],
 
     "PRSwitches": {
         "ballLaunch": {
