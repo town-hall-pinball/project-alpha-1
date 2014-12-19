@@ -20,6 +20,7 @@
 # DEALINGS IN THE SOFTWARE.
 
 from pinlib import p, util
+from pinlib.dmd import ui
 from pinlib.modules import coin, highscore, script
 
 def init():
@@ -30,12 +31,12 @@ class AttractMode(script.Script):
 
     def __init__(self, options):
         super(AttractMode, self).__init__(options, priority=22)
-        self.script = p.gfx.ScriptPanel()
+        self.script = ui.ScriptPanel()
 
-        background = p.gfx.Background("attract/p-roc")
-        presents = p.gfx.Message("TOWN HALL PINBALL", "plain").add("PRESENTS")
-        no_fear = p.gfx.Message("NO FEAR")
-        game_over = p.gfx.Message("GAME OVER")
+        background = ui.Background("attract/p-roc")
+        presents = ui.Message("TOWN HALL PINBALL", "plain").add("PRESENTS")
+        no_fear = ui.Message("NO FEAR")
+        game_over = ui.Message("GAME OVER")
 
         self.script.add(background, 3.0)
         self.script.add(presents, 3.0)
