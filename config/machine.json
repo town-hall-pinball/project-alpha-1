@@ -649,23 +649,28 @@
 
         "gi01": {
             "number": "G01",
-            "name": "GI01"
+            "name": "General Illumination, 1",
+            "gi": true
         },
         "gi02": {
             "number": "G02",
-            "name": "GI02"
+            "name": "General Illumination, 2",
+            "gi": true
         },
         "gi03": {
             "number": "G03",
-            "name": "GI03"
+            "name": "General Illumination, 3",
+            "gi": true
         },
         "gi04": {
             "number": "G04",
-            "name": "GI04"
+            "name": "General Illumination, 4",
+            "gi": true
         },
         "gi05": {
             "number": "G05",
-            "name": "GI05"
+            "name": "General Illumination, 5",
+            "gi": true
         }
     }
 }
