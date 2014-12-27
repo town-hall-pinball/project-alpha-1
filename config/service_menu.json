@@ -107,6 +107,14 @@
             "name": "Browser",
             "icon": "service/browse",
             "menu": [{
+                "name": "Music",
+                "icon": "service/music",
+                "event": "request-music-browser"
+            },{
+                "name": "Sounds",
+                "icon": "service/sounds",
+                "event": "request-sound-browser"
+            },{
                 "name": "Fonts",
                 "icon": "service/font",
                 "event": "request-font-browser"
