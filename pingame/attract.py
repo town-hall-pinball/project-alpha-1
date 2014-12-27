@@ -34,7 +34,7 @@ class AttractMode(script.Script):
         self.script = ui.ScriptPanel()
 
         background = ui.Background("attract/p-roc")
-        presents = ui.Message("TOWN HALL PINBALL", "plain").add("PRESENTS")
+        presents = ui.Message("Town Hall Pinball", "small_wide").add("Presents")
         no_fear = ui.Message("NO FEAR")
         game_over = ui.Message("GAME OVER")
 

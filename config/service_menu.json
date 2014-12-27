@@ -104,6 +104,14 @@
                 "confirm": true
             }]
         },{
+            "name": "Browser",
+            "icon": "service/browse",
+            "menu": [{
+                "name": "Fonts",
+                "icon": "service/font",
+                "event": "request-font-browser"
+            }]
+        },{
             "name": "Debug",
             "icon": "service/debug",
             "menu": [{
