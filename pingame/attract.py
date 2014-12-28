@@ -24,7 +24,7 @@ from pinlib.dmd import ui
 from pinlib.modules import coin, highscore, script
 
 def init():
-    p.load_mode("pingame.attract.AttractMode", { "start": ["request-attract"] })
+    p.load_mode(AttractMode, { "start": ["request-attract"] })
 
 
 class AttractMode(script.Script):
@@ -35,8 +35,8 @@ class AttractMode(script.Script):
 
         background = ui.Background("attract/p-roc")
         presents = ui.Message("Town Hall Pinball", "small_wide").add("Presents")
-        no_fear = ui.Message("NO FEAR")
-        game_over = ui.Message("GAME OVER")
+        no_fear = ui.Message(p.machine["game.name"])
+        game_over = ui.Message("Game Over")
 
         self.script.add(background, 3.0)
         self.script.add(presents, 3.0)
