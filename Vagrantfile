@@ -27,12 +27,12 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "hashicorp/precise64"
   config.vm.provision :shell, path: "vm/bootstrap"
-  config.vm.hostname = "no-fear"
+  config.vm.hostname = "project-alpha"
   config.ssh.forward_x11 = true
   config.vm.network "forwarded_port", guest: 9000, host: 9000
 
   config.vm.provider "virtualbox" do |vb|
-      vb.name = "no-fear"
+      vb.name = "project-alpha"
       vb.gui = true
       if Vagrant::Util::Platform.windows?
           vb.customize ["modifyvm", :id, "--audio", "dsound",

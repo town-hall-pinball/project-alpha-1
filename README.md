@@ -1,11 +1,27 @@
-# no-fear
+# project-alpha
 
 Visit our blog at:
 
 http://townhallpinball.org
 
+Town Hall Pinball is working on a customized pinball machine. The overall plan
+is to:
+
+* Use an existing pinball machine, "No Fear"
+* Completely rebrand it with a new play-field, backglass, and cabinet artwork
+* Design a new theme
+* Design a new ruleset
+* Design and/or use new animations, sound effects, and music
+* Design new software
+
+We are using the [P-ROC](http://www.pinballcontrollers.com/index.php/products/p-roc)
+to interface with the pinball machine. A general library, called
+[pinlib](https://github.com/town-hall-pinball/pinlib), is being developed
+by us that extends off the work done on
+[pyprocgame](https://github.com/preble/pyprocgame).
+
 Since the theme and the name of the game has not yet been decided,
-this repository will be called "no-fear" for now. It will be renamed
+this repository will be called "project-alpha" for now. It will be renamed
 in the future.
 
 ## Requirements
@@ -35,19 +51,19 @@ cd town-hall-pinball
 
 If you are not contributing back to the repositories or prefer to use https:
 ```bash
-git clone --recursive https://github.com/town-hall-pinball/no-fear.git
+git clone https://github.com/town-hall-pinball/project-alpha.git
 git clone https://github.com/town-hall-pinball/pinlib.git
 ```
 
 Otherwise, register your SSH key and:
 ```bash
-git clone --recursive git@github.com:town-hall-pinball/no-fear.git
+git clone git@github.com:town-hall-pinball/project-alpha.git
 git clone git@github.com:town-hall-pinball/pinlib.git
 ```
 
 Then:
 ``` bash
-cd no-fear
+cd project-alpha
 vagrant up
 ```
 
@@ -77,14 +93,25 @@ Operator service mode:
 * ``9``: Down
 * ``0``: Exit
 
-## Development Notes
+## Easter Eggs
 
-* The ``no-fear`` repository contains the code specific for the
-machine and ruleset.
-* The ``pinlib`` repository contains generic modules that can
-be useful for any machine and ruleset. This provides the ``pyprocgame``
-library that has custom patches applied and new code to provide
-a nicer abstraction laπyer.
+For the MM3 easter egg, execute the following commands from the `project-alpha`
+directory:
+
+```bash
+mkdir ext
+cd ext
+git clone https://github.com/town-hall-pinball/mm3.git
+```
+
+This will not work out-of-the box and requires an external resources pack.
+Contact us for the required URL.
+
+Activate the Easter Egg in attract mode with the following:
+
+* Left Flipper x 3
+* Right Flipper x 3
+* Start Button
 
 ## Contributing
 
@@ -94,7 +121,7 @@ to the discussion.
 
 ## Administrivia
 
-* no-fear: Copyright &copy; 2014 townhallpinball.org
+* project-alpha: Copyright &copy; 2014 townhallpinball.org
 * pinlib: Copyright &copy; 2014 townhallpinball.org
 * pyprocgame: Copyright &copy; 2009-2011 Adam Preble and Gerry Stellenberg
 
