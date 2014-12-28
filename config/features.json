@@ -1,7 +1,9 @@
 {
     "modules": [
+        "pinlib.modules.game",
         "pinlib.modules.splash",
         "pinlib.modules.coin",
+        "pinlib.modules.score",
         "pinlib.modules.server",
         "pinlib.modules.service",
         "pingame.attract"
