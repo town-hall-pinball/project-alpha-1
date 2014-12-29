@@ -85,6 +85,7 @@ Only a simple attract mode is available at the moment.
 * ``3``: Right coin slot
 * ``[``: Left flipper
 * ``]``: Right flipper
+* ``s``: Start Button
 
 Operator service mode:
 
