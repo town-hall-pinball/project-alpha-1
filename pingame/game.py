@@ -22,14 +22,30 @@
 from pinlib import p, mode, util
 
 def init():
-    p.load_mode(GameMode, { "start": ["reset"] })
+    p.load_mode(BackgroundMode, { "start": ["reset"] })
+    p.load_mode(GameMode,       { "start": ["game_reset"] })
+
+class BackgroundMode(mode.Base):
+
+    def __init__(self, options):
+        options["id"] = options.get("id", "background")
+        super(BackgroundMode, self).__init__(options, priority=100)
+
+    def start(self):
+        map(lambda lamp: lamp.enable(), p.machine.lamps("gi"))
 
 
 class GameMode(mode.Base):
 
     def __init__(self, options):
-        options["id"] = "game"
-        super(GameMode, self).__init__(options, priority=100)
+        options["id"] = options.get("id", "game")
+        super(GameMode, self).__init__(options, priority=110)
 
     def start(self):
-        map(lambda lamp: lamp.enable(), p.machine.lamps("gi"))
+        p.events.on("next_player", self.next_player)
+
+    def stop(self):
+        p.events.on("next_player", self.next_player)
+
+    def next_player(self):
+        p.machine.coil("trough").pulse()
