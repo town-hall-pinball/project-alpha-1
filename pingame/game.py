@@ -45,7 +45,7 @@ class GameMode(mode.Base):
         p.events.on("next_player", self.next_player)
 
     def stop(self):
-        p.events.on("next_player", self.next_player)
+        p.events.off("next_player", self.next_player)
 
     def next_player(self):
         p.machine.coil("trough").pulse()
