@@ -10,7 +10,10 @@
     ],
     "modes": [{
         "name": "pinlib.modules.splash.SplashMode",
-        "start": ["reset"],
-        "stop": ["request-attract"]
+        "start": ["reset"]
+    },{
+        "name": "pingame.attract.AttractMode",
+        "start": ["splash_stopped"],
+        "stop":  ["game_reset"]
     }]
 }
