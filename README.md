@@ -1,4 +1,4 @@
-# project-alpha
+# Project Alpha
 
 Visit our blog at:
 

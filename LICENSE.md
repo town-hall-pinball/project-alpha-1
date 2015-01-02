@@ -1,4 +1,4 @@
-# no-fear
+# Project Alpha
 
 Copyright (c) 2014 - 2015 townhallpinball.org
 
