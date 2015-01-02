@@ -86,6 +86,7 @@ Only a simple attract mode is available at the moment.
 * ``[``: Left flipper
 * ``]``: Right flipper
 * ``s``: Start Button
+* ``d``: Drain
 * ``x``: Buy Extra Ball
 
 Operator service mode:

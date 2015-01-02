@@ -210,7 +210,7 @@
             "number": "S31",
             "type": "NC",
             "name": "Trough, Stack",
-            "keyboard": "x"
+            "keyboard": "d"
         },
         "trough1": {
             "number": "S32",
