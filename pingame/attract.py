@@ -33,7 +33,7 @@ class AttractMode(script.Script):
 
         background = ui.Background("attract/p-roc")
         presents = ui.Message("Town Hall Pinball", "small_wide").add("Presents")
-        no_fear = ui.Message(p.machine["game.name"])
+        no_fear = ui.Message(p.machine.config["game.name"])
         game_over = ui.Message("Game Over")
 
         self.script.add(background, 3.0)

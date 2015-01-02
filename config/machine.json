@@ -650,28 +650,28 @@
 
         "gi01": {
             "number": "G01",
-            "name": "General Illumination, 1",
-            "gi": true
+            "name": "Gen Illum 1",
+            "tags": ["gi"]
         },
         "gi02": {
             "number": "G02",
-            "name": "General Illumination, 2",
-            "gi": true
+            "name": "Gen Illum 2",
+            "tags": ["gi"]
         },
         "gi03": {
             "number": "G03",
-            "name": "General Illumination, 3",
-            "gi": true
+            "name": "Gen Illum 3",
+            "tags": ["gi"]
         },
         "gi04": {
             "number": "G04",
-            "name": "General Illumination, 4",
-            "gi": true
+            "name": "Gen Illum 4",
+            "tags": ["gi"]
         },
         "gi05": {
             "number": "G05",
-            "name": "General Illumination, 5",
-            "gi": true
+            "name": "Gen Illum 5",
+            "tags": ["gi"]
         }
     }
 }

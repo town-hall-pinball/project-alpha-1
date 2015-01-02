@@ -6,7 +6,8 @@
         "pinlib.modules.score",
         "pinlib.modules.server",
         "pinlib.modules.service",
-        "pingame.attract"
+        "pingame.attract",
+        "pingame.game"
     ],
     "modes": [{
         "name": "pinlib.modules.splash.SplashMode",

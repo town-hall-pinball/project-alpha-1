@@ -21,6 +21,9 @@
 
 from pinlib import p, mode, util
 
+def init():
+    p.load_mode(GameMode, { "start": ["reset"] })
+
 
 class GameMode(mode.Base):
 
@@ -28,5 +31,5 @@ class GameMode(mode.Base):
         options["id"] = "game"
         super(GameMode, self).__init__(options, priority=100)
 
-    def sw_startButton_active(self, sw=None):
-        p.game.
+    def start(self):
+        map(lambda lamp: lamp.enable(), p.machine.lamps("gi"))
