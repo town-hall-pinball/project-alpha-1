@@ -18,7 +18,7 @@
         "duration": 0.5
     },{
         "name": "pingame.attract.AttractMode",
-        "start": ["splash_stopped"],
-        "stop":  ["game_reset"]
+        "start": ["splash_stopped", "game_over", "service_stopped"],
+        "stop":  ["game_reset", "service_started"]
     }]
 }

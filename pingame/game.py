@@ -23,7 +23,10 @@ from pinlib import p, mode, util
 
 def init():
     p.load_mode(BackgroundMode, { "start": ["reset"] })
-    p.load_mode(GameMode,       { "start": ["game_reset"] })
+    p.load_mode(GameMode,       {
+        "start": ["game_reset"],
+        "stop":  ["game_over"] 
+    })
 
 class BackgroundMode(mode.Base):
 
@@ -42,6 +45,7 @@ class GameMode(mode.Base):
         super(GameMode, self).__init__(options, priority=110)
 
     def start(self):
+        p.sounds.play_music("credits", start_time=2.4)
         p.events.on("next_player", self.next_player)
 
     def stop(self):
@@ -49,3 +53,6 @@ class GameMode(mode.Base):
 
     def next_player(self):
         p.machine.coil("trough").pulse()
+
+    def sw_troughStack_active(self, sw=None):
+        p.game.next_player()

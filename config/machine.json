@@ -209,7 +209,8 @@
         "troughStack": {
             "number": "S31",
             "type": "NC",
-            "name": "Trough, Stack"
+            "name": "Trough, Stack",
+            "keyboard": "x"
         },
         "trough1": {
             "number": "S32",
