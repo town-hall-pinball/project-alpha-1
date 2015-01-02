@@ -6,6 +6,7 @@
         "pinlib.modules.score",
         "pinlib.modules.server",
         "pinlib.modules.service",
+        "pinlib.modules.volume",
         "pingame.attract",
         "pingame.game"
     ],
