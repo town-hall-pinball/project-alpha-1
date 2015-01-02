@@ -195,7 +195,8 @@
         },
         "tiltSlam": {
             "number": "S21",
-            "name": "Tilt, Slam"
+            "name": "Tilt, Slam",
+            "keyboard": "c"
         },
         "troughEnterCenter": {
             "number": "S37",
