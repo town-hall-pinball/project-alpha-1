@@ -191,12 +191,13 @@
         },
         "tilt": {
             "number": "S14",
-            "name": "Tilt, Plumb"
+            "name": "Tilt, Plumb",
+            "keyboard": "y"
         },
         "tiltSlam": {
             "number": "S21",
             "name": "Tilt, Slam",
-            "keyboard": "c"
+            "keyboard": "t"
         },
         "troughEnterCenter": {
             "number": "S37",
