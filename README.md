@@ -86,6 +86,7 @@ Only a simple attract mode is available at the moment.
 * ``[``: Left flipper
 * ``]``: Right flipper
 * ``s``: Start Button
+* ``x``: Buy Extra Ball
 
 Operator service mode:
 
@@ -112,7 +113,7 @@ Activate the Easter Egg in attract mode with the following:
 
 * Left Flipper x 3
 * Right Flipper x 3
-* Start Button
+* Buy Extra Ball
 
 ## Contributing
 

@@ -54,7 +54,8 @@
         },
         "extraBallBuy": {
             "number": "S23",
-            "name": "Buy Extra Ball"
+            "name": "Buy Extra Ball",
+            "keyboard": "x"
         },
         "flipperLeft": {
             "number": "SF4",
