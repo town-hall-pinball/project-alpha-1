@@ -10,8 +10,12 @@
         "pingame.game"
     ],
     "modes": [{
+        "name": "pinlib.modules.coin.CoinMode",
+        "start": ["splash_stopped"]
+    },{
         "name": "pinlib.modules.splash.SplashMode",
-        "start": ["reset"]
+        "start": ["reset"],
+        "duration": 0.5
     },{
         "name": "pingame.attract.AttractMode",
         "start": ["splash_stopped"],
