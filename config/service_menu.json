@@ -43,15 +43,21 @@
         "menu": [{
             "name": "Switches",
             "icon": "service/switches",
-            "event": "request-switch-test"
+            "event": "request_switch_test"
         },{
             "name": "Coils",
             "icon": "service/coils",
-            "event": "request-coil-test"
+            "event": "request_coil_test"
         },{
-            "name": "Lights",
+            "name": "Lamps",
             "icon": "service/lamps",
-            "event": "request-light-test"
+            "menu": [{
+                "name": "All",
+                "event": "request_all_lamp_test"
+            },{
+                "name": "Individual",
+                "event": "request_lamp_test"
+            }]
         }]
     },{
         "name": "Audits",
@@ -104,11 +110,11 @@
             "icon": "service/clear",
             "menu": [{
                 "name": "Credits",
-                "event": "credits-clear",
+                "event": "request_credits_clear",
                 "confirm": true
             },{
                 "name": "Audits",
-                "event": "audits-clear",
+                "event": "request_audits_clear",
                 "confirm": true
             }]
         },{
