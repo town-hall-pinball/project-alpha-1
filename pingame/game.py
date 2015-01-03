@@ -47,9 +47,12 @@ class GameMode(mode.Base):
     def start(self):
         p.sounds.play_music("credits", start_time=2.4)
         p.events.on("next_player", self.next_player)
+        print "**** enable?"
+        self.machine.flippers().enable()
 
     def stop(self):
         p.events.off("next_player", self.next_player)
+        self.machine.flippers().disable()
 
     def next_player(self):
         p.machine.coil("trough").pulse()
