@@ -19,7 +19,8 @@
     "PRSwitches": {
         "ballLaunch": {
             "number": "S11",
-            "name": "Ball Launch"
+            "name": "Ball Launch",
+            "keyboard":"l"
         },
         "coinDoorClosed": {
             "number": "S22",
@@ -170,7 +171,8 @@
         },
         "shooterLane": {
             "number": "S15",
-            "name": "Shooter Lane"
+            "name": "Shooter Lane",
+            "keyboard": "r"
         },
         "slingshotLeft": {
             "number": "S27",
