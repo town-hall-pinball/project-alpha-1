@@ -47,7 +47,6 @@ class GameMode(mode.Base):
     def start(self):
         p.sounds.play_music("credits", start_time=2.4)
         p.events.on("next_player", self.next_player)
-        print "**** enable?"
         self.machine.flippers().enable()
 
     def stop(self):
