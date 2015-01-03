@@ -35,7 +35,7 @@ class BackgroundMode(mode.Base):
         super(BackgroundMode, self).__init__(options, priority=100)
 
     def start(self):
-        map(lambda lamp: lamp.enable(), p.machine.lamps("gi"))
+        p.machine.lamps("gi", lambda lamp: lamp.enable())
 
 
 class GameMode(mode.Base):

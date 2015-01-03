@@ -18,684 +18,684 @@
 
     "PRSwitches": {
         "ballLaunch": {
-            "number": "S11",
-            "name": "Ball Launch",
+            "id": "S11",
+            "label": "Ball Launch",
             "keyboard":"l"
         },
         "coinDoorClosed": {
-            "number": "S22",
-            "name": "Coin Door Closed"
+            "id": "S22",
+            "label": "Coin Door Closed"
         },
         "coinLeft": {
-            "number": "SD1",
-            "name": "Coin Chute, Left",
+            "id": "SD1",
+            "label": "Coin Chute, Left",
             "keyboard": "1"
         },
         "coinCenter": {
-            "number": "SD2",
-            "name": "Coin Chute, Center",
+            "id": "SD2",
+            "label": "Coin Chute, Center",
             "keyboard": "2"
         },
         "coinRight": {
-            "number": "SD3",
-            "name": "Coin Chute, Right",
+            "id": "SD3",
+            "label": "Coin Chute, Right",
             "keyboard": "3"
         },
         "coinFourth": {
-            "number": "SD4",
-            "name": "Coin Chute, Fourth"
+            "id": "SD4",
+            "label": "Coin Chute, Fourth"
         },
         "dropTarget": {
-            "number": "S51",
-            "name": "Drop Target"
+            "id": "S51",
+            "label": "Drop Target"
         },
         "eject": {
-            "number": "S61",
-            "name": "Eject",
+            "id": "S61",
+            "label": "Eject",
             "keyboard":"j"
         },
         "extraBallBuy": {
-            "number": "S23",
-            "name": "Buy Extra Ball",
+            "id": "S23",
+            "label": "Buy Extra Ball",
             "keyboard": "x"
         },
         "flipperLeft": {
-            "number": "SF4",
-            "name": "Flipper, Lower Left",
+            "id": "SF4",
+            "label": "Flipper, Lower Left",
             "keyboard": "["
         },
         "flipperRight": {
-            "number": "SF2",
-            "name": "Flipper, Lower Right",
+            "id": "SF2",
+            "label": "Flipper, Lower Right",
             "keyboard": "]"
         },
         "flipperRightUp": {
-            "number": "SF6",
-            "name": "Flipper, Upper Right"
+            "id": "SF6",
+            "label": "Flipper, Upper Right"
         },
         "kickback": {
-            "number": "S25",
-            "name": "Kickback"
+            "id": "S25",
+            "label": "Kickback"
         },
         "kickbackLightBottom": {
-            "number": "S56",
-            "name": "Kickback, Light Bottom"
+            "id": "S56",
+            "label": "Kickback, Light Bottom"
         },
         "kickbackLightTop": {
-            "number": "S57",
-            "name": "Kickback, Light Top"
+            "id": "S57",
+            "label": "Kickback, Light Top"
         },
         "loopInner": {
-            "number": "S55",
-            "name": "Loop, Inner"
+            "id": "S55",
+            "label": "Loop, Inner"
         },
         "loopLeft": {
-            "number": "S62",
-            "name": "Loop, Left"
+            "id": "S62",
+            "label": "Loop, Left"
         },
         "loopRight": {
-            "number": "S58",
-            "name": "Loop, Right"
+            "id": "S58",
+            "label": "Loop, Right"
         },
         "magnetLeft": {
-            "number": "S46",
+            "id": "S46",
             "type": "NC",
-            "name": "Magnet, Left"
+            "label": "Magnet, Left"
         },
         "magnetCenter": {
-            "number": "S47",
+            "id": "S47",
             "type": "NC",
-            "name": "Magnet, Center"
+            "label": "Magnet, Center"
         },
         "magnetRight": {
-            "number": "S48",
+            "id": "S48",
             "type": "NC",
-            "name": "Magnet, Right"
+            "label": "Magnet, Right"
         },
         "outlaneRight": {
-            "number": "S17",
-            "name": "Outlane, Right"
+            "id": "S17",
+            "label": "Outlane, Right"
         },
         "popperRight1": {
-            "number": "S41",
+            "id": "S41",
             "type": "NC",
-            "name": "Popper, Right 1"
+            "label": "Popper, Right 1"
         },
         "popperRight2": {
-            "number": "S42",
+            "id": "S42",
             "type": "NC",
-            "name": "Popper, Right 2"
+            "label": "Popper, Right 2"
         },
         "rampLeftEnter": {
-            "number": "S63",
-            "name": "Ramp, Left Enter"
+            "id": "S63",
+            "label": "Ramp, Left Enter"
         },
         "rampLeftMiddle": {
-            "number": "S64",
-            "name": "Ramp, Left Middle"
+            "id": "S64",
+            "label": "Ramp, Left Middle"
         },
         "rampRightEnter": {
-            "number": "S66",
-            "name": "Ramp, Right Enter"
+            "id": "S66",
+            "label": "Ramp, Right Enter"
         },
         "rampRightExit": {
-            "number": "S67",
-            "name": "Ramp, Right Exit"
+            "id": "S67",
+            "label": "Ramp, Right Exit"
         },
         "returnLeft": {
-            "number": "S26",
-            "name": "Return, Left"
+            "id": "S26",
+            "label": "Return, Left"
         },
         "returnRight": {
-            "number": "S18",
-            "name": "Return, Right"
+            "id": "S18",
+            "label": "Return, Right"
         },
         "serviceDown": {
-            "number": "SD6",
-            "name": "Service, Down",
+            "id": "SD6",
+            "label": "Service, Down",
             "keyboard": "9"
         },
         "serviceEnter": {
-            "number": "SD8",
-            "name": "Service, Enter",
+            "id": "SD8",
+            "label": "Service, Enter",
             "keyboard": "7"
         },
         "serviceExit": {
-            "number": "SD5",
-            "name": "Service, Exit",
+            "id": "SD5",
+            "label": "Service, Exit",
             "keyboard": "0"
         },
         "serviceUp": {
-            "number": "SD7",
-            "name": "Service, Up",
+            "id": "SD7",
+            "label": "Service, Up",
             "keyboard": "8"
         },
         "shooterLane": {
-            "number": "S15",
-            "name": "Shooter Lane",
+            "id": "S15",
+            "label": "Shooter Lane",
             "keyboard": "r"
         },
         "slingshotLeft": {
-            "number": "S27",
-            "name": "Slingshot, Left"
+            "id": "S27",
+            "label": "Slingshot, Left"
         },
         "slingshotRight": {
-            "number": "S28",
-            "name": "Slingshot, Right"
+            "id": "S28",
+            "label": "Slingshot, Right"
         },
         "spinner": {
-            "number": "S16",
-            "name": "Spinner",
+            "id": "S16",
+            "label": "Spinner",
             "keyboard": "q"
         },
         "startButton": {
-            "number": "S13",
-            "name": "Start Button",
+            "id": "S13",
+            "label": "Start Button",
             "keyboard": "s"
         },
         "tilt": {
-            "number": "S14",
-            "name": "Tilt, Plumb",
+            "id": "S14",
+            "label": "Tilt, Plumb",
             "keyboard": "y"
         },
         "tiltSlam": {
-            "number": "S21",
-            "name": "Tilt, Slam",
+            "id": "S21",
+            "label": "Tilt, Slam",
             "keyboard": "t"
         },
         "troughEnterCenter": {
-            "number": "S37",
-            "name": "Trough, Enter Center"
+            "id": "S37",
+            "label": "Trough, Enter Center"
         },
         "troughEnterLeft": {
-            "number": "S38",
-            "name": "Trough, Enter Left"
+            "id": "S38",
+            "label": "Trough, Enter Left"
         },
         "troughStack": {
-            "number": "S31",
+            "id": "S31",
             "type": "NC",
-            "name": "Trough, Stack",
+            "label": "Trough, Stack",
             "keyboard": "d"
         },
         "trough1": {
-            "number": "S32",
+            "id": "S32",
             "type": "NC",
-            "name": "Trough, Far Right"
+            "label": "Trough, Far Right"
         },
         "trough2": {
-            "number": "S33",
+            "id": "S33",
             "type": "NC",
-            "name": "Trough, Center Right"
+            "label": "Trough, Center Right"
         },
         "trough3": {
-            "number": "S34",
+            "id": "S34",
             "type": "NC",
-            "name": "Trough, Center Left"
+            "label": "Trough, Center Left"
         },
         "trough4": {
-            "number": "S35",
+            "id": "S35",
             "type": "NC",
-            "name": "Trough, Far Left"
+            "label": "Trough, Far Left"
         },
         "wireformLeft": {
-            "number": "S54",
-            "name": "Wireform, Left"
+            "id": "S54",
+            "label": "Wireform, Left"
         },
 
-        "sw12":  { "number": "S12", "tags": ["unused"] },
-        "sw24":  { "number": "S24", "tags": ["unused"] },
-        "sw36":  { "number": "S36", "tags": ["unused"] },
-        "sw43":  { "number": "S43", "tags": ["unused"] },
-        "sw44":  { "number": "S44", "tags": ["unused"] },
-        "sw45":  { "number": "S45", "tags": ["unused"] },
-        "sw52":  { "number": "S52", "tags": ["unused"] },
-        "sw53":  { "number": "S53", "tags": ["unused"] },
-        "sw65":  { "number": "S65", "tags": ["unused"] },
-        "sw68":  { "number": "S68", "tags": ["unused"] },
-        "sw71":  { "number": "S71", "tags": ["unused"] },
-        "sw72":  { "number": "S72", "tags": ["unused"] },
-        "sw73":  { "number": "S73", "tags": ["unused"] },
-        "sw74":  { "number": "S74", "tags": ["unused"] },
-        "sw75":  { "number": "S75", "tags": ["unused"] },
-        "sw76":  { "number": "S75", "tags": ["unused"] },
-        "sw77":  { "number": "S76", "tags": ["unused"] },
-        "sw78":  { "number": "S78", "tags": ["unused"] },
-        "sw81":  { "number": "S81", "tags": ["unused"] },
-        "sw82":  { "number": "S82", "tags": ["unused"] },
-        "sw83":  { "number": "S83", "tags": ["unused"] },
-        "sw84":  { "number": "S84", "tags": ["unused"] },
-        "sw85":  { "number": "S85", "tags": ["unused"] },
-        "sw86":  { "number": "S85", "tags": ["unused"] },
-        "sw87":  { "number": "S86", "tags": ["unused"] },
-        "sw88":  { "number": "S88", "tags": ["unused"] }
+        "sw12":  { "id": "S12", "category": "unused"  },
+        "sw24":  { "id": "S24", "category": "unused"  },
+        "sw36":  { "id": "S36", "category": "unused"  },
+        "sw43":  { "id": "S43", "category": "unused"  },
+        "sw44":  { "id": "S44", "category": "unused"  },
+        "sw45":  { "id": "S45", "category": "unused"  },
+        "sw52":  { "id": "S52", "category": "unused"  },
+        "sw53":  { "id": "S53", "category": "unused"  },
+        "sw65":  { "id": "S65", "category": "unused"  },
+        "sw68":  { "id": "S68", "category": "unused"  },
+        "sw71":  { "id": "S71", "category": "unused"  },
+        "sw72":  { "id": "S72", "category": "unused"  },
+        "sw73":  { "id": "S73", "category": "unused"  },
+        "sw74":  { "id": "S74", "category": "unused"  },
+        "sw75":  { "id": "S75", "category": "unused"  },
+        "sw76":  { "id": "S75", "category": "unused"  },
+        "sw77":  { "id": "S76", "category": "unused"  },
+        "sw78":  { "id": "S78", "category": "unused"  },
+        "sw81":  { "id": "S81", "category": "unused"  },
+        "sw82":  { "id": "S82", "category": "unused"  },
+        "sw83":  { "id": "S83", "category": "unused"  },
+        "sw84":  { "id": "S84", "category": "unused"  },
+        "sw85":  { "id": "S85", "category": "unused"  },
+        "sw86":  { "id": "S85", "category": "unused"  },
+        "sw87":  { "id": "S86", "category": "unused"  },
+        "sw88":  { "id": "S88", "category": "unused"  }
     },
 
     "PRCoils": {
         "flipperLeftMain": {
-            "number": "FLLM",
+            "id": "FLLM",
             "tags": ["flipper"]
         },
         "flipperLeftHold": {
-            "number": "FLLH",
+            "id": "FLLH",
             "tags": ["flipper"]
         },
         "flipperRightMain": {
-            "number": "FLRM",
+            "id": "FLRM",
             "tags": ["flipper"]
         },
         "flipperRightHold": {
-            "number": "FLRH",
+            "id": "FLRH",
             "tags": ["flipper"]
         },
         "flipperRightUpMain": {
-            "number": "FURM",
+            "id": "FURM",
             "tags": ["flipper"]
         },
         "flipperRightUpHold": {
-            "number": "FURH",
+            "id": "FURH",
             "tags": ["flipper"]
         },
         "autoPlunger": {
-            "number": "C02",
-            "name": "Auto Plunger"
+            "id": "C02",
+            "label": "Auto Plunger"
         },
         "dropTargetDown": {
-            "number": "C08",
-            "name": "Drop Target, Down"
+            "id": "C08",
+            "label": "Drop Target, Down"
         },
         "dropTargetUp": {
-            "number": "C12",
-            "name": "Drop Target, Up"
+            "id": "C12",
+            "label": "Drop Target, Up"
         },
         "eject": {
-            "number": "C15",
-            "name": "Eject"
+            "id": "C15",
+            "label": "Eject"
         },
         "kickback": {
-            "number": "C04",
-            "name": "Kickback"
+            "id": "C04",
+            "label": "Kickback"
         },
         "knocker": {
-            "number": "C07",
-            "name": "Knocker",
+            "id": "C07",
+            "label": "Knocker",
             "tags": ["no_search"]
         },
         "magnetCenter": {
-            "number": "C05",
-            "name": "Magnet, Center"
+            "id": "C05",
+            "label": "Magnet, Center"
         },
         "magnetLeft": {
-            "number": "C06",
-            "name": "Magnet, Left"
+            "id": "C06",
+            "label": "Magnet, Left"
         },
         "magnetRight": {
-            "number": "C03",
-            "name": "Magnet, Right"
+            "id": "C03",
+            "label": "Magnet, Right"
         },
         "popperRight": {
-            "number": "C01",
-            "name": "Popper, Right"
+            "id": "C01",
+            "label": "Popper, Right"
         },
         "skullMouth": {
-            "number": "C16",
-            "name": "Skull Mouth"
+            "id": "C16",
+            "label": "Skull Mouth"
         },
         "slingshotLeft": {
-            "number": "C11",
-            "name": "Slingshot, Left"
+            "id": "C11",
+            "label": "Slingshot, Left"
         },
         "slingshotRight": {
-            "number": "C10",
-            "name": "Slingshot, Right"
+            "id": "C10",
+            "label": "Slingshot, Right"
         },
         "trough": {
-            "number": "C14",
-            "name": "Trough"
+            "id": "C14",
+            "label": "Trough"
         },
-        "flashserAutoFire": {
-            "number": "C25",
-            "name": "Flasher, Auto Fire",
+        "flasherAutoFire": {
+            "id": "C25",
+            "label": "Flasher, Auto Fire",
             "tags": ["flasher"]
         },
         "flasherFlippeReturn": {
-            "number": "C17",
-            "name": "Flasher, Flipper Return",
+            "id": "C17",
+            "label": "Flasher, Flipper Return",
             "tags": ["flasher"]
         },
         "flasherInsertExplode": {
-            "number": "C22",
-            "name": "Flasher, Explode Insert",
+            "id": "C22",
+            "label": "Flasher, Explode Insert",
             "tags": ["flasher"]
         },
         "flasherInsertTopLeft": {
-            "number": "C26",
-            "name": "Flasher, Top Left Insert",
+            "id": "C26",
+            "label": "Flasher, Top Left Insert",
             "tags": ["flasher"]
         },
         "flasherInsertTopRight": {
-            "number": "C27",
-            "name": "Flasher, Top Right Insert",
+            "id": "C27",
+            "label": "Flasher, Top Right Insert",
             "tags": ["flasher"]
         },
         "flasherNoFear": {
-            "number": "C19",
-            "name": "Flasher, No Fear",
+            "id": "C19",
+            "label": "Flasher, No Fear",
             "tags": ["flasher"]
         },
         "flasherPopperRight": {
-            "number": "C28",
-            "name": "Flasher, Right Popper",
+            "id": "C28",
+            "label": "Flasher, Right Popper",
             "tags": ["flasher"]
         },
         "flasherLeftRamp": {
-            "number": "C23",
-            "name": "Flasher, Left Ramp",
+            "id": "C23",
+            "label": "Flasher, Left Ramp",
             "tags": ["flasher"]
         },
         "flahserRampRight": {
-            "number": "C20",
-            "name": "Flasher, Right Ramp",
+            "id": "C20",
+            "label": "Flasher, Right Ramp",
             "tags": ["flasher"]
         },
         "flasherSkull": {
-            "number": "C21",
-            "name": "flasherSkull",
+            "id": "C21",
+            "label": "flasherSkull",
             "tags": ["flasher"]
         },
         "flasherSpinner": {
-            "number": "C18",
-            "name": "Flasher, Spinner",
+            "id": "C18",
+            "label": "Flasher, Spinner",
             "tags": ["flasher"]
         },
         "flasherTopLeft": {
-            "number": "C24",
-            "name": "Flasher, Top Left",
+            "id": "C24",
+            "label": "Flasher, Top Left",
             "tags": ["flasher"]
         },
 
-        "c09": { "number": "C09", "tags": ["unused"]},
-        "c13": { "number": "C13", "tags": ["unused"]},
-        "c37": { "number": "C37", "tags": ["unused"]},
-        "c38": { "number": "C38", "tags": ["unused"]},
-        "c39": { "number": "C39", "tags": ["unused"]},
-        "c40": { "number": "C40", "tags": ["unused"]},
-        "c41": { "number": "C41", "tags": ["unused"]},
-        "c42": { "number": "C42", "tags": ["unused"]},
-        "c43": { "number": "C43", "tags": ["unused"]},
-        "c44": { "number": "C44", "tags": ["unused"]}
+        "c09": { "id": "C09", "category": "unused" },
+        "c13": { "id": "C13", "category": "unused" },
+        "c37": { "id": "C37", "category": "unused" },
+        "c38": { "id": "C38", "category": "unused" },
+        "c39": { "id": "C39", "category": "unused" },
+        "c40": { "id": "C40", "category": "unused" },
+        "c41": { "id": "C41", "category": "unused" },
+        "c42": { "id": "C42", "category": "unused" },
+        "c43": { "id": "C43", "category": "unused" },
+        "c44": { "id": "C44", "category": "unused" }
     },
 
     "PRLamps": {
         "buttonBallLaunch": {
-            "number": "L86",
-            "name": "Ball Launch Button"
+            "id": "L86",
+            "label": "Ball Launch Button"
         },
         "buttonBuyIn": {
-            "number": "L87",
-            "name": "Buy-In Button"
+            "id": "L87",
+            "label": "Buy-In Button"
         },
         "buttonStart": {
-            "number": "L88",
-            "name": "Start Button"
+            "id": "L88",
+            "label": "Start Button"
         },
         "circle1": {
-            "number": "L26",
-            "name": "Circle, 1 O'Clock Position"
+            "id": "L26",
+            "label": "Circle, 1 O'Clock Position"
         },
         "circle2": {
-            "number": "L25",
-            "name": "Circle, 2 O'Clock Position"
+            "id": "L25",
+            "label": "Circle, 2 O'Clock Position"
         },
         "circle3": {
-            "number": "L24",
-            "name": "Circle, 3 O'Clock Position"
+            "id": "L24",
+            "label": "Circle, 3 O'Clock Position"
         },
         "circle4": {
-            "number": "L23",
-            "name": "Circle, 4 O'Clock Position"
+            "id": "L23",
+            "label": "Circle, 4 O'Clock Position"
         },
         "circle5": {
-            "number": "L22",
-            "name": "Circle, 5 O'Clock Position"
+            "id": "L22",
+            "label": "Circle, 5 O'Clock Position"
         },
         "circle6": {
-            "number": "L11",
-            "name": "Circle, 6 O'Clock Position"
+            "id": "L11",
+            "label": "Circle, 6 O'Clock Position"
         },
         "circle7": {
-            "number": "L12",
-            "name": "Circle, 7 O'Clock Position"
+            "id": "L12",
+            "label": "Circle, 7 O'Clock Position"
         },
         "circle8": {
-            "number": "L13",
-            "name": "Circle, 8 O'Clock Position"
+            "id": "L13",
+            "label": "Circle, 8 O'Clock Position"
         },
         "circle9": {
-            "number": "L14",
-            "name": "Circle, 9 O'Clock Position"
+            "id": "L14",
+            "label": "Circle, 9 O'Clock Position"
         },
         "circle10": {
-            "number": "L15",
-            "name": "Circle, 10 O'Clock Position"
+            "id": "L15",
+            "label": "Circle, 10 O'Clock Position"
         },
         "circle11": {
-            "number": "L16",
-            "name": "Circle, 11 O'Clock Position"
+            "id": "L16",
+            "label": "Circle, 11 O'Clock Position"
         },
         "circle12": {
-            "number": "L18",
-            "name": "Circle, 12 O'Clock Position"
+            "id": "L18",
+            "label": "Circle, 12 O'Clock Position"
         },
         "circleCenter": {
-            "number": "L21",
-            "name": "Circle, Center Position"
+            "id": "L21",
+            "label": "Circle, Center Position"
         },
         "inlaneLeft": {
-            "number": "L66",
-            "name": "Left Inlane"
+            "id": "L66",
+            "label": "Left Inlane"
         },
         "inlaneRight": {
-            "number": "L73",
-            "name": "Right Inlane"
+            "id": "L73",
+            "label": "Right Inlane"
         },
         "kickbackArrow": {
-            "number": "L68",
-            "name": "Kickback Arrow"
+            "id": "L68",
+            "label": "Kickback Arrow"
         },
         "midPlayfieldCenter": {
-            "number": "L28",
-            "name": "Mid Playfield, Center"
+            "id": "L28",
+            "label": "Mid Playfield, Center"
         },
         "midPlayfieldFarLeft": {
-            "number": "L48",
-            "name": "Mid Playfield, Far Left (2 lamps)"
+            "id": "L48",
+            "label": "Mid Playfield, Far Left (2 lamps)"
         },
         "midPlayfieldFarRight": {
-            "number": "L37",
-            "name": "Mid Playfield, Far Right (2 lamps)"
+            "id": "L37",
+            "label": "Mid Playfield, Far Right (2 lamps)"
         },
         "midPlayfieldLeft": {
-            "number": "L17",
-            "name": "Mid Playfield, Left"
+            "id": "L17",
+            "label": "Mid Playfield, Left"
         },
         "midPlayfieldRight": {
-            "number": "L27",
-            "name": "Mid Playfield, Right"
+            "id": "L27",
+            "label": "Mid Playfield, Right"
         },
         "orbitLeftArrow1": {
-            "number": "L57",
-            "name": "Left Orbit, 1st Arrow"
+            "id": "L57",
+            "label": "Left Orbit, 1st Arrow"
         },
         "orbitLeftArrow2": {
-            "number": "L51",
-            "name": "Left Orbit, 2nd Arrow"
+            "id": "L51",
+            "label": "Left Orbit, 2nd Arrow"
         },
         "orbitLeftLamp3": {
-            "number": "L53",
-            "name": "Left Orbit, 3rd Lamp"
+            "id": "L53",
+            "label": "Left Orbit, 3rd Lamp"
         },
         "orbitLeftSign": {
-            "number": "L38",
-            "name": "Left Orbit, Sign"
+            "id": "L38",
+            "label": "Left Orbit, Sign"
         },
         "orbitRightArrow1": {
-            "number": "L77",
-            "name": "Right Orbit, 1st Arrow"
+            "id": "L77",
+            "label": "Right Orbit, 1st Arrow"
         },
         "orbitRightArrow2": {
-            "number": "L78",
-            "name": "Right Orbit, 2nd Arrow"
+            "id": "L78",
+            "label": "Right Orbit, 2nd Arrow"
         },
         "outlaneLeft": {
-            "number": "L67",
-            "name": "Left Outlane"
+            "id": "L67",
+            "label": "Left Outlane"
         },
         "outlaneRight": {
-            "number": "L74",
-            "name": "Right Outlane"
+            "id": "L74",
+            "label": "Right Outlane"
         },
         "rampLeftArrow": {
-            "number": "L56",
-            "name": "Left Ramp, Arrow"
+            "id": "L56",
+            "label": "Left Ramp, Arrow"
         },
         "rampLeftCircle1": {
-            "number": "L55",
-            "name": "Left Ramp, 1st Circle"
+            "id": "L55",
+            "label": "Left Ramp, 1st Circle"
         },
         "rampLeftCircle2": {
-            "number": "L52",
-            "name": "Left Ramp, 2nd Circle"
+            "id": "L52",
+            "label": "Left Ramp, 2nd Circle"
         },
         "rampLeftCircle3": {
-            "number": "L54",
-            "name": "Left Ramp, 3rd Circle"
+            "id": "L54",
+            "label": "Left Ramp, 3rd Circle"
         },
         "rampLeftSignBottom": {
-            "number": "L83",
-            "name": "Left Ramp, Sign Bottom"
+            "id": "L83",
+            "label": "Left Ramp, Sign Bottom"
         },
         "rampLeftSignTop": {
-            "number": "L84",
-            "name": "Left Ramp, Sign Top"
+            "id": "L84",
+            "label": "Left Ramp, Sign Top"
         },
         "rampRightArrow1": {
-            "number": "L75",
-            "name": "Right Ramp, 1st Arrow"
+            "id": "L75",
+            "label": "Right Ramp, 1st Arrow"
         },
         "rightRampArrow2": {
-            "number": "L76",
-            "name": "Right Ramp, 2nd Arrow"
+            "id": "L76",
+            "label": "Right Ramp, 2nd Arrow"
         },
         "rampRightCircle1": {
-            "number": "L63",
-            "name": "Right Ramp, 1st Circle"
+            "id": "L63",
+            "label": "Right Ramp, 1st Circle"
         },
         "rampRightCircle2": {
-            "number": "L64",
-            "name": "Right Ramp, 2nd Circle"
+            "id": "L64",
+            "label": "Right Ramp, 2nd Circle"
         },
         "rampRightCircle3": {
-            "number": "L65",
-            "name": "Right Ramp, 3rd Circle"
+            "id": "L65",
+            "label": "Right Ramp, 3rd Circle"
         },
         "scoopDropArrow1": {
-            "number": "L45",
-            "name": "Drop Target Scoop, 1st Arrow"
+            "id": "L45",
+            "label": "Drop Target Scoop, 1st Arrow"
         },
         "scoopDropArrow2": {
-            "number": "L46",
-            "name": "Drop Target Scoop, 2nd Arrow"
+            "id": "L46",
+            "label": "Drop Target Scoop, 2nd Arrow"
         },
         "scoopDropArrow3": {
-            "number": "L47",
-            "name": "Drop Target Scoop, 3rd Arrow"
+            "id": "L47",
+            "label": "Drop Target Scoop, 3rd Arrow"
         },
         "scoopSkullArrow1": {
-            "number": "L31",
-            "name": "Skull Scoop, 1st Arrow"
+            "id": "L31",
+            "label": "Skull Scoop, 1st Arrow"
         },
         "scoopSkullArrow2": {
-            "number": "L33",
-            "name": "Skull Scoop, 2nd Arrow"
+            "id": "L33",
+            "label": "Skull Scoop, 2nd Arrow"
         },
         "scoopSkullArrow3": {
-            "number": "L34",
-            "name": "Skull Scoop, 3rd Arrow"
+            "id": "L34",
+            "label": "Skull Scoop, 3rd Arrow"
         },
         "scoopSkullArrow4": {
-            "number": "L36",
-            "name": "Skull Scoop, 4th Arrow"
+            "id": "L36",
+            "label": "Skull Scoop, 4th Arrow"
         },
         "scoopSkullCircle": {
-            "number": "L35",
-            "name": "Skull Scoop, Circle"
+            "id": "L35",
+            "label": "Skull Scoop, Circle"
         },
         "shootAgain": {
-            "number": "L81",
-            "name": "Shoot Again"
+            "id": "L81",
+            "label": "Shoot Again"
         },
         "skullEyeLeft": {
-            "number": "L82",
-            "name": "Skull, Left Eye"
+            "id": "L82",
+            "label": "Skull, Left Eye"
         },
         "skullEyeRight": {
-            "number": "L85",
-            "name": "Skull, Right Eye"
+            "id": "L85",
+            "label": "Skull, Right Eye"
         },
         "standupArrowBottom": {
-            "number": "L72",
-            "name": "Standup Target Arrow, Bottom"
+            "id": "L72",
+            "label": "Standup Target Arrow, Bottom"
         },
         "standupArrowTop": {
-            "number": "L71",
-            "name": "Standup Target Arrow, Top"
+            "id": "L71",
+            "label": "Standup Target Arrow, Top"
         },
         "uTurnLeftArrow": {
-            "number": "L41",
-            "name": "U-Turn, Left Arrow"
+            "id": "L41",
+            "label": "U-Turn, Left Arrow"
         },
         "uTurnLeftCircle1": {
-            "number": "L42",
-            "name": "U-Turn, Left 1st Circle"
+            "id": "L42",
+            "label": "U-Turn, Left 1st Circle"
         },
         "uTurnLeftCircle2": {
-            "number": "L43",
-            "name": "U-Turn, Left 2nd Circle"
+            "id": "L43",
+            "label": "U-Turn, Left 2nd Circle"
         },
         "uTurnLeftCircle3": {
-            "number": "L44",
-            "name": "U-Turn, Left 3rd Circle"
+            "id": "L44",
+            "label": "U-Turn, Left 3rd Circle"
         },
         "uTurnRightArrow": {
-            "number": "L32",
-            "name": "U-Turn, Right Arrow"
+            "id": "L32",
+            "label": "U-Turn, Right Arrow"
         },
 
-        "l58": { "number": "L58", "tags": ["unused"]},
+        "l58": { "id": "L58", "category": "unused" },
 
         "gi01": {
-            "number": "G01",
-            "name": "Gen Illum 1",
+            "id": "G01",
+            "label": "Gen Illum 1",
             "tags": ["gi"]
         },
         "gi02": {
-            "number": "G02",
-            "name": "Gen Illum 2",
+            "id": "G02",
+            "label": "Gen Illum 2",
             "tags": ["gi"]
         },
         "gi03": {
-            "number": "G03",
-            "name": "Gen Illum 3",
+            "id": "G03",
+            "label": "Gen Illum 3",
             "tags": ["gi"]
         },
         "gi04": {
-            "number": "G04",
-            "name": "Gen Illum 4",
+            "id": "G04",
+            "label": "Gen Illum 4",
             "tags": ["gi"]
         },
         "gi05": {
-            "number": "G05",
-            "name": "Gen Illum 5",
+            "id": "G05",
+            "label": "Gen Illum 5",
             "tags": ["gi"]
         }
     }

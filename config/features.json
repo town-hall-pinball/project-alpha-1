@@ -24,5 +24,19 @@
         "name": "pingame.attract.AttractMode",
         "start": ["splash_stopped", "game_over", "service_stopped"],
         "stop":  ["game_reset", "service_started"]
+    },{
+        "name": "pinlib.modules.search.SearchMode",
+        "start": ["reset"],
+        "order": [
+            "autoPlunger",
+            "dropTargetDown",
+            "dropTargetUp",
+            "eject",
+            "kickback",
+            "popperRight",
+            "skullMouth",
+            "slingshotLeft",
+            "slingshotRight"
+        ]
     }]
 }
