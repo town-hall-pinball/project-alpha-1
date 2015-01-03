@@ -51,7 +51,8 @@
         },
         "eject": {
             "number": "S61",
-            "name": "Eject"
+            "name": "Eject",
+            "keyboard":"j"
         },
         "extraBallBuy": {
             "number": "S23",
