@@ -184,7 +184,8 @@
         },
         "spinner": {
             "number": "S16",
-            "name": "Spinner"
+            "name": "Spinner",
+            "keyboard": "q"
         },
         "startButton": {
             "number": "S13",

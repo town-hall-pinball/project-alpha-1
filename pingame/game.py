@@ -25,7 +25,7 @@ def init():
     p.load_mode(BackgroundMode, { "start": ["reset"] })
     p.load_mode(GameMode,       {
         "start": ["game_reset"],
-        "stop":  ["game_over"] 
+        "stop":  ["game_over"]
     })
 
 class BackgroundMode(mode.Base):
@@ -56,3 +56,6 @@ class GameMode(mode.Base):
 
     def sw_troughStack_active(self, sw=None):
         p.game.next_player()
+
+    def sw_spinner_active(self, sw=None):
+        p.game.player.award(10)
