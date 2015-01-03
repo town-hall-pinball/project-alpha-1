@@ -58,6 +58,16 @@
                 "name": "Individual",
                 "event": "request_lamp_test"
             }]
+        },{
+            "name": "Flashers",
+            "icon": "service/flashers",
+            "menu": [{
+                "name": "All",
+                "event": "request_all_flasher_test"
+            },{
+                "name": "Individual",
+                "event": "request_flasher_test"
+            }]
         }]
     },{
         "name": "Audits",
