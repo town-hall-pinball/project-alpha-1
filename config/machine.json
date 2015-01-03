@@ -242,52 +242,58 @@
             "name": "Wireform, Left"
         },
 
-        "sw12":  { "number": "S12", "unused": true },
-        "sw24":  { "number": "S24", "unused": true },
-        "sw36":  { "number": "S36", "unused": true },
-        "sw43":  { "number": "S43", "unused": true },
-        "sw44":  { "number": "S44", "unused": true },
-        "sw45":  { "number": "S45", "unused": true },
-        "sw52":  { "number": "S52", "unused": true },
-        "sw53":  { "number": "S53", "unused": true },
-        "sw65":  { "number": "S65", "unused": true },
-        "sw68":  { "number": "S68", "unused": true },
-        "sw71":  { "number": "S71", "unused": true },
-        "sw72":  { "number": "S72", "unused": true },
-        "sw73":  { "number": "S73", "unused": true },
-        "sw74":  { "number": "S74", "unused": true },
-        "sw75":  { "number": "S75", "unused": true },
-        "sw76":  { "number": "S75", "unused": true },
-        "sw77":  { "number": "S76", "unused": true },
-        "sw78":  { "number": "S78", "unused": true },
-        "sw81":  { "number": "S81", "unused": true },
-        "sw82":  { "number": "S82", "unused": true },
-        "sw83":  { "number": "S83", "unused": true },
-        "sw84":  { "number": "S84", "unused": true },
-        "sw85":  { "number": "S85", "unused": true },
-        "sw86":  { "number": "S85", "unused": true },
-        "sw87":  { "number": "S86", "unused": true },
-        "sw88":  { "number": "S88", "unused": true }
+        "sw12":  { "number": "S12", "tags": ["unused"] },
+        "sw24":  { "number": "S24", "tags": ["unused"] },
+        "sw36":  { "number": "S36", "tags": ["unused"] },
+        "sw43":  { "number": "S43", "tags": ["unused"] },
+        "sw44":  { "number": "S44", "tags": ["unused"] },
+        "sw45":  { "number": "S45", "tags": ["unused"] },
+        "sw52":  { "number": "S52", "tags": ["unused"] },
+        "sw53":  { "number": "S53", "tags": ["unused"] },
+        "sw65":  { "number": "S65", "tags": ["unused"] },
+        "sw68":  { "number": "S68", "tags": ["unused"] },
+        "sw71":  { "number": "S71", "tags": ["unused"] },
+        "sw72":  { "number": "S72", "tags": ["unused"] },
+        "sw73":  { "number": "S73", "tags": ["unused"] },
+        "sw74":  { "number": "S74", "tags": ["unused"] },
+        "sw75":  { "number": "S75", "tags": ["unused"] },
+        "sw76":  { "number": "S75", "tags": ["unused"] },
+        "sw77":  { "number": "S76", "tags": ["unused"] },
+        "sw78":  { "number": "S78", "tags": ["unused"] },
+        "sw81":  { "number": "S81", "tags": ["unused"] },
+        "sw82":  { "number": "S82", "tags": ["unused"] },
+        "sw83":  { "number": "S83", "tags": ["unused"] },
+        "sw84":  { "number": "S84", "tags": ["unused"] },
+        "sw85":  { "number": "S85", "tags": ["unused"] },
+        "sw86":  { "number": "S85", "tags": ["unused"] },
+        "sw87":  { "number": "S86", "tags": ["unused"] },
+        "sw88":  { "number": "S88", "tags": ["unused"] }
     },
 
     "PRCoils": {
         "flipperLeftMain": {
-            "number": "FLLM"
+            "number": "FLLM",
+            "tags": ["flipper"]
         },
         "flipperLeftHold": {
-            "number": "FLLH"
+            "number": "FLLH",
+            "tags": ["flipper"]
         },
         "flipperRightMain": {
-            "number": "FLRM"
+            "number": "FLRM",
+            "tags": ["flipper"]
         },
         "flipperRightHold": {
-            "number": "FLRH"
+            "number": "FLRH",
+            "tags": ["flipper"]
         },
         "flipperRightUpMain": {
-            "number": "FURM"
+            "number": "FURM",
+            "tags": ["flipper"]
         },
         "flipperRightUpHold": {
-            "number": "FURH"
+            "number": "FURH",
+            "tags": ["flipper"]
         },
         "autoPlunger": {
             "number": "C02",
@@ -311,7 +317,8 @@
         },
         "knocker": {
             "number": "C07",
-            "name": "Knocker"
+            "name": "Knocker",
+            "tags": ["no_search"]
         },
         "magnetCenter": {
             "number": "C05",
@@ -345,66 +352,77 @@
             "number": "C14",
             "name": "Trough"
         },
-
         "flashserAutoFire": {
             "number": "C25",
-            "name": "Flasher, Auto Fire"
+            "name": "Flasher, Auto Fire",
+            "tags": ["flasher"]
         },
         "flasherFlippeReturn": {
             "number": "C17",
-            "name": "Flasher, Flipper Return"
+            "name": "Flasher, Flipper Return",
+            "tags": ["flasher"]
         },
         "flasherInsertExplode": {
             "number": "C22",
-            "name": "Flasher, Explode Insert"
+            "name": "Flasher, Explode Insert",
+            "tags": ["flasher"]
         },
         "flasherInsertTopLeft": {
             "number": "C26",
-            "name": "Flasher, Top Left Insert"
+            "name": "Flasher, Top Left Insert",
+            "tags": ["flasher"]
         },
         "flasherInsertTopRight": {
             "number": "C27",
-            "name": "Flasher, Top Right Insert"
+            "name": "Flasher, Top Right Insert",
+            "tags": ["flasher"]
         },
         "flasherNoFear": {
             "number": "C19",
-            "name": "Flasher, No Fear"
+            "name": "Flasher, No Fear",
+            "tags": ["flasher"]
         },
         "flasherPopperRight": {
             "number": "C28",
-            "name": "Flasher, Right Popper"
+            "name": "Flasher, Right Popper",
+            "tags": ["flasher"]
         },
         "flasherLeftRamp": {
             "number": "C23",
-            "name": "Flasher, Left Ramp"
+            "name": "Flasher, Left Ramp",
+            "tags": ["flasher"]
         },
         "flahserRampRight": {
             "number": "C20",
-            "name": "Flasher, Right Ramp"
+            "name": "Flasher, Right Ramp",
+            "tags": ["flasher"]
         },
         "flasherSkull": {
             "number": "C21",
-            "name": "flasherSkull"
+            "name": "flasherSkull",
+            "tags": ["flasher"]
         },
         "flasherSpinner": {
             "number": "C18",
-            "name": "Flasher, Spinner"
+            "name": "Flasher, Spinner",
+            "tags": ["flasher"]
         },
         "flasherTopLeft": {
             "number": "C24",
-            "name": "Flasher, Top Left"
+            "name": "Flasher, Top Left",
+            "tags": ["flasher"]
         },
 
-        "c09": { "number": "C09", "unused": true},
-        "c13": { "number": "C13", "unused": true},
-        "c37": { "number": "C37", "unused": true},
-        "c38": { "number": "C38", "unused": true},
-        "c39": { "number": "C39", "unused": true},
-        "c40": { "number": "C40", "unused": true},
-        "c41": { "number": "C41", "unused": true},
-        "c42": { "number": "C42", "unused": true},
-        "c43": { "number": "C43", "unused": true},
-        "c44": { "number": "C44", "unused": true}
+        "c09": { "number": "C09", "tags": ["unused"]},
+        "c13": { "number": "C13", "tags": ["unused"]},
+        "c37": { "number": "C37", "tags": ["unused"]},
+        "c38": { "number": "C38", "tags": ["unused"]},
+        "c39": { "number": "C39", "tags": ["unused"]},
+        "c40": { "number": "C40", "tags": ["unused"]},
+        "c41": { "number": "C41", "tags": ["unused"]},
+        "c42": { "number": "C42", "tags": ["unused"]},
+        "c43": { "number": "C43", "tags": ["unused"]},
+        "c44": { "number": "C44", "tags": ["unused"]}
     },
 
     "PRLamps": {
@@ -653,7 +671,7 @@
             "name": "U-Turn, Right Arrow"
         },
 
-        "l58": { "number": "L58", "unused": true},
+        "l58": { "number": "L58", "tags": ["unused"]},
 
         "gi01": {
             "number": "G01",
