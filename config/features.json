@@ -10,6 +10,7 @@
         "pinlib.modules.tilt",
         "pinlib.modules.launch",
         "pinlib.modules.search",
+        "pinlib.modules.skull",
         "pingame.attract",
         "pingame.game"
     ],
