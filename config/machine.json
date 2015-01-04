@@ -205,12 +205,14 @@
         },
         "troughEnterCenter": {
             "id": "S37",
+            "type": "NC",
             "label": "Trough, Enter Center",
             "note":"This is the skull",
             "keyboard":"a"
         },
         "troughEnterLeft": {
             "id": "S38",
+            "type": "NC",
             "label": "Trough, Enter Left",
             "note": "behind drop target"
         },
