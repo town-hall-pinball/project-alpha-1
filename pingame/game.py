@@ -40,6 +40,8 @@ class BackgroundMode(mode.Base):
 
 class GameMode(mode.Base):
 
+    dropTarget = "up"
+
     def __init__(self, options):
         options["id"] = options.get("id", "game")
         super(GameMode, self).__init__(options, priority=110)
@@ -55,13 +57,47 @@ class GameMode(mode.Base):
 
     def next_player(self):
         p.machine.coil("trough").pulse()
+        self.lowerDropTarget(40)
 
-    def sw_troughStack_active(self, sw=None):
+    def raiseDropTarget(self):
+        if self.dropTarget == "down":
+            p.machine.coil("dropTargetUp").pulse()
+
+    def lowerDropTarget(self, delay=0):
+        if self.dropTarget == "up":
+            p.machine.coil("dropTargetDown").future_pulse(timestamp=delay)
+
+    def sw_trough1_active_for_2s(self, sw=None):
         p.game.next_player()
 
     def sw_spinner_active(self, sw=None):
         p.game.player.award(10)
 
+    def sw_popperRight1_active_for_2s(self, sw=None):
+        p.machine.coil("popperRight").pulse()
+
     def sw_eject_active_for_2s(self, sw=None):
-        p.game.player.award(100)
+        p.game.player.award(250)
         p.machine.coil("eject").pulse()
+
+    def sw_magnetLeft_active(self, sw=None):
+        p.machine.coil("magnetLeft").pulse(30)
+
+    """
+    def sw_magnetCenter_active_for(self, sw=None):
+        p.machine.coil("magnetCenter").pulse(30)
+    """
+
+    def sw_magnetRight_active(self, sw=None):
+        p.machine.coil("magnetRight").pulse(30)
+
+    def sw_kickback_active(self, sw=None):
+        p.machine.coil("kickback").pulse()
+
+    def sw_dropTarget_active(self, sw=None):
+        p.game.player.award(500)
+        self.lowerDropTarget()
+
+    def sw_troughEnterLeft_active(self, sw=None):
+        p.game.player.award(1000)
+        self.raiseDropTarget()
