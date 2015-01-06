@@ -207,7 +207,7 @@
             "id": "S37",
             "type": "NC",
             "label": "Trough, Enter Center",
-            "note":"This is the skull",
+            "note": "This is the skull",
             "keyboard":"a"
         },
         "troughEnterLeft": {
@@ -219,13 +219,13 @@
         "troughStack": {
             "id": "S31",
             "type": "NC",
-            "label": "Trough, Stack",
-            "keyboard": "d"
+            "label": "Trough, Stack"
         },
         "trough1": {
             "id": "S32",
             "type": "NC",
-            "label": "Trough, Far Right"
+            "label": "Trough, Far Right",
+            "keyboard": "d"
         },
         "trough2": {
             "id": "S33",

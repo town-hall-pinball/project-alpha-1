@@ -65,7 +65,7 @@ class GameMode(mode.Base):
 
     def lowerDropTarget(self, delay=0):
         if self.dropTarget == "up":
-            p.machine.coil("dropTargetDown").future_pulse(timestamp=delay)
+            p.machine.coil("dropTargetDown").pulse(delay=delay)
 
     def sw_trough1_active_for_2s(self, sw=None):
         p.game.next_player()
