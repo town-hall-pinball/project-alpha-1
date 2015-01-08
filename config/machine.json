@@ -47,7 +47,8 @@
         },
         "dropTarget": {
             "id": "S51",
-            "label": "Drop Target"
+            "label": "Drop Target",
+            "keyboard": "v"
         },
         "eject": {
             "id": "S61",
@@ -119,7 +120,8 @@
         "popperRight1": {
             "id": "S41",
             "type": "NC",
-            "label": "Popper, Right 1"
+            "label": "Popper, Right 1",
+            "keyboard": "p"
         },
         "popperRight2": {
             "id": "S42",
@@ -214,7 +216,8 @@
             "id": "S38",
             "type": "NC",
             "label": "Trough, Enter Left",
-            "note": "behind drop target"
+            "note": "behind drop target",
+            "keyboard": ","
         },
         "troughStack": {
             "id": "S31",
@@ -359,62 +362,62 @@
         },
         "flasherAutoFire": {
             "id": "C25",
-            "label": "Flasher, Auto Fire",
+            "label": "Auto Fire",
             "tags": ["flasher"]
         },
         "flasherFlippeReturn": {
             "id": "C17",
-            "label": "Flasher, Flipper Return",
+            "label": "Flipper Return",
             "tags": ["flasher"]
         },
         "flasherInsertExplode": {
             "id": "C22",
-            "label": "Flasher, Explode Insert",
+            "label": "Insert, Explode",
             "tags": ["flasher"]
         },
         "flasherInsertTopLeft": {
             "id": "C26",
-            "label": "Flasher, Top Left Insert",
+            "label": "Insert, Top Left",
             "tags": ["flasher"]
         },
         "flasherInsertTopRight": {
             "id": "C27",
-            "label": "Flasher, Top Right Insert",
+            "label": "Insert, Top Right",
             "tags": ["flasher"]
         },
         "flasherNoFear": {
             "id": "C19",
-            "label": "Flasher, No Fear",
+            "label": "Circle, Center",
             "tags": ["flasher"]
         },
         "flasherPopperRight": {
             "id": "C28",
-            "label": "Flasher, Right Popper",
+            "label": "Popper, Right",
             "tags": ["flasher"]
         },
         "flasherLeftRamp": {
             "id": "C23",
-            "label": "Flasher, Left Ramp",
+            "label": "Ramp, Left",
             "tags": ["flasher"]
         },
         "flahserRampRight": {
             "id": "C20",
-            "label": "Flasher, Right Ramp",
+            "label": "Ramp, Right",
             "tags": ["flasher"]
         },
         "flasherSkull": {
             "id": "C21",
-            "label": "flasherSkull",
+            "label": "Skull",
             "tags": ["flasher"]
         },
         "flasherSpinner": {
             "id": "C18",
-            "label": "Flasher, Spinner",
+            "label": "Spinner",
             "tags": ["flasher"]
         },
         "flasherTopLeft": {
             "id": "C24",
-            "label": "Flasher, Top Left",
+            "label": "Outside, Top Left",
             "tags": ["flasher"]
         },
 
@@ -445,51 +448,51 @@
         },
         "circle1": {
             "id": "L26",
-            "label": "Circle, 1 O'Clock Position"
+            "label": "Circle, 01"
         },
         "circle2": {
             "id": "L25",
-            "label": "Circle, 2 O'Clock Position"
+            "label": "Circle, 02"
         },
         "circle3": {
             "id": "L24",
-            "label": "Circle, 3 O'Clock Position"
+            "label": "Circle, 03"
         },
         "circle4": {
             "id": "L23",
-            "label": "Circle, 4 O'Clock Position"
+            "label": "Circle, 04"
         },
         "circle5": {
             "id": "L22",
-            "label": "Circle, 5 O'Clock Position"
+            "label": "Circle, 05"
         },
         "circle6": {
             "id": "L11",
-            "label": "Circle, 6 O'Clock Position"
+            "label": "Circle, 06"
         },
         "circle7": {
             "id": "L12",
-            "label": "Circle, 7 O'Clock Position"
+            "label": "Circle, 07"
         },
         "circle8": {
             "id": "L13",
-            "label": "Circle, 8 O'Clock Position"
+            "label": "Circle, 08"
         },
         "circle9": {
             "id": "L14",
-            "label": "Circle, 9 O'Clock Position"
+            "label": "Circle, 09"
         },
         "circle10": {
             "id": "L15",
-            "label": "Circle, 10 O'Clock Position"
+            "label": "Circle, 10"
         },
         "circle11": {
             "id": "L16",
-            "label": "Circle, 11 O'Clock Position"
+            "label": "Circle, 11"
         },
         "circle12": {
             "id": "L18",
-            "label": "Circle, 12 O'Clock Position"
+            "label": "Circle, 12"
         },
         "circleCenter": {
             "id": "L21",
