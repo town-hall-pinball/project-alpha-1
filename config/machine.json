@@ -17,10 +17,15 @@
     "PRBumpers": ["slingshotLeft","slingshotRight"],
 
     "PRSwitches": {
-        "ballLaunch": {
+        "ballLaunchButton": {
             "id": "S11",
-            "label": "Ball Launch",
+            "label": "Ball Launch Button",
             "keyboard":"l"
+        },
+        "buyExtraBallButton": {
+            "id": "S23",
+            "label": "Buy Extra Ball Button",
+            "keyboard": "x"
         },
         "coinDoorClosed": {
             "id": "S22",
@@ -55,11 +60,6 @@
             "label": "Eject",
             "keyboard":"j"
         },
-        "extraBallBuy": {
-            "id": "S23",
-            "label": "Buy Extra Ball",
-            "keyboard": "x"
-        },
         "flipperLeft": {
             "id": "SF4",
             "label": "Flipper, Lower Left",
@@ -77,14 +77,6 @@
         "kickback": {
             "id": "S25",
             "label": "Kickback"
-        },
-        "kickbackLightBottom": {
-            "id": "S56",
-            "label": "Kickback, Light Bottom"
-        },
-        "kickbackLightTop": {
-            "id": "S57",
-            "label": "Kickback, Light Top"
         },
         "loopInner": {
             "id": "S55",
@@ -190,10 +182,34 @@
             "label": "Spinner",
             "keyboard": "q"
         },
+        "standupTargetBottom": {
+            "id": "S56",
+            "label": "Standup Target, Bottom",
+            "note": "Original: Light Kickback"
+        },
+        "standupTargetTop": {
+            "id": "S57",
+            "label": "Standup Target, Top",
+            "note": "Original: Light Kickback"
+        },
         "startButton": {
             "id": "S13",
             "label": "Start Button",
             "keyboard": "s"
+        },
+        "subwayCenter": {
+            "id": "S37",
+            "type": "NC",
+            "label": "Subway, Center",
+            "note": "This is the skull",
+            "keyboard": "a"
+        },
+        "subwayLeft": {
+            "id": "S38",
+            "type": "NC",
+            "label": "Subway, Left",
+            "note": "behind drop target",
+            "keyboard": ","
         },
         "tilt": {
             "id": "S14",
@@ -205,20 +221,6 @@
             "label": "Tilt, Slam",
             "keyboard": "t"
         },
-        "troughEnterCenter": {
-            "id": "S37",
-            "type": "NC",
-            "label": "Trough, Enter Center",
-            "note": "This is the skull",
-            "keyboard":"a"
-        },
-        "troughEnterLeft": {
-            "id": "S38",
-            "type": "NC",
-            "label": "Trough, Enter Left",
-            "note": "behind drop target",
-            "keyboard": ","
-        },
         "troughStack": {
             "id": "S31",
             "type": "NC",
@@ -227,23 +229,23 @@
         "trough1": {
             "id": "S32",
             "type": "NC",
-            "label": "Trough, Far Right",
+            "label": "Trough, 1",
             "keyboard": "d"
         },
         "trough2": {
             "id": "S33",
             "type": "NC",
-            "label": "Trough, Center Right"
+            "label": "Trough, 2"
         },
         "trough3": {
             "id": "S34",
             "type": "NC",
-            "label": "Trough, Center Left"
+            "label": "Trough, 3"
         },
         "trough4": {
             "id": "S35",
             "type": "NC",
-            "label": "Trough, Far Left"
+            "label": "Trough, 4"
         },
         "wireformLeft": {
             "id": "S54",
@@ -434,13 +436,13 @@
     },
 
     "PRLamps": {
-        "buttonBallLaunch": {
+        "ballLaunchButton": {
             "id": "L86",
             "label": "Ball Launch Button"
         },
-        "buttonBuyIn": {
+        "buyExtraBallButton": {
             "id": "L87",
-            "label": "Buy-In Button"
+            "label": "Buy Extra Ball Button"
         },
         "buttonStart": {
             "id": "L88",
@@ -496,147 +498,157 @@
         },
         "circleCenter": {
             "id": "L21",
-            "label": "Circle, Center Position"
+            "label": "Circle, Center"
         },
         "inlaneLeft": {
             "id": "L66",
-            "label": "Left Inlane"
+            "label": "Inlane, Left"
         },
         "inlaneRight": {
             "id": "L73",
-            "label": "Right Inlane"
+            "label": "Inlane, Right"
         },
-        "kickbackArrow": {
+        "kickback": {
             "id": "L68",
-            "label": "Kickback Arrow"
-        },
-        "midPlayfieldCenter": {
-            "id": "L28",
-            "label": "Mid Playfield, Center"
-        },
-        "midPlayfieldFarLeft": {
-            "id": "L48",
-            "label": "Mid Playfield, Far Left (2 lamps)"
-        },
-        "midPlayfieldFarRight": {
-            "id": "L37",
-            "label": "Mid Playfield, Far Right (2 lamps)"
-        },
-        "midPlayfieldLeft": {
-            "id": "L17",
-            "label": "Mid Playfield, Left"
-        },
-        "midPlayfieldRight": {
-            "id": "L27",
-            "label": "Mid Playfield, Right"
+            "label": "Kickback"
         },
         "orbitLeftArrow1": {
             "id": "L57",
-            "label": "Left Orbit, 1st Arrow"
+            "label": "Orbit, Left Arrow 1"
         },
         "orbitLeftArrow2": {
             "id": "L51",
-            "label": "Left Orbit, 2nd Arrow"
+            "label": "Orbit, Left Arrow 2"
         },
         "orbitLeftLamp3": {
             "id": "L53",
-            "label": "Left Orbit, 3rd Lamp"
+            "label": "Orbit, Left Lamp 3"
         },
         "orbitLeftSign": {
             "id": "L38",
-            "label": "Left Orbit, Sign"
+            "label": "Orbit, Left Sign"
         },
         "orbitRightArrow1": {
             "id": "L77",
-            "label": "Right Orbit, 1st Arrow"
+            "label": "Orbit, Right Arrow 1"
         },
         "orbitRightArrow2": {
             "id": "L78",
-            "label": "Right Orbit, 2nd Arrow"
+            "label": "Orbit, Right Arrow 2"
         },
         "outlaneLeft": {
             "id": "L67",
-            "label": "Left Outlane"
+            "label": "Outlane, Left"
         },
         "outlaneRight": {
             "id": "L74",
-            "label": "Right Outlane"
+            "label": "Outlane, Right"
+        },
+        "playfieldCenter": {
+            "id": "L28",
+            "label": "Playfield, Center"
+        },
+        "playfieldFarLeft": {
+            "id": "L48",
+            "label": "Playfield, Far Left",
+            "note": "Original: Left Autofire"
+        },
+        "playfieldFarRight": {
+            "id": "L37",
+            "label": "Playfield, Far Right",
+            "note": "Original: Right Autofire"
+        },
+        "playfieldLeft": {
+            "id": "L17",
+            "label": "Playfield, Left"
+        },
+        "playfieldRight": {
+            "id": "L27",
+            "label": "Playfield, Right"
         },
         "rampLeftArrow": {
             "id": "L56",
-            "label": "Left Ramp, Arrow"
+            "label": "Ramp, Left Arrow"
         },
         "rampLeftCircle1": {
             "id": "L55",
-            "label": "Left Ramp, 1st Circle"
+            "label": "Ramp, Left Circle 1"
         },
         "rampLeftCircle2": {
             "id": "L52",
-            "label": "Left Ramp, 2nd Circle"
+            "label": "Ramp, Left Circle 2"
         },
         "rampLeftCircle3": {
             "id": "L54",
-            "label": "Left Ramp, 3rd Circle"
+            "label": "Ramp, Left Circle 3"
         },
         "rampLeftSignBottom": {
             "id": "L83",
-            "label": "Left Ramp, Sign Bottom"
+            "label": "Ramp, Left Sign Bottom"
         },
         "rampLeftSignTop": {
             "id": "L84",
-            "label": "Left Ramp, Sign Top"
+            "label": "Ramp, Left Sign Top"
         },
         "rampRightArrow1": {
             "id": "L75",
-            "label": "Right Ramp, 1st Arrow"
+            "label": "Ramp, Right Arrow 1"
         },
         "rightRampArrow2": {
             "id": "L76",
-            "label": "Right Ramp, 2nd Arrow"
+            "label": "Ramp, Right Arrow 2"
         },
         "rampRightCircle1": {
             "id": "L63",
-            "label": "Right Ramp, 1st Circle"
+            "label": "Ramp, Right Circle 1"
         },
         "rampRightCircle2": {
             "id": "L64",
-            "label": "Right Ramp, 2nd Circle"
+            "label": "Ramp, Right Circle 2"
         },
         "rampRightCircle3": {
             "id": "L65",
-            "label": "Right Ramp, 3rd Circle"
+            "label": "Ramp, Right Circle 3"
         },
-        "scoopDropArrow1": {
+        "scoopLeftArrow1": {
             "id": "L45",
-            "label": "Drop Target Scoop, 1st Arrow"
+            "label": "Scoop, Left Arrow 1",
+            "note": "Original: Skydive"
         },
-        "scoopDropArrow2": {
+        "scoopLeftArrow2": {
             "id": "L46",
-            "label": "Drop Target Scoop, 2nd Arrow"
+            "label": "Scoop, Left Arrow 2",
+            "note": "Original: Drop Jackpot"
         },
-        "scoopDropArrow3": {
+        "scoopLeftArrow3": {
             "id": "L47",
-            "label": "Drop Target Scoop, 3rd Arrow"
+            "label": "Scoop, Left Arrow 3",
+            "note": "Original: Drop Lock"
         },
-        "scoopSkullArrow1": {
+        "scoopCenterArrow1": {
             "id": "L31",
-            "label": "Skull Scoop, 1st Arrow"
+            "label": "Scoop, Center Arrow 1",
+            "note": "Original: Skull"
         },
-        "scoopSkullArrow2": {
+        "scoopCenterArrow2": {
             "id": "L33",
-            "label": "Skull Scoop, 2nd Arrow"
+            "label": "Scoop, Center Arrow 2",
+            "note": "Original: Center Jackpot"
         },
-        "scoopSkullArrow3": {
+        "scoopCenterArrow3": {
             "id": "L34",
-            "label": "Skull Scoop, 3rd Arrow"
+            "label": "Scoop, Center Arrow 3",
+            "note": "Original: Extra Ball"
         },
-        "scoopSkullArrow4": {
+        "scoopCenterArrow4": {
             "id": "L36",
-            "label": "Skull Scoop, 4th Arrow"
+            "label": "Scoop, Center Arrow 4",
+            "note": "Original: Center Lock"
         },
-        "scoopSkullCircle": {
+        "scoopCenterCircle": {
             "id": "L35",
-            "label": "Skull Scoop, Circle"
+            "label": "Scoop, Center Circle",
+            "note": "Original: Start Challenge"
         },
         "shootAgain": {
             "id": "L81",
@@ -650,13 +662,13 @@
             "id": "L85",
             "label": "Skull, Right Eye"
         },
-        "standupArrowBottom": {
+        "standupTargetBottom": {
             "id": "L72",
-            "label": "Standup Target Arrow, Bottom"
+            "label": "Standup Target, Bottom"
         },
-        "standupArrowTop": {
+        "standupTargetTop": {
             "id": "L71",
-            "label": "Standup Target Arrow, Top"
+            "label": "Standup Target, Top"
         },
         "uTurnLeftArrow": {
             "id": "L41",
@@ -664,15 +676,15 @@
         },
         "uTurnLeftCircle1": {
             "id": "L42",
-            "label": "U-Turn, Left 1st Circle"
+            "label": "U-Turn, Left Circle 1"
         },
         "uTurnLeftCircle2": {
             "id": "L43",
-            "label": "U-Turn, Left 2nd Circle"
+            "label": "U-Turn, Left Circle 2"
         },
         "uTurnLeftCircle3": {
             "id": "L44",
-            "label": "U-Turn, Left 3rd Circle"
+            "label": "U-Turn, Left Circle 3"
         },
         "uTurnRightArrow": {
             "id": "L32",
@@ -683,27 +695,27 @@
 
         "gi01": {
             "id": "G01",
-            "label": "Gen Illum 1",
+            "label": "Illumination, Playfield Top",
             "tags": ["gi"]
         },
         "gi02": {
             "id": "G02",
-            "label": "Gen Illum 2",
+            "label": "Illumination, Playfield Right",
             "tags": ["gi"]
         },
         "gi03": {
             "id": "G03",
-            "label": "Gen Illum 3",
+            "label": "Illumination, Playfield Left",
             "tags": ["gi"]
         },
         "gi04": {
             "id": "G04",
-            "label": "Gen Illum 4",
+            "label": "Illumination, Insert Title",
             "tags": ["gi"]
         },
         "gi05": {
             "id": "G05",
-            "label": "Gen Illum 5",
+            "label": "Illumination, Insert Background",
             "tags": ["gi"]
         }
     }

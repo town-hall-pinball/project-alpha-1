@@ -98,6 +98,6 @@ class GameMode(mode.Base):
         p.game.player.award(500)
         self.lowerDropTarget()
 
-    def sw_troughEnterLeft_active(self, sw=None):
+    def sw_subwayLeft_active(self, sw=None):
         p.game.player.award(1000)
         self.raiseDropTarget()
