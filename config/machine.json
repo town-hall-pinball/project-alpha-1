@@ -696,26 +696,31 @@
         "gi01": {
             "id": "G01",
             "label": "Illumination, Playfield Top",
+            "search": "general gi",
             "tags": ["gi"]
         },
         "gi02": {
             "id": "G02",
             "label": "Illumination, Playfield Right",
+            "search": "general gi",
             "tags": ["gi"]
         },
         "gi03": {
             "id": "G03",
             "label": "Illumination, Playfield Left",
+            "search": "general gi",
             "tags": ["gi"]
         },
         "gi04": {
             "id": "G04",
             "label": "Illumination, Insert Title",
+            "search": "general gi",
             "tags": ["gi"]
         },
         "gi05": {
             "id": "G05",
             "label": "Illumination, Insert Background",
+            "search": "general gi",
             "tags": ["gi"]
         }
     }
