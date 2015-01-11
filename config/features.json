@@ -12,7 +12,8 @@
         "pinlib.modules.search",
         "pinlib.modules.skull",
         "pingame.attract",
-        "pingame.game"
+        "pingame.game",
+        "pingame.mini"
     ],
     "modes": [{
         "name": "pinlib.modules.coin.CoinMode",

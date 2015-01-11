@@ -78,18 +78,6 @@
             "id": "S25",
             "label": "Kickback"
         },
-        "loopInner": {
-            "id": "S55",
-            "label": "Loop, Inner"
-        },
-        "loopLeft": {
-            "id": "S62",
-            "label": "Loop, Left"
-        },
-        "loopRight": {
-            "id": "S58",
-            "label": "Loop, Right"
-        },
         "magnetLeft": {
             "id": "S46",
             "type": "NC",
@@ -104,6 +92,14 @@
             "id": "S48",
             "type": "NC",
             "label": "Magnet, Right"
+        },
+        "orbitLeft": {
+            "id": "S62",
+            "label": "Orbit, Left"
+        },
+        "orbitRight": {
+            "id": "S58",
+            "label": "Orbit, Right"
         },
         "outlaneRight": {
             "id": "S17",
@@ -246,6 +242,10 @@
             "id": "S35",
             "type": "NC",
             "label": "Trough, 4"
+        },
+        "uTurn": {
+            "id": "S55",
+            "label": "U-Turn"
         },
         "wireformLeft": {
             "id": "S54",
@@ -594,7 +594,7 @@
             "id": "L75",
             "label": "Ramp, Right Arrow 1"
         },
-        "rightRampArrow2": {
+        "rampRightArrow2": {
             "id": "L76",
             "label": "Ramp, Right Arrow 2"
         },

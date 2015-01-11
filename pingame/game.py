@@ -24,7 +24,7 @@ from pinlib import p, mode, util
 def init():
     p.load_mode(BackgroundMode, { "start": ["reset"] })
     p.load_mode(GameMode,       {
-        "start": ["game_reset"],
+        "start": ["game_start"],
         "stop":  ["game_over"]
     })
 
@@ -45,7 +45,7 @@ class GameMode(mode.Base):
 
     def __init__(self, options):
         options["id"] = options.get("id", "game")
-        options["label"] = options.get("label", "Game")    
+        options["label"] = options.get("label", "Project Alpha")
         super(GameMode, self).__init__(options, priority=110)
 
     def start(self):
