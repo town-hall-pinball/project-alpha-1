@@ -32,6 +32,7 @@ class BackgroundMode(mode.Base):
 
     def __init__(self, options):
         options["id"] = options.get("id", "background")
+        options["label"] = options.get("label", "Background")
         super(BackgroundMode, self).__init__(options, priority=100)
 
     def start(self):
@@ -44,6 +45,7 @@ class GameMode(mode.Base):
 
     def __init__(self, options):
         options["id"] = options.get("id", "game")
+        options["label"] = options.get("label", "Game")    
         super(GameMode, self).__init__(options, priority=110)
 
     def start(self):

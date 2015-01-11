@@ -30,6 +30,7 @@ class AttractMode(script.Script):
 
     def __init__(self, options):
         options["id"] = "attract"
+        options["label"] = "Attract"
         super(AttractMode, self).__init__(options, priority=22)
         self.script = ui.ScriptPanel()
 
