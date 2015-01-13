@@ -92,8 +92,8 @@ Only a simple attract mode is available at the moment.
 Operator service mode:
 
 * ``7``: Enter
-* ``8``: Up
-* ``9``: Down
+* ``8``: Down
+* ``9``: Up
 * ``0``: Exit
 
 ## Easter Eggs

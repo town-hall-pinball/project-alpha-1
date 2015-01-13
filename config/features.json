@@ -10,9 +10,9 @@
         "pinlib.modules.tilt",
         "pinlib.modules.launch",
         "pinlib.modules.search",
-        "pinlib.modules.skull",
         "pingame.attract",
         "pingame.game",
+        "pingame.skull",
         "pingame.mini"
     ],
     "modes": [{
@@ -21,7 +21,7 @@
     },{
         "name": "pinlib.modules.splash.SplashMode",
         "start": ["reset"],
-        "duration": 0.5
+        "duration": 2.0
     },{
         "name": "pingame.attract.AttractMode",
         "start": ["splash_stopped", "game_over", "service_stopped"],

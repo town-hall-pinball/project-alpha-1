@@ -22,31 +22,20 @@
 from pinlib import p, mode, util
 
 def init():
-    p.load_mode(BackgroundMode, { "start": ["reset"] })
-    p.load_mode(GameMode,       {
-        "start": ["game_start"],
-        "stop":  ["game_over"]
-    })
-
-class BackgroundMode(mode.Base):
-
-    def __init__(self, options):
-        options["id"] = options.get("id", "background")
-        options["label"] = options.get("label", "Background")
-        super(BackgroundMode, self).__init__(options, priority=100)
-
-    def start(self):
-        p.machine.lamps("gi", lambda lamp: lamp.enable())
+    p.load_mode(GameMode)
 
 
 class GameMode(mode.Base):
 
-    dropTarget = "up"
+    defaults = {
+        "id": "main_game",
+        "label": "Project Alpha",
+        "priority": 2300,
+        "start": ["game_start"],
+        "stop": ["game_over"]
+    }
 
-    def __init__(self, options):
-        options["id"] = options.get("id", "game")
-        options["label"] = options.get("label", "Project Alpha")
-        super(GameMode, self).__init__(options, priority=110)
+    dropTarget = "up"
 
     def start(self):
         p.sounds.play_music("credits", start_time=2.4)

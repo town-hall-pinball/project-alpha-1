@@ -27,9 +27,11 @@ class TriggerMode(mode.Base):
     defaults = {
         "id": "mini_trigger",
         "label": "Mini Game Menu Trigger",
-        "priority": 30,
+        "priority": 1800,
         "button": "buyExtraBallButton",
-        "lamp": "buyExtraBallButton"
+        "lamp": "buyExtraBallButton",
+        "start": ["attract_started"],
+        "stop": ["attract_stopped"]
     }
 
     def __init__(self, options):
@@ -50,7 +52,6 @@ class TriggerMode(mode.Base):
         self.lamp.disable()
 
     def menu(self, sw=None):
-        self.deactivate()
         p.events.trigger("request_mini_menu")
 
     def update_button(self):
@@ -67,7 +68,7 @@ class MenuMode(mode.Base):
     defaults = {
         "id": "mini_menu",
         "label": "Mini Game Menu",
-        "priority": 30,
+        "priority": 1500,
         "stop": ["game_reset"]
     }
 

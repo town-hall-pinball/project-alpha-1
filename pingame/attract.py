@@ -26,29 +26,38 @@ from pinlib.modules import coin, highscore, script
 
 class AttractMode(script.Script):
 
+    defaults = {
+        "id": "attract",
+        "label": "Attract",
+        "priority": 1300,
+    }
+
     unit = 5.55 / 2.0
 
     def __init__(self, options):
-        options["id"] = "attract"
-        options["label"] = "Attract"
-        super(AttractMode, self).__init__(options, priority=22)
-        self.script = ui.ScriptPanel()
+        super(AttractMode, self).__init__(options)
+
+    def setup(self):
+        self.root = ui.ScriptPanel()
 
         background = ui.Background("attract/p-roc")
         presents = ui.Message("Town Hall Pinball", "small_wide").add("Presents")
-        no_fear = ui.Message(p.machine.config["game.name"])
+        title = ui.Message(p.machine.config["game.name"])
         game_over = ui.Message("Game Over")
 
         #self.script.add(background, self.unit)
-        self.script.add(presents, self.unit)
-        self.script.add(no_fear, self.unit)
-        self.script.add(game_over, self.unit * 2)
-        self.script.add(coin.credits(), self.unit * 2)
+        self.root.add(presents, self.unit)
+        self.root.add(title, self.unit)
+        self.root.add(game_over, self.unit * 2)
+        self.root.add(coin.credits(), self.unit * 2)
         #self.script.add(highscore.ClassicTable())
-        self.script.add(None, self.unit * 2)
-        self.set_layer(self.script)
+        self.root.add(None, self.unit * 2)
+        self.display(self.root)
 
     def start(self):
         super(AttractMode, self).start()
         p.sounds.play_music("intro", start_time=0.5)
-        self.script.reset()
+        self.root.reset()
+
+    def stop(self):
+        p.sounds.stop_music()

@@ -20,9 +20,35 @@
 # DEALINGS IN THE SOFTWARE.
 
 from pinlib import p, mode, util
-from pingame.mini import menu
+from pinlib.dmd import ui
+from os import system
 
 def init():
-    p.load_mode(menu.TriggerMode)
-    p.load_mode(menu.MenuMode)
-    p.load_module("pingame.mini.shoot12")
+    p.load_mode(SkullMode)
+
+class SkullMode(mode.Base):
+
+    defaults = {
+        "id": "skull",
+        "label": "Skull Time!",
+        "priority": 2400,
+        "start": ["game_reset"]
+    }
+
+    def setup(self):
+        self.root = ui.Text({
+            "padding": 0,
+            "text": "Skull Time",
+            "font": "medium_bold",
+            "opaque": True,
+            "enabled": False
+
+        })
+        self.display(self.root)
+
+    def sw_subwayCenter_active(self, sw=None):
+        self.skull_speak()
+
+    def skull_speak(self):
+        self.root.show("Skull Time!", 2.0).effect("pulse")
+        p.machine.coil("skullMouth").pulse()

@@ -43,30 +43,30 @@
         "menu": [{
             "name": "Switches",
             "icon": "service/switches",
-            "event": "request_switch_test"
+            "event": "request_service_switch_test"
         },{
             "name": "Coils",
             "icon": "service/coils",
-            "event": "request_coil_test"
+            "event": "request_service_coil_test"
         },{
             "name": "Lamps",
             "icon": "service/lamps",
             "menu": [{
                 "name": "All",
-                "event": "request_all_lamp_test"
+                "event": "request_service_lamp_test_all"
             },{
                 "name": "Individual",
-                "event": "request_lamp_test"
+                "event": "request_service_lamp_test_individual"
             }]
         },{
             "name": "Flashers",
             "icon": "service/flashers",
             "menu": [{
                 "name": "All",
-                "event": "request_all_flasher_test"
+                "event": "request_service_flasher_test_all"
             },{
                 "name": "Individual",
-                "event": "request_flasher_test"
+                "event": "request_service_flasher_test_individual"
             }]
         }]
     },{
@@ -133,15 +133,15 @@
             "menu": [{
                 "name": "Music",
                 "icon": "service/music",
-                "event": "request-music-browser"
+                "event": "request_service_music_browser"
             },{
                 "name": "Sounds",
                 "icon": "service/sounds",
-                "event": "request-sound-browser"
+                "event": "request_service_sound_browser"
             },{
                 "name": "Fonts",
                 "icon": "service/font",
-                "event": "request-font-browser"
+                "event": "request_service_font_browser"
             }]
         },{
             "name": "Debug",

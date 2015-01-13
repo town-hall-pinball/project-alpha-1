@@ -143,7 +143,7 @@
         "serviceDown": {
             "id": "SD6",
             "label": "Service, Down",
-            "keyboard": "9"
+            "keyboard": "8"
         },
         "serviceEnter": {
             "id": "SD8",
@@ -158,7 +158,7 @@
         "serviceUp": {
             "id": "SD7",
             "label": "Service, Up",
-            "keyboard": "8"
+            "keyboard": "9"
         },
         "shooterLane": {
             "id": "S15",
