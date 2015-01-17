@@ -723,5 +723,26 @@
             "search": "general gi",
             "tags": ["gi"]
         }
+    },
+
+    "simulator": {
+        "initial": {
+            "trough3": true,
+            "trough2": true,
+            "trough1": true,
+            "popperRight1": true
+        },
+        "rules": [
+            {
+                "on": "coil:trough=pulse",
+                "if": [
+                    "swtich:trough1=active"
+                ],
+                "do": [
+                    "swtich:trough1=inactive",
+                    "switch:shooterLane=active"
+                ]
+            }
+        ]
     }
 }
