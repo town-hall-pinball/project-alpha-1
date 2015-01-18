@@ -58,7 +58,7 @@ class GameMode(mode.Base):
         if self.dropTarget == "up":
             p.machine.coil("dropTargetDown").pulse(delay=delay)
 
-    def sw_trough1_active_for_2s(self, sw=None):
+    def sw_trough4_active(self, sw=None):
         p.game.next_player()
 
     def sw_spinner_active(self, sw=None):

@@ -225,8 +225,7 @@
         "trough1": {
             "id": "S32",
             "type": "NC",
-            "label": "Trough, 1",
-            "keyboard": "d"
+            "label": "Trough, 1"
         },
         "trough2": {
             "id": "S33",
@@ -241,7 +240,8 @@
         "trough4": {
             "id": "S35",
             "type": "NC",
-            "label": "Trough, 4"
+            "label": "Trough, 4",
+            "keyboard": "d"
         },
         "uTurn": {
             "id": "S55",
@@ -732,17 +732,21 @@
             "trough1": true,
             "popperRight1": true
         },
-        "rules": [
-            {
-                "on": "coil:trough=pulse",
-                "if": [
-                    "swtich:trough1=active"
-                ],
-                "do": [
-                    "swtich:trough1=inactive",
-                    "switch:shooterLane=active"
-                ]
-            }
-        ]
+        "rules": {
+            "coil:trough=pulse": [
+                { "from": "trough1",        "to": "shooterLane" },
+                { "from": "trough2",        "to": "trough1" },
+                { "from": "trough3",        "to": "trough2" },
+                { "from": "trough4",        "to": "trough3" }
+            ],
+            "switch:trough4=enable": [
+                { "from": "trough4",        "to": "trough3 "},
+                { "from": "trough3",        "to": "trough2" },
+                { "from": "trough2",        "to": "trough1" }
+            ],
+            "coil:autoPlunger=pulse": [
+                { "from": "shooterLane" }
+            ]
+        }
     }
 }

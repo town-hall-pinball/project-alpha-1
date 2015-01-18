@@ -32,7 +32,8 @@ class SkullMode(mode.Base):
         "id": "skull",
         "label": "Skull Time!",
         "priority": 2400,
-        "start": ["game_reset"]
+        "start": ["game_reset"],
+        "stop": ["game_over"]
     }
 
     def setup(self):
