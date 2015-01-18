@@ -147,6 +147,14 @@
             "name": "Debug",
             "icon": "service/debug",
             "menu": [{
+                "name": "Simulator",
+                "data": "simulator.enabled",
+                "options": [
+                    [true, "Yes"],
+                    [false, "No"]
+                ],
+                "event": "toggle_simulator"
+            },{
                 "name": "Alignment Grid",
                 "data": "debug.alignment_grid",
                 "options": [
