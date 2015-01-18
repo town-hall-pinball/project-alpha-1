@@ -33,7 +33,8 @@ class GravityAssistMode(mode.Base):
         "priority": 2210,
         "start": ["game_start"],
         "stop": ["game_over"],
-        "max_bonus": 10000
+        "max_bonus": 10000,
+        "bonus": 1000
     }
 
     def setup(self):
@@ -44,12 +45,22 @@ class GravityAssistMode(mode.Base):
         ]
 
     def setup_player(self, player):
-        player.data["gravity.assists"] = 0
+        player.data["bonus"]["gravity"] = {
+            "name": "Gravity Assists",
+            "count": 0,
+            "points": 0
+        }
+
+    def add(self):
+        bonus = p.state["bonus"]["gravity"]
+        bonus["count"] += 1
+        bonus["points"] += self.options["bonus"]
 
     def next_turn(self):
-        p.state["gravity.assists"] += 1
+        self.add()
 
     def award(self, sw=None):
+        self.add()
         mult = p.state["spinner.multiplier"]
         message = ui.Message("Gravity Assist")
         if mult < 10:
@@ -61,4 +72,3 @@ class GravityAssistMode(mode.Base):
         self.display(message)
         message.show(2.0)
         p.state["spinner.multiplier"] = mult
-        p.state["gravity.assists"] += 1

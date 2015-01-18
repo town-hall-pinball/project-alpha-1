@@ -40,12 +40,12 @@ class GameMode(mode.Base):
 
     def setup(self):
         self.events = [
+            ["drain_all", self.end_of_turn],
             ["inactive", "shooterLane",    self.check_launch],
         ]
 
     def start(self):
         p.events.on("next_player", self.next_player)
-        self.machine.flippers().enable()
 
     def stop(self):
         p.events.off("next_player", self.next_player)
@@ -53,6 +53,7 @@ class GameMode(mode.Base):
         self.machine.flippers().disable()
 
     def next_player(self):
+        self.machine.flippers().enable()
         self.state = "launch"
         p.sounds.play_music("Introduction", start_time=0.5, loops=-1)
         p.machine.coil("trough").pulse()
@@ -63,6 +64,10 @@ class GameMode(mode.Base):
             self.state = "play"
             p.sounds.play_music("Credits", start_time=2.25, loops=-1)
 
+    def end_of_turn(self):
+        self.machine.flippers().disable()
+        p.events.trigger("request_bonus")
+
     def raiseDropTarget(self):
         if self.dropTarget == "down":
             p.machine.coil("dropTargetUp").pulse()
@@ -71,8 +76,6 @@ class GameMode(mode.Base):
         if self.dropTarget == "up":
             p.machine.coil("dropTargetDown").pulse(delay=delay)
 
-    def sw_trough4_active(self, sw=None):
-        p.game.next_player()
 
     def sw_eject_active_for_2s(self, sw=None):
         p.game.player.award(250)

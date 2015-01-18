@@ -12,6 +12,7 @@
         "pinlib.modules.launch",
         "pinlib.modules.search",
         "pingame.attract",
+        "pingame.bonus",
         "pingame.nofear",
         "pingame.alpha",
         "pingame.skull",

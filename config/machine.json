@@ -267,7 +267,7 @@
             "id": "S35",
             "type": "NC",
             "label": "Trough, 4",
-            "tags": ["out", "trough"],
+            "tags": ["out", "trough", "drain"],
             "keyboard": "d"
         },
         "uTurn": {
@@ -767,7 +767,7 @@
                 { "from": "trough4", "to": "trough3" }
             ],
             "switch:trough4=enable": [
-                { "from": "trough4", "to": "trough3 "},
+                { "from": "trough4", "to": "trough3" },
                 { "from": "trough3", "to": "trough2" },
                 { "from": "trough2", "to": "trough1" }
             ],
