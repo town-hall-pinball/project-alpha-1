@@ -20,35 +20,42 @@
         "ballLaunchButton": {
             "id": "S11",
             "label": "Ball Launch Button",
-            "keyboard":"l"
+            "tags": ["input"],
+            "keyboard": "p"
         },
         "buyExtraBallButton": {
             "id": "S23",
             "label": "Buy Extra Ball Button",
+            "tags": ["input"],
             "keyboard": "x"
         },
         "coinDoorClosed": {
             "id": "S22",
-            "label": "Coin Door Closed"
+            "label": "Coin Door Closed",
+            "tags": ["admin"]
         },
         "coinLeft": {
             "id": "SD1",
             "label": "Coin Chute, Left",
+            "tags": ["input"],
             "keyboard": "1"
         },
         "coinCenter": {
             "id": "SD2",
             "label": "Coin Chute, Center",
+            "tags": ["input"],
             "keyboard": "2"
         },
         "coinRight": {
             "id": "SD3",
             "label": "Coin Chute, Right",
+            "tags": ["input"],
             "keyboard": "3"
         },
         "coinFourth": {
             "id": "SD4",
-            "label": "Coin Chute, Fourth"
+            "label": "Coin Chute, Fourth",
+            "tags": ["input"]
         },
         "dropTarget": {
             "id": "S51",
@@ -58,21 +65,25 @@
         "eject": {
             "id": "S61",
             "label": "Eject",
-            "keyboard":"j"
+            "tags": ["hold"],
+            "keyboard": "j"
         },
         "flipperLeft": {
             "id": "SF4",
             "label": "Flipper, Lower Left",
+            "tags": ["input", "flipper"],
             "keyboard": "["
         },
         "flipperRight": {
             "id": "SF2",
             "label": "Flipper, Lower Right",
+            "tags": ["input", "flipper"],
             "keyboard": "]"
         },
         "flipperRightUp": {
             "id": "SF6",
-            "label": "Flipper, Upper Right"
+            "label": "Flipper, Upper Right",
+            "tags": ["input", "flipper"]
         },
         "kickback": {
             "id": "S25",
@@ -109,16 +120,18 @@
             "id": "S41",
             "type": "NC",
             "label": "Popper, Right 1",
-            "keyboard": "p"
+            "tags": ["trough"]
         },
         "popperRight2": {
             "id": "S42",
             "type": "NC",
-            "label": "Popper, Right 2"
+            "label": "Popper, Right 2",
+            "tags": ["hold"]
         },
         "rampLeftEnter": {
             "id": "S63",
-            "label": "Ramp, Left Enter"
+            "label": "Ramp, Left Enter",
+            "keyboard": "q"
         },
         "rampLeftMiddle": {
             "id": "S64",
@@ -126,7 +139,8 @@
         },
         "rampRightEnter": {
             "id": "S66",
-            "label": "Ramp, Right Enter"
+            "label": "Ramp, Right Enter",
+            "keyboard": "w"
         },
         "rampRightExit": {
             "id": "S67",
@@ -143,26 +157,31 @@
         "serviceDown": {
             "id": "SD6",
             "label": "Service, Down",
+            "tags": ["input"],
             "keyboard": "8"
         },
         "serviceEnter": {
             "id": "SD8",
             "label": "Service, Enter",
+            "tags": ["input"],
             "keyboard": "7"
         },
         "serviceExit": {
             "id": "SD5",
             "label": "Service, Exit",
+            "tags": ["input"],
             "keyboard": "0"
         },
         "serviceUp": {
             "id": "SD7",
             "label": "Service, Up",
+            "tags": ["input"],
             "keyboard": "9"
         },
         "shooterLane": {
             "id": "S15",
             "label": "Shooter Lane",
+            "tags": ["hold"],
             "keyboard": "r"
         },
         "slingshotLeft": {
@@ -176,7 +195,7 @@
         "spinner": {
             "id": "S16",
             "label": "Spinner",
-            "keyboard": "q"
+            "keyboard": "e"
         },
         "standupTargetBottom": {
             "id": "S56",
@@ -191,6 +210,7 @@
         "startButton": {
             "id": "S13",
             "label": "Start Button",
+            "tags": ["input"],
             "keyboard": "s"
         },
         "subwayCenter": {
@@ -198,7 +218,7 @@
             "type": "NC",
             "label": "Subway, Center",
             "note": "This is the skull",
-            "keyboard": "a"
+            "keyboard": "k"
         },
         "subwayLeft": {
             "id": "S38",
@@ -210,37 +230,44 @@
         "tilt": {
             "id": "S14",
             "label": "Tilt, Plumb",
+            "tags": ["input"],
             "keyboard": "y"
         },
         "tiltSlam": {
             "id": "S21",
             "label": "Tilt, Slam",
+            "tags": ["input"],
             "keyboard": "t"
         },
         "troughStack": {
             "id": "S31",
             "type": "NC",
-            "label": "Trough, Stack"
+            "label": "Trough, Stack",
+            "tags": ["out", "trough"]
         },
         "trough1": {
             "id": "S32",
             "type": "NC",
-            "label": "Trough, 1"
+            "label": "Trough, 1",
+            "tags": ["out", "trough"]
         },
         "trough2": {
             "id": "S33",
             "type": "NC",
-            "label": "Trough, 2"
+            "label": "Trough, 2",
+            "tags": ["out", "trough"]
         },
         "trough3": {
             "id": "S34",
             "type": "NC",
-            "label": "Trough, 3"
+            "label": "Trough, 3",
+            "tags": ["out", "trough"]
         },
         "trough4": {
             "id": "S35",
             "type": "NC",
             "label": "Trough, 4",
+            "tags": ["out", "trough"],
             "keyboard": "d"
         },
         "uTurn": {

@@ -1,6 +1,7 @@
 {
     "modules": [
         "pinlib.modules.game",
+        "pinlib.modules.ball",
         "pinlib.modules.splash",
         "pinlib.modules.coin",
         "pinlib.modules.score",

@@ -26,5 +26,6 @@
 * 1400: Coin
 * 1300: Attract
 * 1200: Score Display
-* 1100: Simulator
+* 1190: Simulator
+* 1100: Ball Management
 * 1000: Catch All
