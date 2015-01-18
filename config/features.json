@@ -15,6 +15,9 @@
         "pingame.nofear",
         "pingame.alpha",
         "pingame.skull",
+        "pingame.gravity",
+        "pingame.spinner",
+        "pingame.slingshot",
         "pingame.mini"
     ],
     "modes": [{

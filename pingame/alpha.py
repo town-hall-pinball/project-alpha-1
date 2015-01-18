@@ -40,7 +40,7 @@ class GameMode(mode.Base):
 
     def setup(self):
         self.events = [
-            ["inactive", "shooterLane", self.check_launch]
+            ["inactive", "shooterLane",    self.check_launch],
         ]
 
     def start(self):
@@ -73,9 +73,6 @@ class GameMode(mode.Base):
 
     def sw_trough4_active(self, sw=None):
         p.game.next_player()
-
-    def sw_spinner_active(self, sw=None):
-        p.game.player.award(10)
 
     def sw_eject_active_for_2s(self, sw=None):
         p.game.player.award(250)
