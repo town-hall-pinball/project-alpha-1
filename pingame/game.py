@@ -54,14 +54,14 @@ class GameMode(mode.Base):
 
     def next_player(self):
         self.state = "launch"
-        p.sounds.play_music("Introduction", start_time=0.5)
+        p.sounds.play_music("Introduction", start_time=0.5, loops=-1)
         p.machine.coil("trough").pulse()
         self.lowerDropTarget(40)
 
     def check_launch(self, sw=None):
         if self.state == "launch":
             self.state = "play"
-            p.sounds.play_music("Credits", start_time=2.25)
+            p.sounds.play_music("Credits", start_time=2.25, loops=-1)
 
     def raiseDropTarget(self):
         if self.dropTarget == "down":
