@@ -50,7 +50,8 @@ class GameMode(mode.Base):
     def popper_cycle(self, sw=None):
         switch = p.machine.switch("popperRight1")
         if switch.is_active():
-            p.machine.coil("popperRight").pulse()
+            p.machine.flasher("flasherPopperRight").pulsed_patter(10, 75, 255)
+            p.machine.coil("popperRight").pulse(delay=255)
 
     def activate_magnet_left(self, sw=None):
         p.machine.coil("magnetLeft").pulsed_patter(1, 1, magnet_timeout)
