@@ -20,56 +20,43 @@
 # DEALINGS IN THE SOFTWARE.
 
 from pinlib import p, mode, util
+from pinlib.dmd import ui
 
 def init():
-    p.load_mode(GameMode)
+    p.load_mode(DropTargetMode)
 
-
-class GameMode(mode.Base):
+class DropTargetMode(mode.Base):
 
     defaults = {
-        "id": "main_game",
-        "label": "Project Alpha",
-        "priority": 2300,
+        "id": "drop_target",
+        "label": "Drop Target",
+        "priority": 2200,
         "start": ["game_start"],
         "stop": ["game_over"]
     }
 
-    state = "over"
-
     def setup(self):
         self.events = [
-            ["drain_all", self.end_of_turn],
-            ["inactive", "shooterLane",    self.check_launch],
+            ["add_player", self.setup_player],
+            ["next_player", self.next_player],
+            ["active", "dropTarget", self.lower_target]
         ]
 
-    def start(self):
-        p.events.on("next_player", self.next_player)
-
-    def stop(self):
-        p.events.off("next_player", self.next_player)
-        p.sounds.stop_music()
-        self.machine.flippers().disable()
+    def setup_player(self, player):
+        player.data["drop_target"] = "up"
 
     def next_player(self):
-        self.machine.flippers().enable()
-        self.state = "launch"
-        p.sounds.play_music("Introduction", start_time=0.5, loops=-1)
-        p.machine.coil("trough").pulse()
+        state = p.state["drop_target"]
+        switch = p.machine.switch("dropTarget")
+        if state == "up" and switch.is_active():
+            self.raise_target()
+        elif state == "down" and switch.is_inactive():
+            self.lower_target()
 
-    def check_launch(self, sw=None):
-        if self.state == "launch":
-            self.state = "play"
-            p.sounds.play_music("Credits", start_time=2.25, loops=-1)
+    def lower_target(self, sw=None):
+        p.state["drop_target"] = "down"
+        p.machine.coil("dropTargetDown").pulse(delay=40)
 
-    def end_of_turn(self):
-        p.sounds.stop_music()
-        self.machine.flippers().disable()
-        p.events.trigger("request_bonus")
-
-    def sw_eject_active_for_2s(self, sw=None):
-        p.game.player.award(250)
-        p.machine.coil("eject").pulse()
-
-    def sw_kickback_active(self, sw=None):
-        p.machine.coil("kickback").pulse()
+    def raise_target(self, sw=None):
+        p.state["drop_target"] = "up"
+        p.machine.coil("dropTargetUp").pulse(delay=40)

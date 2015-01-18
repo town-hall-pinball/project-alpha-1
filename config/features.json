@@ -13,6 +13,7 @@
         "pinlib.modules.search",
         "pingame.attract",
         "pingame.bonus",
+        "pingame.drop",
         "pingame.nofear",
         "pingame.alpha",
         "pingame.skull",

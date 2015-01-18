@@ -785,6 +785,9 @@
             ],
             "switch:popperRight2=enable": [
                 { "from": "popperRight2", "to": "popperRight1" }
+            ],
+            "coil:dropTargetUp=pulse": [
+                { "disable": "dropTarget" }
             ]
         }
     }
