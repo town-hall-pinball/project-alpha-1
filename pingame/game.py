@@ -36,19 +36,32 @@ class GameMode(mode.Base):
     }
 
     dropTarget = "up"
+    state = "over"
+
+    def setup(self):
+        self.events = [
+            ["inactive", "shooterLane", self.check_launch]
+        ]
 
     def start(self):
-        p.sounds.play_music("credits", start_time=2.4)
         p.events.on("next_player", self.next_player)
         self.machine.flippers().enable()
 
     def stop(self):
         p.events.off("next_player", self.next_player)
+        p.sounds.stop_music()
         self.machine.flippers().disable()
 
     def next_player(self):
+        self.state = "launch"
+        p.sounds.play_music("Introduction", start_time=0.5)
         p.machine.coil("trough").pulse()
         self.lowerDropTarget(40)
+
+    def check_launch(self, sw=None):
+        if self.state == "launch":
+            self.state = "play"
+            p.sounds.play_music("Credits", start_time=2.25)
 
     def raiseDropTarget(self):
         if self.dropTarget == "down":

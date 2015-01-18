@@ -56,8 +56,4 @@ class AttractMode(script.Script):
 
     def start(self):
         super(AttractMode, self).start()
-        p.sounds.play_music("intro", start_time=0.5)
         self.root.reset()
-
-    def stop(self):
-        p.sounds.stop_music()
