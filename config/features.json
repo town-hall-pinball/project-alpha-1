@@ -12,7 +12,8 @@
         "pinlib.modules.launch",
         "pinlib.modules.search",
         "pingame.attract",
-        "pingame.game",
+        "pingame.nofear",
+        "pingame.alpha",
         "pingame.skull",
         "pingame.mini"
     ],

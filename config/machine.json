@@ -761,18 +761,30 @@
         },
         "rules": {
             "coil:trough=pulse": [
-                { "from": "trough1",        "to": "shooterLane" },
-                { "from": "trough2",        "to": "trough1" },
-                { "from": "trough3",        "to": "trough2" },
-                { "from": "trough4",        "to": "trough3" }
+                { "from": "trough1", "to": "shooterLane" },
+                { "from": "trough2", "to": "trough1" },
+                { "from": "trough3", "to": "trough2" },
+                { "from": "trough4", "to": "trough3" }
             ],
             "switch:trough4=enable": [
-                { "from": "trough4",        "to": "trough3 "},
-                { "from": "trough3",        "to": "trough2" },
-                { "from": "trough2",        "to": "trough1" }
+                { "from": "trough4", "to": "trough3 "},
+                { "from": "trough3", "to": "trough2" },
+                { "from": "trough2", "to": "trough1" }
             ],
             "coil:autoPlunger=pulse": [
                 { "from": "shooterLane" }
+            ],
+            "coil:popperRight=pulse": [
+                { "from": "popperRight1" }
+            ],
+            "switch:subwayLeft=enable": [
+                { "to": "subwayCenter" }
+            ],
+            "switch:subwayCenter=enable": [
+                { "from": "subwayCenter", "to": "popperRight2" }
+            ],
+            "switch:popperRight2=enable": [
+                { "from": "popperRight2", "to": "popperRight1" }
             ]
         }
     }

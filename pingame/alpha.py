@@ -77,9 +77,6 @@ class GameMode(mode.Base):
     def sw_spinner_active(self, sw=None):
         p.game.player.award(10)
 
-    def sw_popperRight1_active_for_2s(self, sw=None):
-        p.machine.coil("popperRight").pulse()
-
     def sw_eject_active_for_2s(self, sw=None):
         p.game.player.award(250)
         p.machine.coil("eject").pulse()
