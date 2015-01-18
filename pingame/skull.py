@@ -19,7 +19,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import p, mode, util
+from pinlib import p, log, mode, util
 from pinlib.dmd import ui
 from os import system
 
@@ -52,4 +52,5 @@ class SkullMode(mode.Base):
 
     def skull_speak(self):
         self.root.show("Skull Time!", 2.0).effect("pulse")
+        log.notify("Skull Time!")
         p.machine.coil("skullMouth").pulse()
