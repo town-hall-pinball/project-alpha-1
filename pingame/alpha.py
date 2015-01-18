@@ -81,17 +81,6 @@ class GameMode(mode.Base):
         p.game.player.award(250)
         p.machine.coil("eject").pulse()
 
-    def sw_magnetLeft_active(self, sw=None):
-        p.machine.coil("magnetLeft").pulse(30)
-
-    """
-    def sw_magnetCenter_active_for(self, sw=None):
-        p.machine.coil("magnetCenter").pulse(30)
-    """
-
-    def sw_magnetRight_active(self, sw=None):
-        p.machine.coil("magnetRight").pulse(30)
-
     def sw_kickback_active(self, sw=None):
         p.machine.coil("kickback").pulse()
 
