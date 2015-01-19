@@ -43,7 +43,7 @@ class DropTargetMode(mode.Base):
         ]
 
     def setup_player(self, player):
-        player.data["drop_target"] = "up"
+        player.state["drop_target"] = "up"
 
     def next_player(self):
         state = p.state["drop_target"]

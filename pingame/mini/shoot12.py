@@ -66,17 +66,14 @@ class Shoot12GameMode(mode.Base):
         ]
         for shot in self.shots.keys():
             self.events += [["active", shot, self.register_shot]]
-        self.data = None
 
     def add_player(self, player):
-        player.data = {
+        player.state = {
             "remaining": 12,
             "shots": dict(self.shots)
         }
 
     def next_player(self):
-        self.player = p.game.player
-        self.data = p.game.player.data
         self.update()
 
     def update(self):
@@ -97,9 +94,9 @@ class Shoot12GameMode(mode.Base):
 
     def register_shot(self, sw):
         shot = sw.name
-        if self.data["shots"][shot] > 0:
-            self.data["shots"][shot] -= 1
-            self.data["remaining"] -= 1
-            self.player.award(1)
+        if p.state["shots"][shot] > 0:
+            p.state["shots"][shot] -= 1
+            p.state["remaining"] -= 1
+            p.player.award(1)
             self.update()
             log.notify("{} shots remaining".format(self.data["remaining"]))

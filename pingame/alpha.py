@@ -39,7 +39,8 @@ class GameMode(mode.Base):
 
     def setup(self):
         self.events = [
-            ["drain_all", self.end_of_turn],
+            ["drain_all", self.balls_secured],
+            ["end_of_turn", self.end_of_turn],
             ["inactive", "shooterLane",    self.check_launch],
         ]
 
@@ -63,9 +64,14 @@ class GameMode(mode.Base):
             p.sounds.play_music("Credits", start_time=2.25, loops=-1)
 
     def end_of_turn(self):
+        self.state = "end_of_turn"
         p.sounds.stop_music()
         self.machine.flippers().disable()
-        p.events.trigger("request_bonus")
+
+    def balls_secured(self):
+        if not p.state.get("tilt", False):
+            p.game.end_of_turn()
+            p.events.trigger("request_bonus")
 
     def sw_eject_active_for_2s(self, sw=None):
         p.game.player.award(250)

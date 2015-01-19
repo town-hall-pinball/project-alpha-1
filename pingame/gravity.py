@@ -45,7 +45,7 @@ class GravityAssistMode(mode.Base):
         ]
 
     def setup_player(self, player):
-        player.data["bonus"]["gravity"] = {
+        player.state["bonus"]["gravity"] = {
             "name": "Gravity Assists",
             "count": 0,
             "points": 0
