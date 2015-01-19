@@ -73,9 +73,5 @@ class GameMode(mode.Base):
             p.game.end_of_turn()
             p.events.trigger("request_bonus")
 
-    def sw_eject_active_for_2s(self, sw=None):
-        p.game.player.award(250)
-        p.machine.coil("eject").pulse()
-
     def sw_kickback_active(self, sw=None):
         p.machine.coil("kickback").pulse()
