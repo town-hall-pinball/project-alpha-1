@@ -37,16 +37,19 @@
         "name": "pinlib.modules.search.SearchMode",
         "start": ["reset"],
         "order": [
-            "autoPlunger",
             "dropTargetDown",
             "dropTargetUp",
+            "autoPlunger",
             "eject",
             "kickback",
             "popperRight",
             "skullMouth",
             "slingshotLeft",
             "slingshotRight"
-        ]
+        ],
+        "conditions": {
+            "popperRight": "popperRight2"
+        }
     },{
         "name": "pinlib.modules.tilt.TiltMode",
         "releases": [
