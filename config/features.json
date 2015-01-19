@@ -47,5 +47,12 @@
             "slingshotLeft",
             "slingshotRight"
         ]
+    },{
+        "name": "pinlib.modules.tilt.TiltMode",
+        "releases": [
+            ["shooterLane", "autoPlunger"],
+            ["popperRight2", "popperRight"],
+            ["eject", "eject"]
+        ]
     }]
 }
