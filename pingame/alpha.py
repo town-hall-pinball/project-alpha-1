@@ -72,6 +72,3 @@ class GameMode(mode.Base):
         if not p.state.get("tilt", False):
             p.game.end_of_turn()
             p.events.trigger("request_bonus")
-
-    def sw_kickback_active(self, sw=None):
-        p.machine.coil("kickback").pulse()
