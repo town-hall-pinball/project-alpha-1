@@ -30,9 +30,9 @@ class DropTargetMode(mode.Base):
     defaults = {
         "id": "drop_target",
         "label": "Drop Target",
-        "priority": 2200,
-        "start": ["game_start"],
-        "stop": ["game_over"]
+        "priority": 2314,
+        "start": ["next_player"],
+        "stop": ["end_of_turn"]
     }
 
     def setup(self):

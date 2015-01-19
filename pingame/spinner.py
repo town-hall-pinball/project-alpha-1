@@ -30,10 +30,10 @@ class SpinnerMode(mode.Base):
     defaults = {
         "id": "spinner",
         "label": "Spinner",
-        "priority": 2211,
+        "priority": 2313,
         "points": 100,
-        "start": ["game_start"],
-        "stop": ["game_over"],
+        "start": ["next_player"],
+        "stop": ["end_of_turn"],
     }
 
     def setup(self):

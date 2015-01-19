@@ -30,10 +30,10 @@ class SlingshotMode(mode.Base):
     defaults = {
         "id": "slingshot",
         "label": "Slingshots",
-        "priority": 2212,
+        "priority": 2312,
         "points": 10,
-        "start": ["game_start"],
-        "stop": ["game_over"],
+        "start": ["next_player"],
+        "stop": ["end_of_turn"],
     }
 
     def setup(self):

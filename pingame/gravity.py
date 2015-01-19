@@ -30,9 +30,9 @@ class GravityAssistMode(mode.Base):
     defaults = {
         "id": "gravity",
         "label": "Gravity Assist",
-        "priority": 2210,
-        "start": ["game_start"],
-        "stop": ["game_over"],
+        "priority": 2310,
+        "start": ["next_player"],
+        "stop": ["end_of_turn"],
         "max_bonus": 10000,
         "bonus": 1000
     }
