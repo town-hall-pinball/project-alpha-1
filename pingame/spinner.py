@@ -38,11 +38,10 @@ class SpinnerMode(mode.Base):
 
     def setup(self):
         self.events = [
-            ["next_player", self.next_turn],
             ["active", "spinner", self.award],
         ]
 
-    def next_turn(self):
+    def start(self):
         p.state["spinner.multiplier"] = 1
 
     def award(self, sw=None):

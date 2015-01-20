@@ -40,7 +40,6 @@ class GravityAssistMode(mode.Base):
     def setup(self):
         self.events = [
             ["add_player", self.setup_player],
-            ["next_player", self.next_turn],
             ["active", "uTurn", self.award],
         ]
 
@@ -56,7 +55,12 @@ class GravityAssistMode(mode.Base):
         bonus["count"] += 1
         bonus["points"] += self.options["bonus"]
 
-    def next_turn(self):
+    def start(self):
+        if not "gravity" in p.state["bonus"]:
+            p.state["bonus"]["gravity"] = {
+                "count": 0,
+                "points": 0
+            }
         self.add()
 
     def award(self, sw=None):

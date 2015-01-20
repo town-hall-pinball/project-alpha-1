@@ -35,13 +35,11 @@ class GameMode(mode.Base):
         "stop": ["game_over"]
     }
 
-    state = "over"
-
     def setup(self):
         self.events = [
             ["drain_all", self.balls_secured],
             ["end_of_turn", self.end_of_turn],
-            ["inactive", "shooterLane",    self.check_launch],
+            ["initial_launch", self.launch],
         ]
 
     def start(self):
@@ -54,14 +52,11 @@ class GameMode(mode.Base):
 
     def next_player(self):
         self.machine.flippers().enable()
-        self.state = "launch"
         p.sounds.play_music("Introduction", start_time=0.5, loops=-1)
         p.machine.coil("trough").pulse()
 
-    def check_launch(self, sw=None):
-        if self.state == "launch":
-            self.state = "play"
-            p.sounds.play_music("Credits", start_time=2.25, loops=-1)
+    def launch(self, sw=None):
+        p.sounds.play_music("Credits", start_time=2.25, loops=-1)
 
     def end_of_turn(self):
         self.state = "end_of_turn"
