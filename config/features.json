@@ -11,17 +11,20 @@
         "pinlib.modules.tilt",
         "pinlib.modules.launch",
         "pinlib.modules.search",
+
+        "pingame.alpha",
         "pingame.attract",
         "pingame.bonus",
         "pingame.drop",
-        "pingame.lagrange",
-        "pingame.kickback",
-        "pingame.nofear",
-        "pingame.alpha",
-        "pingame.skull",
         "pingame.gravity",
-        "pingame.spinner",
+        "pingame.kickback",
+        "pingame.lagrange",
+        "pingame.magnets",
+        "pingame.popper",
+        "pingame.skull",
         "pingame.slingshot",
+        "pingame.spinner",
+
         "pingame.mini"
     ],
     "modes": [{

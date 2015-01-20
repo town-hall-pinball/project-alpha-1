@@ -22,28 +22,21 @@
 from pinlib import p, mode, util
 
 def init():
-    p.load_mode(GameMode)
+    p.load_mode(PopperMode)
 
-magnet_timeout = 100
 
-class GameMode(mode.Base):
+class PopperMode(mode.Base):
 
     defaults = {
-        "id": "no_fear",
-        "label": "No Fear",
-        "priority": 2200,
-        "start": ["game_start"],
-        "stop": ["game_over"]
+        "id": "popper",
+        "label": "Popper",
+        "priority": 2318,
+        "start": ["next_player"],
+        "stop": ["end_of_turn"]
     }
 
     def setup(self):
         self.events = [
-            ["active",   "magnetLeft",    self.activate_magnet_left],
-            ["inactive", "magnetLeft",    self.deactivate_magnet_left],
-            ["active",   "magnetCenter",  self.activate_magnet_center],
-            ["inactive", "magnetCenter",  self.deactivate_magnet_center],
-            ["active",   "magnetRight",   self.activate_magnet_right],
-            ["inactive", "magnetRight",   self.deactivate_magnet_right],
             ["active",   "subwayCenter",  self.popper_cycle],
         ]
 
@@ -52,21 +45,3 @@ class GameMode(mode.Base):
         if switch.is_active():
             p.machine.flasher("flasherPopperRight").pulsed_patter(10, 75, 255)
             p.machine.coil("popperRight").pulse(delay=255)
-
-    def activate_magnet_left(self, sw=None):
-        p.machine.coil("magnetLeft").pulsed_patter(1, 1, magnet_timeout)
-
-    def deactivate_magnet_left(self, sw=None):
-        p.machine.coil("magnetLeft").disable()
-
-    def activate_magnet_center(self, sw=None):
-        p.machine.coil("magnetCenter").pulsed_patter(1, 1, magnet_timeout)
-
-    def deactivate_magnet_center(self, sw=None):
-        p.machine.coil("magnetCenter").disable()
-
-    def activate_magnet_right(self, sw=None):
-        p.machine.coil("magnetRight").pulsed_patter(1, 1, magnet_timeout)
-
-    def deactivate_magnet_right(self, sw=None):
-        p.machine.coil("magnetRight").disable()
