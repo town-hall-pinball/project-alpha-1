@@ -45,3 +45,5 @@ class PopperMode(mode.Base):
         if switch.is_active():
             p.machine.flasher("flasherPopperRight").pulsed_patter(10, 75, 255)
             p.machine.coil("popperRight").pulse(delay=255)
+        else:
+            p.machine.coil("trough").pulse()
