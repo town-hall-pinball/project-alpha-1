@@ -19,7 +19,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import p, mode, util
+from pinlib import p, log, mode, util
 
 def init():
     p.load_mode(GameMode)
@@ -69,6 +69,9 @@ class GameMode(mode.Base):
         self.machine.flippers().disable()
 
     def balls_secured(self):
-        if not p.state.get("tilt", False):
+        saving = p.state.get("saving", False)
+        tilting = p.state.get("tilt", False)
+        if not saving and not tilting:
+            log.notify("End of Turn")
             p.game.end_of_turn()
             p.events.trigger("request_bonus")

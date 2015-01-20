@@ -35,7 +35,7 @@ class BonusMode(mode.Base):
     }
 
     def intro(self):
-        return ui.Message("Out of Fuel")
+        return ui.Message("Misson Abort")
 
     def start(self):
         self.root = self.intro()

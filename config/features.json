@@ -2,6 +2,7 @@
     "modules": [
         "pinlib.modules.game",
         "pinlib.modules.ball",
+        "pinlib.modules.save",
         "pinlib.modules.splash",
         "pinlib.modules.coin",
         "pinlib.modules.score",
@@ -62,5 +63,15 @@
             ["popperRight2", "popperRight"],
             ["eject", "eject"]
         ]
+    },{
+        "name": "pinlib.modules.launch.LaunchMode",
+        "button": "ballLaunchButton",
+        "lamp": "ballLaunchButton",
+        "lane": "shooterLane",
+        "coil": "autoPlunger"
+    },{
+        "name": "pinlib.modules.save.BallSaveMode",
+        "flasher": "flasherAutoFire",
+        "coil": "trough"
     }]
 }
