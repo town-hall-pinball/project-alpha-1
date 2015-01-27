@@ -33,7 +33,8 @@ class SkullMode(mode.Base):
         "label": "Skull Time!",
         "priority": 2311,
         "start": ["next_player"],
-        "stop": ["end_of_turn"]
+        "stop": ["end_of_turn"],
+        "award": 50000
     }
 
     def setup(self):
@@ -52,5 +53,6 @@ class SkullMode(mode.Base):
 
     def skull_speak(self):
         self.root.show("Skull Time!", 2.0).effect("pulse")
+        p.player.award(self.options["award"])
         log.notify("Skull Time!")
         p.machine.coil("skullMouth").pulse()
