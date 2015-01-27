@@ -205,4 +205,4 @@ See the [full license](LICENSE.md) for more information.
 * [Mike McGann](https://github.com/mike-mcgann): Software
 * [Ken Barton](https://github.com/stappkb): Software
 * [Bradford Barr](https://github.com/bradfordbarr): Blog
-* [Dan Hooper](https://github.com/danhooper)
+* [Dan Hooper](https://github.com/danhooper): Contributor
