@@ -5,7 +5,7 @@ can use git. Add your name here! Alphabetical order in the sections.
 
 
 #### Executive Producer
-- Jon Horner
+- Jon Horner (@charredresistors)
 
 #### Ruleset
 - Chris Newsom
@@ -21,17 +21,17 @@ can use git. Add your name here! Alphabetical order in the sections.
 #### Music
 
 #### Software
-- Mike McGann
-- Ken B
+- Mike McGann (@mike-mcgann)
+- Ken B (@stappkb)
 
 #### Web Site
-- Bradford Barr
+- Bradford Barr (@bradfordbarr)
 
 
 #### Testers
 
 #### Contributors
-- Dan Hooper
+- Dan Hooper (@danhooper)
 
 #### Special Thanks
 TODO: Cite used libraries here
