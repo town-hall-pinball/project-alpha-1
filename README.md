@@ -184,6 +184,22 @@ Activate the Easter Egg in attract mode with the following:
 * Left Flipper
 * Right Flipper
 
+## Usage
+
+```
+usage: pingame [-h] [-c] [-d] [--display] [-e] [-p] [-q] [-v]
+
+optional arguments:
+-h, --help     show this help message and exit
+-c, --console  also print log file to console
+-d, --debug    enable all debugging options
+--display      force debugging display when using the P-ROC
+-e, --events   show machine events to console
+-p, --proc     connect to the P-ROC
+-q, --quiet    do not use a log file
+-v, --verbose  print debugging information to the log
+```
+
 ## Contributing
 
 It is quite early, but yes, contributions are completely welcome.
