@@ -1,11 +1,13 @@
 # Project Alpha
 
-Visit our blog at:
+Visit our blog for news, updates, and videos:
 
 http://townhallpinball.org
 
-Town Hall Pinball is working on a customized pinball machine. The overall plan
-is to:
+## About
+
+Town Hall Pinball Studios is working on a customized pinball machine. The
+overall plan is to:
 
 * Use an existing pinball machine, "No Fear"
 * Completely rebrand it with a new play-field, backglass, and cabinet artwork
@@ -23,6 +25,10 @@ by us that extends off the work done on
 Since the theme and the name of the game has not yet been decided,
 this repository will be called "project-alpha" for now. It will be renamed
 in the future.
+
+Feel free to clone the repository and see development in action. This code
+can be run without an actual pinball machine. Anything and everything can be
+broken at anytime.
 
 ## Requirements
 
@@ -76,18 +82,7 @@ pingame
 
 A dot-matrix display should appear.
 
-## Controls
-
-Only a simple attract mode is available at the moment.
-
-* ``1``: Left coin slot
-* ``2``: Center coin slot
-* ``3``: Right coin slot
-* ``[``: Left flipper
-* ``]``: Right flipper
-* ``s``: Start Button
-* ``d``: Drain
-* ``x``: Buy Extra Ball
+## Keyboard Controls
 
 Operator service mode:
 
@@ -95,6 +90,76 @@ Operator service mode:
 * ``8``: Down
 * ``9``: Up
 * ``0``: Exit
+
+Important to know:
+
+* ``1``: Coin slot (left)
+* ``[``: Left flipper
+* ``]``: Right flipper
+* ``s``: Start Button
+* ``p``: Ball Launch Button
+* ``d``: Drain (Trough, 4)
+* ``\``: Slam Tilt (Useful for quickly ending a game)
+
+Other game switches:
+
+* ``v``: Drop Target
+* ``b``: Left subway entrance (behind drop target)
+* ``n``: Center subway entrance (skull)
+* ``/``: Spinner
+* ``c``: Saucer
+* ``'``: Tilt
+* ``i``: Left Ramp, Enter
+* ``k``: Left Ramp, Middle
+* ``o``: Right Ramp, Enter
+* ``l``: Right Ramp, Exit
+* ``x``: Buy Extra Ball
+
+## Web Console
+
+The web console is enabled by default. To use, navigate to the following:
+
+http://localhost:9000
+
+See the video of the
+[web console](https://www.youtube.com/watch?v=--j8BTRcH3A)
+in action.
+
+The web service can be enabled or disable in the service menu under
+``Utilities -> Server``
+
+## Ruleset
+
+Completely boring at the moment, but it is a start:
+
+* Ball save is active for five seconds. Only one save per ball.
+* Hitting the drop target lowers the target. A shot to the left subway raises
+the drop target. State of the drop target is preserved across balls.
+* The scoop behind the drop target or the skull awards a Skull Time
+value of 50,000.
+* Center orbit shot awards a gravity assist. Each gravity assist increases the
+spinner multipler by one to a maximum of ten. Once the maximum has been
+reached, each additional shot awards 10,000. The spinner multiplier is reset
+at the start of each ball.
+* The spinner awards 100 times the amount of the spinner multiplier.
+* Each visit to the saucer tours a Lagrange point. Points are as follows:
+  * L1: 10,000 points
+  * L2: 20,000 points
+  * L3: 30,000 points
+  * L4: 40,000 points
+  * L5: 50,000 points
+* No points are awarded once the Lagrange tour is complete. Visits are reset at
+the start of each ball.
+* Slingshots award 10 points.
+
+
+## Mini-Games
+
+Start the game by pressing *Buy Extra Ball* instead of *Start* to access the
+mini-game menu. Work in progress. Expected mini-games:
+
+* Timed 12-shot Challenge
+* Multiball Madness
 
 ## Easter Eggs
 
@@ -114,7 +179,8 @@ Activate the Easter Egg in attract mode with the following:
 
 * Left Flipper x 3
 * Right Flipper x 3
-* Buy Extra Ball
+* Left Flipper
+* Right Flipper
 
 ## Contributing
 
