@@ -125,7 +125,7 @@ See the video of the
 [web console](https://www.youtube.com/watch?v=--j8BTRcH3A)
 in action.
 
-The web service can be enabled or disable in the service menu under
+The web service can be enabled or disabled in the service menu under
 ``Utilities -> Server``
 
 ## Ruleset
