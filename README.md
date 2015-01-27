@@ -133,6 +133,8 @@ The web service can be enabled or disable in the service menu under
 Completely boring at the moment, but it is a start:
 
 * Ball save is active for five seconds. Only one save per ball.
+* Kickback is lit at the start of each ball. Relight by hitting both standup
+targets within a period of nine seconds.
 * Hitting the drop target lowers the target. A shot to the left subway raises
 the drop target. State of the drop target is preserved across balls.
 * The scoop behind the drop target or the skull awards a Skull Time
@@ -190,8 +192,8 @@ to the discussion.
 
 ## Administrivia
 
-* project-alpha: Copyright &copy; 2014 townhallpinball.org
-* pinlib: Copyright &copy; 2014 townhallpinball.org
+* project-alpha: Copyright &copy; 2014-2015 townhallpinball.org
+* pinlib: Copyright &copy; 2014-2015 townhallpinball.org
 * pyprocgame: Copyright &copy; 2009-2011 Adam Preble and Gerry Stellenberg
 
 See the [full license](LICENSE.md) for more information.
