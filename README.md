@@ -198,4 +198,11 @@ to the discussion.
 
 See the [full license](LICENSE.md) for more information.
 
-[Credits](CREDITS.md)
+## Credits
+
+* [Jon Horner](https://github.com/charredresistors): Executive Producer
+* Chris Newsom: Ruleset? He did provide the machine.
+* [Mike McGann](https://github.com/mike-mcgann): Software
+* [Ken Barton](https://github.com/stappkb): Software
+* [Bradford Barr](https://github.com/bradfordbarr): Blog
+* [Dan Hooper](https://github.com/danhooper)
