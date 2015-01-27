@@ -35,11 +35,11 @@ broken at anytime.
 * [VirtualBox](https://www.virtualbox.org/)
 * [Vagrant](https://www.vagrantup.com/)
 
-### Mac OS X Specific
+#### Mac OS X Specific
 
 * X11, [Xquartz](http://xquartz.macosforge.org/trac/wiki)
 
-### Windows Specific
+#### Windows Specific
 
 * [Cygwin](https://www.cygwin.com)
 * X11, [Xming](https://sourceforge.net/projects/xming/files/latest/download)
