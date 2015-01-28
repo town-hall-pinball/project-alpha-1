@@ -142,6 +142,10 @@
                 "name": "Fonts",
                 "icon": "service/font",
                 "event": "request_service_font_browser"
+            },{
+                "name": "Animations",
+                "icon": "service/animations",
+                "event": "request_service_animation_browser"
             }]
         },{
             "name": "Debug",
