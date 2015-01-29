@@ -41,17 +41,22 @@ class AttractMode(script.Script):
         self.root = ui.ScriptPanel()
 
         background = ui.Background("attract/p-roc")
-        presents = ui.Message("Town Hall Pinball Studios", "small_wide").add("Presents")
+        town_hall = ui.Background("THP_Logo")
+        presents = ui.Message("Presents")
         title = ui.Message(p.machine.config["game.name"])
         game_over = ui.Message("Game Over")
+        #anim = ui.Animation({"animation": "tinatest"})
 
-        #self.script.add(background, self.unit)
+        #self.root.add(anim, self.unit)
+        self.root.add(background, self.unit)
+        self.root.add(town_hall, self.unit)
         self.root.add(presents, self.unit)
         self.root.add(title, self.unit)
         self.root.add(game_over, self.unit * 2)
         self.root.add(coin.credits(), self.unit * 2)
         #self.script.add(highscore.ClassicTable())
         self.root.add(None, self.unit * 2)
+
         self.display(self.root)
 
     def start(self):

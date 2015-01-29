@@ -43,7 +43,11 @@ class PopperMode(mode.Base):
     def popper_cycle(self, sw=None):
         switch = p.machine.switch("popperRight1")
         if switch.is_active():
-            p.machine.flasher("flasherPopperRight").pulsed_patter(10, 75, 255)
-            p.machine.coil("popperRight").pulse(delay=255)
+            p.machine.flasher("flasherPopperRight").patter(100, 127)
+            p.timers.set(1, self.pop)
         else:
             p.machine.coil("trough").pulse()
+
+    def pop(self):
+        p.machine.flasher("flasherPopperRight").disable()
+        p.machine.coil("popperRight").pulse(delay=255)

@@ -35,8 +35,8 @@ class KickbackMode(mode.Base):
         "stop": ["end_of_turn"],
         "award_target_active": 10000,
         "award_target_inactive": 1000,
-        "hurry_up_duration": 9,
-        "blink_time": 500
+        "hurry_up_duration": 30,
+        "blink_time": 1000
     }
     timer = None
     hurry_up_lamp = None

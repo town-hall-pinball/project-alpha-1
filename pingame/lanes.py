@@ -19,40 +19,32 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-from pinlib import p, log, mode, util
-from pinlib.dmd import ui
-from os import system
+from pinlib import p, mode, util
 
 def init():
-    p.load_mode(SkullMode)
+    p.load_mode(LanesMode)
 
-class SkullMode(mode.Base):
+
+class LanesMode(mode.Base):
 
     defaults = {
-        "id": "skull",
-        "label": "Skull Time!",
-        "priority": 2311,
+        "id": "lanes",
+        "label": "Lanes",
+        "priority": 2320,
         "start": ["next_player"],
-        "stop": ["end_of_turn"],
-        "award": 2500
+        "stop": ["end_of_turn"]
     }
 
     def setup(self):
-        self.root = ui.Text({
-            "padding": 0,
-            "text": "Skull Time",
-            "font": "medium_bold",
-            "opaque": True,
-            "enabled": False
+        self.events = [
+            ["active",   "returnLeft",      self.inlane],
+            ["active",   "returnRight",     self.inlane],
+            ["active",   "outlaneRight",    self.outlane],
+            ["active",   "kickback",        self.outlane],
+        ]
 
-        })
-        self.display(self.root)
+    def inlane(self, sw=None):
+        p.player.award(100)
 
-    def sw_subwayCenter_active(self, sw=None):
-        self.skull_speak()
-
-    def skull_speak(self):
-        self.root.show("Skull Time!", 2.0).effect("pulse")
-        p.player.award(self.options["award"])
-        log.notify("Skull Time!")
-        p.machine.coil("skullMouth").pulse()
+    def outlane(self, sw=None):
+        p.player.award(1000)

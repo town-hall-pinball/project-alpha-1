@@ -47,7 +47,7 @@ class MagnetsMode(mode.Base):
         ]
 
     def on(self, switch):
-        p.machine.coil(switch.name).pulsed_patter(1, 1, magnet_timeout)
+        p.machine.coil(switch.name).pulsed_patter(1, 1)
 
     def off(self, switch):
         p.machine.coil(switch.name).disable()

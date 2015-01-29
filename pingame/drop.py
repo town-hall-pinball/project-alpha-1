@@ -31,7 +31,7 @@ class DropTargetMode(mode.Base):
         "id": "drop_target",
         "label": "Drop Target",
         "priority": 2314,
-        "start": ["next_player"],
+        "start": ["activate_playfield"],
         "stop": ["end_of_turn"]
     }
 
@@ -39,7 +39,8 @@ class DropTargetMode(mode.Base):
         self.events = [
             ["add_player", self.setup_player],
             ["next_player", self.next_player],
-            ["active", "dropTarget", self.lower_target]
+            ["active", "dropTarget", self.lower_target],
+            ["active", "subwayLeft", self.raise_target]
         ]
 
     def setup_player(self, player):
