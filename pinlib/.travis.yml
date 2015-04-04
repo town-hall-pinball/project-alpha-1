@@ -1,0 +1,8 @@
+language: python
+python:
+    - "2.7"
+before_install: pip install mock
+script: ./run_tests.sh
+notifications:
+  slack: town-hall-pinball:HqAxLSQWDcNCMIfIoH35ZFOc
+  

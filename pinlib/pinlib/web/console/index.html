@@ -1,0 +1,150 @@
+
+<!doctype html>
+<html>
+<head>
+    <link type="text/css" rel="Stylesheet" href="/lib/font-awesome-4.2.0/css/font-awesome.min.css">
+    <link type="text/css" rel="Stylesheet" href="/lib/bootstrap-3.3.1/css/bootstrap.min.css">
+    <link type="text/css" rel="Stylesheet" href="/lib/bootstrap-3.3.1/css/bootstrap-theme.min.css">
+    <link type="text/css" rel="Stylesheet" href="console.css">
+
+    <script type="text/javascript" src="/lib/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery.animate-colors-min.js"></script>
+    <script type="text/javascript" src="/lib/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/lib/lodash-2.4.1.min.js"></script>
+    <script type="text/javascript" src="/util/events.js"></script>
+    <script type="text/javascript" src="ws.js"></script>
+    <script type="text/javascript" src="sim.js"></script>
+    <script type="text/javascript" src="console.js"></script>
+</head>
+<body>
+
+<h1 id="title"></h1>
+
+<div id="top-bar" class="flow">
+    <div id="activity" class="status-light" title="Activity"></div>
+    <div id="connection" class="status-light" title="Connection"></div>
+</div>
+
+<div id="search" class="input-group">
+    <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
+    <div class="btn-toolbar" role="toolbar">
+        <div id="device-filter" role="group" class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active filter">
+                <input type="checkbox" data-hardware="coil" data-action="filter" autocomplete="off" checked><i class="fa fa-database"></i>
+            </label>
+            <label class="btn btn-primary active filter">
+                <input type="checkbox" data-hardware="flasher" data-action="filter" autocomplete="off" checked><i class="fa fa-bolt"></i>
+            </label>
+            <label class="btn btn-primary active filter">
+                <input type="checkbox" data-hardware="lamp" data-action="filter" autocomplete="off" checked><i class="fa fa-lightbulb-o"></i>
+            </label>
+            <label class="btn btn-primary active filter">
+                <input type="checkbox" data-hardware="switch" data-action="filter" autocomplete="off" checked><i class="fa fa-minus-square-o"></i>
+            </label>
+            <label class="btn btn-primary filter">
+                <input type="checkbox" data-hardware="favorites" data-action="filter" autocomplete="off"><i class="fa fa-star"></i>
+            </label>
+        </div>
+        <div id="action-button" role="group" class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-fw fa-star"></i>
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a id="mark" href="#"><i class="fa fa-fw fa-star"></i>Mark Favorite</a></li>
+                <li><a id="info" href="#"><i class="fa fa-fw fa-info-circle"></i>Display Information</a></li>
+                <li><a id="send" href="#"><i class="fa fa-fw fa-exchange"></i>Send Command</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="device-list" class="panel">
+    <ul>
+    </ul>
+</div>
+
+<div id="matrix">
+    <div id="switches" class="matrix left">
+        <table class="panel">
+            <tr>
+                <th>D</th>
+                <th colspan="8">Switches</th>
+                <th>F</th>
+            </tr>
+        </table>
+    </div>
+    <div id="lamps" class="matrix left">
+        <table class="panel">
+            <tr>
+                <th colspan="8">Lamps</th>
+                <th>G</th>
+            </tr>
+        </table>
+    </div>
+    <div id="coils" class="matrix left">
+        <table class="panel">
+            <tr>
+                <th colspan="5">Coils / Flash</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="center">
+    <span title="Keyboard Reference" data-toggle="tooltip"><button  data-placement="top" class="btn btn-primary" type="button" data-toggle="modal" data-target="#keyboard-reference"><i class="fa fa-keyboard-o"></i></button></span>
+    <button id="ball-search" title="Ball Search" data-toggle="tooltip" data-placement="top" class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+
+    <span id="flippers">
+        <button id="flippers-enable" class="btn btn-primary" type="button">Flippers</button>
+        <div role="group" class="btn-group">
+            <button id="simulator" class="btn btn-primary" type="button" data-toggle="dropdown" aria-expanded="false" disabled="disabled">
+                Simulator <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a id="simulator-toggle" href="#">Enable</a></li>
+            </ul>
+        </div>
+    </span>
+</div>
+
+<div id="modes" class="panel">
+<table>
+</table>
+</div>
+
+<div id="log" class="panel">
+    <ul></ul>
+</div>
+<div id="info-panel" class="panel" style="display: none">
+    <div id="info-label"></div>
+    <div id="info-hardware"></div>
+    <div id="info-name"></div>
+    <div id="info-id"></div>
+    <div id="info-notes"></div>
+</div>
+
+<div id="keyboard-reference" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Keyboard Reference</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table" id="keyboard-table">
+                    <tr>
+                        <th>Key</th>
+                        <th>Device</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+</html>

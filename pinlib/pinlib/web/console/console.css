@@ -1,0 +1,400 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    font-family: ‘Lucida Console’, Monaco, monospace;
+}
+
+#search input {
+    background-color: #000;
+    border: 1px solid #888;
+    color: #fff;
+}
+
+#title {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 14pt;
+}
+
+#top-bar {
+    position: absolute;
+    left: 1010px;
+    top: 20px;
+}
+
+#top-bar div {
+    margin: 0 2px 0 3px;
+}
+
+.status-light {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    background-color: #000;
+}
+
+.on {
+    background-color: #fff;
+}
+
+#search {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+#device-filter {
+    margin-top: 5px;
+    margin-left: 2px;
+    width: 250px;
+}
+
+#device-filter label {
+    width: 15%;
+}
+
+#action-button {
+    float: right;
+    margin-top: -33px; /* Embarassing */
+}
+
+#action-button button {
+    background-image: none;
+    background-color: #000;
+    color: #fff;
+    border-color: #888;
+}
+
+#action-button button:hover {
+    background-color: #888;
+}
+
+#action-button .dropdown-menu i {
+    margin-right: 5px;
+}
+
+#device-list {
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    bottom: 10px;
+    width: 250px;
+    color: #fff;
+    font-size: 8pt;
+    font-family: ‘Lucida Console’, Monaco, monospace;
+    overflow-y: scroll;
+}
+
+#device-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#device-list li {
+    padding-left: 5px;
+}
+
+#device-list li:hover {
+    background-color: #006;
+}
+
+#device-list i.hardware {
+    margin-right: 5px;
+}
+
+#device-list .favorite {
+    color: rgba(0, 0, 0, 0);
+}
+
+#device-list .favorite.selected {
+    color: #fff;
+}
+
+#matrix {
+    position: absolute;
+    top: 50px;
+    left: 290px;
+    width: 800px;
+}
+
+#matrix table th {
+    text-align: center;
+    border-bottom: 1px solid #888;
+    font-size: 8pt;
+}
+
+.matrix {
+    margin-right: 20px;
+}
+
+.flow {
+    display: block;
+}
+
+.flow div {
+    float: left;
+}
+
+.panel {
+    background-color: #000;
+    border: 1px solid #888;
+    border-collapse: collapse;
+}
+
+.left-column {
+    border-right: 1px solid #888;
+}
+
+.right-column {
+    border-left: 1px solid #888;
+}
+
+.switch {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+}
+
+.switch.off {
+    border: 2px solid #000;
+    background-color: #444;
+}
+
+.switch.on {
+    border: 2px solid #fff;
+    background-color: #444;
+}
+
+.light {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.light.off {
+    border: 1px solid #888;
+    background-color: #000;
+}
+
+.light.on {
+    border: 1px solid #888;
+    background-color: #fff;
+}
+
+.coil {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+}
+
+.coil.off {
+    border: 1px solid #888;
+    background-color: #000;
+}
+
+.coil.on {
+    border: 1px solid #888;
+    background-color: #fff;
+}
+
+.unused {
+    width: 12px;
+    height: 12px;
+    margin: 3px;
+}
+
+.enable[data-type='mode'] {
+    color: #aaf;
+}
+
+.hover-link {
+    background-color: #00a;
+}
+
+#center {
+    position: absolute;
+    left: 290px;
+    top: 220px;
+    width: 490px;
+}
+
+#flippers {
+    float: right;
+}
+
+#modes {
+    position: absolute;
+    top: 50px;
+    left: 800px;
+    bottom: 10px;
+    width: 250px;
+    font-size: 9pt;
+}
+
+#modes .priority {
+    text-align: right;
+}
+
+#modes td {
+    padding: 0 5px;
+}
+
+#log, #info-panel {
+    position: absolute;
+    left: 290px;
+    top: 260px;
+    bottom: 10px;
+    width: 490px;
+    color: #fff;
+    overflow-y: scroll;
+    font-size: 9pt;
+    font-family: ‘Lucida Console’, Monaco, monospace;
+}
+
+#info-panel {
+    font-size: 12pt;
+    padding: 10px;
+}
+
+#info-label {
+    font-size: 14pt;
+}
+
+#info-hardware {
+    margin-bottom: 10px;
+    font-size: 10pt;
+}
+
+#log ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#log li {
+    padding-left: 5px;
+}
+
+#log i {
+    margin-right: 7px;
+}
+
+.disable {
+    color: #888;
+}
+
+.game {
+    color: #f80;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+li.on {
+    background-color: #888;
+}
+
+.local {
+    color: #ff8;
+}
+
+.error {
+    color: #f88;
+}
+
+.simulate {
+    color: #8f8;
+}
+
+li.enable[data-type='music'],
+li.enable[data-type='sound'] {
+    color: #a8a;
+}
+
+li.disable[data-type='music'],
+li.disable[data-type='sound'] {
+    color: #888;
+}
+
+.btn-primary {
+    background-color: #000;
+    background-image: none;
+    border-color: #888;
+}
+
+.btn-primary:focus {
+    background-color: #000;
+    border-color: #888;
+}
+
+.btn-primary:hover {
+    background-color: #888;
+}
+
+.btn-primary.active {
+    border-color: #666;
+    background-color: #aaa;
+    color: #000;
+}
+
+.btn-primary:disabled {
+    border-color: #222;
+    background-color: #444;
+    color: #000;
+}
+
+.btn-primary.active:hover {
+    background-color: #888;
+}
+
+.btn-primary.on {
+    color: #000;
+    background-color: #aaa;
+}
+
+.btn-primary.on:hover {
+    background-color: #888;
+}
+
+.tooltip-inner {
+    color: #000;
+    background: #fff;
+}
+
+.modal-dialog {
+    color: #000;
+}
+
+#keyboard-reference .modal-header {
+    border-bottom: none;
+}
+
+
+button:focus {
+    outline: 0 !important;
+}
+
+
+/*
+.tooltip.left  .tooltip-arrow,
+.tooltip.right .tooltip-arrow,
+.tooltip.top   .tooltip-arrow,
+.tooltip.down  .tooltip-arrow {
+    background-color: #f00;
+}
+
+.tooltip.left  .tooltip-arrow {
+    border-left-color: #0f0;
+}
+*/

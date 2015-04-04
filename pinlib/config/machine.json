@@ -1,0 +1,55 @@
+{
+    "game.name": "Splash Mode",
+    "game.version": "Pinlib version 0.0",
+    "game.release": "release date",
+
+    "PRGame": {
+        "machineType": "wpc",
+        "numBalls": 4
+    },
+
+    "PRSwitches": {
+        "flipperLeft": {
+            "number": "SF4",
+            "name": "Flipper, Left",
+            "keyboard": "["
+        },
+        "flipperRight": {
+            "number": "SF2",
+            "name": "Flipper, Right",
+            "keyboard": "]"
+        },
+        "serviceDown": {
+            "number": "SD6",
+            "name": "Service, Down",
+            "keyboard": "9"
+        },
+        "serviceEnter": {
+            "number": "SD8",
+            "name": "Service, Enter",
+            "keyboard": "7"
+        },
+        "serviceExit": {
+            "number": "SD5",
+            "name": "Service, Exit",
+            "keyboard": "0"
+        },
+        "serviceUp": {
+            "number": "SD7",
+            "name": "Service, Up",
+            "keyboard": "8"
+        },
+        "startButton": {
+            "number": "S13",
+            "name": "Start Button",
+            "keyboard": "s"
+        }
+    },
+
+    "PRCoils": {
+        "eject": {
+            "number": "C15",
+            "name": "Eject"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "modules": [
+        "demo.dmd",
+        "demo.display",
+        "demo.main",
+        "demo.modes",
+        "pinlib.modules.service",
+        "pinlib.modules.server"
+    ]
+}

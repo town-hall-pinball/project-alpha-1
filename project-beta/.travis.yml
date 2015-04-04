@@ -1,0 +1,13 @@
+language: python
+python:
+    - "2.7"
+before_install: pip install paver
+install:
+    - pip install coveralls
+    - pip install virtualenv
+    - ./virtualenv-setup
+script: paver test
+notifications:
+  slack: town-hall-pinball:HqAxLSQWDcNCMIfIoH35ZFOc
+after_success:
+    coveralls

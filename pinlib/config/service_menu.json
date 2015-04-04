@@ -1,0 +1,98 @@
+{
+    "name": "Service",
+    "menu": [{
+        "name": "Demo",
+        "icon": "demo",
+        "menu": [{
+            "name": "Displays",
+            "menu": [{
+                "name": "HS Table Display",
+                "menu": [
+                    { "name": "Classic", "event": "high-score-table-classic" },
+                    { "name": "Modern", "event": "high-score-table-modern" }
+                ]
+            }]
+        },{
+            "name": "UI Gallery",
+            "menu": [
+                { "name": "Gradient", "event": "gradient" },
+                { "name": "Text", "event": "text" },
+                { "name": "Alignment", "event": "alignment" },
+                { "name": "Image", "event": "image" },
+                { "name": "Row Panel", "event": "row-panel" },
+                { "name": "Column Panel", "event": "column-panel" }
+            ]
+        },{
+            "name": "Modes",
+            "menu": [
+                { "name": "Script", "event": "script" }
+            ]
+        }]
+    },{
+        "name": "Tests",
+        "icon": "service/tests",
+        "menu": [{
+            "name": "Switches",
+            "icon": "service/switches",
+            "event": "request-switch-test"
+        },{
+            "name": "Coils",
+            "icon": "service/coils",
+            "event": "request-coil-test"
+        },{
+            "name": "Lights",
+            "icon": "service/lamps",
+            "event": "request-light-test"
+        }]
+    },{
+        "name": "Utilities",
+        "icon": "service/utilities",
+        "menu": [{
+            "name": "Server",
+            "icon": "service/server",
+            "menu": [{
+                "name": "Enable Server",
+                "data": "server.enabled",
+                "options": [
+                    [true, "Yes"],
+                    [false, "No"]
+                ],
+                "event": "server-adjust"
+            },{
+                "name": "Publish Events",
+                "data": "server.publish_events",
+                "options": [
+                    [true, "Yes"],
+                    [false, "No"]
+                ]
+            },{
+                "name": "Remote Control",
+                "data": "server.remote_control",
+                "options": [
+                    [true, "Yes"],
+                    [false, "No"]
+                ]
+            }]
+        },{
+            "name": "Browser",
+            "icon": "service/browse",
+            "menu": [{
+                "name": "Fonts",
+                "icon": "service/font",
+                "event": "request-font-browser"
+            }]
+        },{
+            "name": "Debug",
+            "icon": "service/debug",
+            "menu": [{
+                "name": "Alignment Grid",
+                "data": "debug.alignment_grid",
+                "options": [
+                    [false, "Disable"],
+                    [true, "Enable"]
+                ],
+                "event": "alignment-grid-toggle"
+            }]
+        }]
+    }]
+}

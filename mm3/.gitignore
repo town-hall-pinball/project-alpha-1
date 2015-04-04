@@ -1,0 +1,4 @@
+resources
+*.pyc
+*.pyo
+.DS_Store

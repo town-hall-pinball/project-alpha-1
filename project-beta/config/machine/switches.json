@@ -1,0 +1,9 @@
+{
+    "switches": {
+        "start_button": {
+            "label": "Start Button",
+            "device": "13"
+        }
+    }
+}
+

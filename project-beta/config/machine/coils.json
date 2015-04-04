@@ -1,0 +1,8 @@
+{
+    "coils": {
+        "auto_plunger": {
+            "xdevice": "02",
+            "label": "Auto Plunger"
+        }
+    }
+}

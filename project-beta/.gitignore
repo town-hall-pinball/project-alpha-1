@@ -1,0 +1,7 @@
+.coverage
+.vagrant
+*.pyc
+*.pyo
+build
+virtualenv
+
