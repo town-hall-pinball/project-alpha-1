@@ -1,3 +1,4 @@
+#
 # Copyright (c) 2014 - 2015 townhallpinball.org
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
@@ -18,30 +19,60 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
+systems = [
+    "Sirius",
+    "Arcturus",
+    "Vega",
+    "Capella",
+    "Rigel",
+]
 
-# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
-VAGRANTFILE_API_VERSION = "2"
+elements = {
+    "S": "Stibnite",
+    "A": "Autunite",
+    "V": "Vanadinium",
+    "C": "Celestine",
+    "R": "Rhodonite"
+}
 
-Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "hashicorp/precise64"
-  config.vm.provision :shell, path: "vm/bootstrap"
-  config.vm.hostname = "project-alpha-2"
-  config.ssh.forward_x11 = true
-  config.vm.network "forwarded_port", guest: 9000, host: 9000
+hi = 2.0
+av = 1.0
+lo = 0.5
 
-  config.vm.provider "virtualbox" do |vb|
-      vb.name = "project-alpha-1"
-      vb.gui = true
-      if Vagrant::Util::Platform.windows?
-          vb.customize ["modifyvm", :id, "--audio", "dsound",
-                        "--audiocontroller", "ac97"]
-      else
-          vb.customize ["modifyvm", :id, "--audio", "coreaudio",
-                        "--audiocontroller", "ac97"]
-      end
-      config.vm.synced_folder "pinlib/pinlib", "/usr/local/lib/python2.7/dist-packages/pinlib"
-      config.vm.synced_folder "pinlib/procgame", "/usr/local/lib/python2.7/dist-packages/procgame"
-  end
-end
+prices = {
+    "Sirius": {
+        "S": hi,
+        "A": av,
+        "V": av,
+        "C": lo,
+        "R": lo
+    },
+    "Arcturus": {
+        "S": lo,
+        "A": hi,
+        "V": av,
+        "C": av,
+        "R": lo
+    },
+    "Vega": {
+        "S": lo,
+        "A": lo,
+        "V": hi,
+        "C": av,
+        "R": av
+    },
+    "Capella": {
+        "S": av,
+        "A": lo,
+        "V": lo,
+        "C": hi,
+        "R": av
+    },
+    "Rigel": {
+        "S": av,
+        "A": av,
+        "V": lo,
+        "C": lo,
+        "R": hi
+    }
+}

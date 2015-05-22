@@ -41,6 +41,8 @@ class PopperMode(mode.Base):
         ]
 
     def popper_cycle(self, sw=None):
+        if p.state.get("popper_hold", False):
+            return
         switch = p.machine.switch("popperRight1")
         if switch.is_active():
             p.machine.flasher("flasherPopperRight").patter(100, 127)

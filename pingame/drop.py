@@ -55,9 +55,13 @@ class DropTargetMode(mode.Base):
             self.lower_target()
 
     def lower_target(self, sw=None):
+        """
         p.state["drop_target"] = "down"
         p.machine.coil("dropTargetDown").pulse(delay=40)
+        """
 
     def raise_target(self, sw=None):
+        """
         p.state["drop_target"] = "up"
         p.machine.coil("dropTargetUp").pulse(delay=40)
+        """

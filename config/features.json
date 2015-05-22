@@ -2,10 +2,8 @@
     "modules": [
         "pinlib.modules.game",
         "pinlib.modules.ball",
-        "pinlib.modules.save",
         "pinlib.modules.splash",
         "pinlib.modules.coin",
-        "pinlib.modules.score",
         "pinlib.modules.server",
         "pinlib.modules.service",
         "pinlib.modules.volume",
@@ -14,6 +12,10 @@
         "pinlib.modules.search",
 
         "pingame.alpha",
+        "pingame.cargo.load",
+        "pingame.cargo.score",
+        "pingame.cargo.depart",
+        "pingame.cargo.travel",
         "pingame.attract",
         "pingame.bonus",
         "pingame.drop",
@@ -22,10 +24,7 @@
         "pingame.lagrange",
         "pingame.lanes",
         "pingame.magnets",
-        "pingame.orbits",
         "pingame.popper",
-        "pingame.ramps",
-        "pingame.skull",
         "pingame.slingshot",
         "pingame.spinner",
 
@@ -72,9 +71,5 @@
         "lamp": "ballLaunchButton",
         "lane": "shooterLane",
         "coil": "autoPlunger"
-    },{
-        "name": "pinlib.modules.save.BallSaveMode",
-        "flasher": "flasherAutoFire",
-        "coil": "trough"
     }]
 }

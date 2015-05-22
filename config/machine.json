@@ -106,11 +106,13 @@
         },
         "orbitLeft": {
             "id": "S62",
-            "label": "Orbit, Left"
+            "label": "Orbit, Left",
+            "keyboard": "h"
         },
         "orbitRight": {
             "id": "S58",
-            "label": "Orbit, Right"
+            "label": "Orbit, Right",
+            "keyboard": "j"
         },
         "outlaneRight": {
             "id": "S17",
