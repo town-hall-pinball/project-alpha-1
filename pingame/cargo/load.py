@@ -56,6 +56,7 @@ class CargoLoadMode(mode.Base):
             ["active",   "rampRightExit",   self.right_ramp_made],
             ["active",   "orbitLeft",       self.left_orbit_made],
             ["active",   "orbitRight",      self.right_orbit_made],
+            ["active",   "uTurn",           self.uturn_made],
             ["active",   "subwayCenter",    self.depart],
         ]
 
@@ -75,16 +76,19 @@ class CargoLoadMode(mode.Base):
         p.machine.lamp("scoopCenterArrow1").disable()
 
     def left_orbit_made(self, sw=None):
-        self.cargo("S")
-
-    def left_ramp_made(self, sw=None):
         self.cargo("A")
 
+    def left_ramp_made(self, sw=None):
+        self.cargo("B")
+
+    def uturn_made(self, sw=None):
+        self.carge("C")
+
     def right_ramp_made(self, sw=None):
-        self.cargo("V")
+        self.cargo("D")
 
     def right_orbit_made(self, sw=None):
-        self.cargo("R")
+        self.cargo("E")
 
     def cargo(self, item):
         cargo = p.state["cargo"]

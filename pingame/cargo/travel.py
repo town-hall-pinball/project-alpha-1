@@ -55,11 +55,11 @@ class TravelMode(mode.Base):
 
     def start(self):
         cargo = {
-            "S": 0,
             "A": 0,
-            "V": 0,
+            "B": 0,
             "C": 0,
-            "R": 0,
+            "D": 0,
+            "E": 0,
         }
         for item in p.state["cargo"]:
             cargo[item] += 1
@@ -73,7 +73,7 @@ class TravelMode(mode.Base):
                 p.player.award(award)
                 element = elements[key]
                 self.messages += [[
-                    "{}: {}x".format(element, value),
+                    "{}: {}x{}".format(element, value, prices[dest][key]),
                     util.format_score(award)
                 ]]
         self.messages += [[

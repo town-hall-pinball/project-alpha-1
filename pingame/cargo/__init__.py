@@ -20,59 +20,59 @@
 # DEALINGS IN THE SOFTWARE.
 
 systems = [
-    "Sirius",
-    "Arcturus",
-    "Vega",
-    "Capella",
-    "Rigel",
+    "Colony A",
+    "Colony B",
+    "Colony C",
+    "Colony D",
+    "Colony E",
 ]
 
 elements = {
-    "S": "Stibnite",
-    "A": "Autunite",
-    "V": "Vanadinium",
-    "C": "Celestine",
-    "R": "Rhodonite"
+    "A": "Cargo A",
+    "B": "Cargo B",
+    "C": "Cargo C",
+    "D": "Cargo D",
+    "E": "Cargo E"
 }
 
-hi = 2.0
+hi = 3.0
 av = 1.0
-lo = 0.5
+lo = 0.25
 
 prices = {
-    "Sirius": {
-        "S": hi,
-        "A": av,
-        "V": av,
-        "C": lo,
-        "R": lo
-    },
-    "Arcturus": {
-        "S": lo,
+    "Colony A": {
         "A": hi,
-        "V": av,
+        "B": av,
         "C": av,
-        "R": lo
+        "D": lo,
+        "E": lo
     },
-    "Vega": {
-        "S": lo,
+    "Colony B": {
         "A": lo,
-        "V": hi,
+        "B": hi,
         "C": av,
-        "R": av
+        "D": av,
+        "E": lo
     },
-    "Capella": {
-        "S": av,
+    "Colony C": {
         "A": lo,
-        "V": lo,
+        "B": lo,
         "C": hi,
-        "R": av
+        "D": av,
+        "E": av
     },
-    "Rigel": {
-        "S": av,
+    "Colony D": {
         "A": av,
-        "V": lo,
+        "B": lo,
         "C": lo,
-        "R": hi
+        "D": hi,
+        "E": av
+    },
+    "Colony E": {
+        "A": av,
+        "B": av,
+        "C": lo,
+        "D": lo,
+        "E": hi
     }
 }
