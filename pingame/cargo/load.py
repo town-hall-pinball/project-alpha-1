@@ -51,6 +51,9 @@ class CargoLoadMode(mode.Base):
         self.panel.add(self.score)
         self.display(self.panel)
 
+        self.this_switch = None
+        self.last_switch = None
+
         self.events = [
             ["active",   "rampLeftMiddle",  self.left_ramp_made],
             ["active",   "rampRightExit",   self.right_ramp_made],
@@ -58,6 +61,7 @@ class CargoLoadMode(mode.Base):
             ["active",   "orbitRight",      self.right_orbit_made],
             ["active",   "uTurn",           self.uturn_made],
             ["active",   "subwayCenter",    self.depart],
+            ["switch",  self.on_switch],
         ]
 
     def start(self):
@@ -75,8 +79,14 @@ class CargoLoadMode(mode.Base):
         p.machine.lamp("scoopLeftArrow1").disable()
         p.machine.lamp("scoopCenterArrow1").disable()
 
+    def on_switch(self, sw, info):
+        if info["state"] == "active":
+            self.last_switch = self.this_switch
+            self.this_switch = sw.name
+
     def left_orbit_made(self, sw=None):
-        self.cargo("A")
+        if self.last_switch != "orbitRight":
+            self.cargo("A")
 
     def left_ramp_made(self, sw=None):
         self.cargo("B")
@@ -88,7 +98,8 @@ class CargoLoadMode(mode.Base):
         self.cargo("D")
 
     def right_orbit_made(self, sw=None):
-        self.cargo("E")
+        if self.last_switch != "orbitLeft":
+            self.cargo("E")
 
     def cargo(self, item):
         cargo = p.state["cargo"]

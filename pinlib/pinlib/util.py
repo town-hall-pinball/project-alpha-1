@@ -57,6 +57,8 @@ class Events(object):
         triggered. Any additional `*args` and `**kwargs` passed when triggering
         the event are passed to the `listener`
         """
+        if not listener:
+            raise ValueError("No listener specified")
         if event not in self.listeners:
             self.listeners[event] = []
         self.listeners[event] += [listener]
