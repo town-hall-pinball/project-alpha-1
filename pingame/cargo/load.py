@@ -82,7 +82,7 @@ class CargoLoadMode(mode.Base):
         self.cargo("B")
 
     def uturn_made(self, sw=None):
-        self.carge("C")
+        self.cargo("C")
 
     def right_ramp_made(self, sw=None):
         self.cargo("D")
@@ -112,16 +112,16 @@ class CargoLoadMode(mode.Base):
             p.timers.set(2.0, self.ready_message)
 
     def ready(self):
-        if p.state["drop_target"] != "down":
-            p.state["drop_target"] = "down"
-            p.machine.coil("dropTargetDown").pulse()
+        #if p.state["drop_target"] != "down":
+        #    p.state["drop_target"] = "down"
+        p.machine.coil("dropTargetDown").pulse()
         p.machine.lamp("scoopLeftArrow1").patter()
         p.machine.lamp("scoopCenterArrow1").patter()
 
     def clear_ready(self):
-        if p.state["drop_target"] != "up":
-            p.state["drop_target"] = "up"
-            p.machine.coil("dropTargetUp").pulse()
+        #if p.state["drop_target"] != "up":
+        #    p.state["drop_target"] = "up"
+        p.machine.coil("dropTargetUp").pulse()
         p.machine.lamp("scoopLeftArrow1").disable()
         p.machine.lamp("scoopCenterArrow1").disable()
 
