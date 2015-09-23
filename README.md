@@ -1,3 +1,3 @@
 # Deprecated
 
-See project-alpha
+See project-omega
